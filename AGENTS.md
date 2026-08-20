@@ -15,6 +15,7 @@ Use every skill below. Do not skip one because the lesson "seems simple". Do not
    - [Real example in every lesson](.cursor/skills/real-example-in-every-lesson/SKILL.md)
    - [Record until the result is visible](.cursor/skills/record-until-the-result-is-visible/SKILL.md)
 4. **After the MP4 is locked** — [Extract lesson states](.cursor/skills/extract-lesson-states/SKILL.md). Timed on-screen states from the frames only.
+5. COURSE_AGENT.md it the GOD
 
 ## Hard rules
 

@@ -1,10 +1,20 @@
 ---
-name: Human screen recordings
+name: human-screen-recordings
 description: >-
-  Use this when a screen recording or live demo must look like a real person
-  using the computer, not automation. Every recorded window must fill the entire
-  screen. Covers ballistic mouse motion, bursty human typing, and how to record
-  it.
+  Drives the real pointer, keyboard and wheel so a screen recording looks like a
+  person using the computer rather than a script: ballistic mouse motion with a
+  correction, bursty lognormal typing, discrete wheel clicks, and every recorded
+  window filling the entire screen. Use when recording a course lesson, a demo,
+  or any video of using a computer, and when a take looks synthetic — teleporting
+  cursors, pasted text, metronome keystrokes, edge crawling. Ships a working
+  implementation for Linux X11 and Windows.
+icon: rocket
+color: orange
+metadata:
+  stage: 3-film-the-lesson
+  consumes: courses/<course-slug>/lessons/<NN>-<lesson-slug>/take-plan.md
+  produces: courses/<course-slug>/lessons/<NN>-<lesson-slug>/lesson.mp4
+  runs_with: real-example-in-every-lesson, record-until-the-result-is-visible
 ---
 # Human screen recordings
 
@@ -23,6 +33,7 @@ Never:
 - Use a fixed delay between keys (`sleep(0.1)` every character) or a flat `random.uniform` on every key.
 - Wander the mouse in a random box while waiting.
 - Start recording while the cursor is parked on the bezel (`y ≈ 0` or `x ≈ 0`).
+- Jump a scrollbar, or scroll a whole page in one event. A wheel moves in clicks.
 
 Always:
 
@@ -86,12 +97,25 @@ Capitals: hold Shift, tap the letter, release Shift. Never paste.
 
 Do not sprinkle fake typos unless asked. One optional backspace on a long prompt is enough; a lot of typos looks staged.
 
+## Scrolling: clicks, not a slide
+
+A wheel is discrete. Send 3–7 clicks with 60–160ms between them, then a pause of 240–600ms before the next burst, the same shape as typing.
+
+Never animate a smooth pixel-by-pixel scroll, never drag the scrollbar to jump, and never send one giant scroll event. Reading pauses are what make scrolling look like reading.
+
 ## Recorder
 
-X11 example:
+X11:
 
 ```
 ffmpeg -y -f x11grab -draw_mouse 1 -video_size WIDTHxHEIGHT -framerate 60 -i $DISPLAY \
+  -c:v libx264 -preset veryfast -crf 16 -pix_fmt yuv420p -an out.mp4
+```
+
+Windows:
+
+```
+ffmpeg -y -f gdigrab -draw_mouse 1 -framerate 60 -i desktop ^
   -c:v libx264 -preset veryfast -crf 16 -pix_fmt yuv420p -an out.mp4
 ```
 
@@ -102,15 +126,26 @@ Stop with SIGINT so the MP4 is finalized. Check duration, 60fps, and a few frame
 The **protocol** is the same everywhere. Only the injector changes:
 
 - **Linux/X11:** `XTestFakeMotionEvent` at 1px + flush; `XTestFakeKeyEvent` for keys. Relative XTest is unreliable on some servers; a dense absolute stream is fine if each step is 1px.
-- **macOS / Windows:** the same timing and path math, using that OS’s pointer/key event API. Do not use accessibility “set cursor to x,y” once per click.
+- **Windows:** `SendInput` with absolute normalized coordinates. Three traps decide whether it looks human, and they are in [references/windows.md](references/windows.md): pointer acceleration mangles relative motion, mouse-move messages are coalesced by default and eat a dense stream, and injection into an elevated window is silently refused.
+- **macOS:** the same timing and path math on that OS's pointer/key event API. Do not use accessibility “set cursor to x,y” once per click.
 
 Pixel-click desktop agents (click-at-coordinates) will look fake. If that is the only tool, do not use it for the recording. Generate the path and play it as a stream.
 
-## Linux X11 reference (drop-in)
+## The drop-in implementation
 
-A complete `HumanInput` class: `park()` before record, `move_to(x, y, target_w=)`, `click()`, `type_text(s)`. Keep this logic; change `DISPLAY` / screen size to match the machine.
+[scripts/human_input.py](scripts/human_input.py) is this protocol as working code, standard library only. The timing and path math are shared; only the injector is per platform, and it picks the right one for the machine it runs on.
 
-Typical session: maximize the window to fill the screen → `h = HumanInput(width, height)` → `h.park()` → start ffmpeg → `h.move_to(...)` / `h.click()` / `h.type_text(...)` → SIGINT ffmpeg → `h.close()`.
+`HumanInput`: `park()` before recording, `move_to(x, y, target_w=)`, `click()`, `type_text(s)`, `press(key)`, `scroll(clicks)`, `close()`.
+
+Typical session: maximize the window to fill the screen → `h = HumanInput()` → `h.park()` → start ffmpeg → `h.move_to(...)` / `h.click()` / `h.type_text(...)` → SIGINT ffmpeg → `h.close()`.
+
+Before trusting it on a new machine, run the protocol checks — they need no display and no recorder, and they fail loudly if a change to the numbers broke the shape:
+
+```
+python3 scripts/human_input.py --selftest
+```
+
+Then `--demo` to drive the real pointer once and watch it with your own eyes.
 
 ## Done when
 

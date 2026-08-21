@@ -14,7 +14,7 @@ Each skill is the gate for its own stage. Run them in order and do not open the 
 2. **Before each lesson** — [Research the current lesson](.cursor/skills/2-research-the-lesson/research-the-current-lesson/SKILL.md). Lock onto that lesson only. Master the material to teaching depth, operate it live, establish best practice, then pick the human example, and write it all to `courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md`. Filming starts from a `ready` brief and from nothing else.
 3. **Film** — all three, together, gated by the first:
  - [Real example in every lesson](.cursor/skills/3-film-the-lesson/real-example-in-every-lesson/SKILL.md). Judge the example against the course's pedagogical bar, write `courses/<course-slug>/lessons/<NN>-<lesson-slug>/take-plan.md`, and only then start a recorder.
- - [Human screen recordings](.cursor/skills/human-screen-recordings/SKILL.md)
+ - [Human screen recordings](.cursor/skills/3-film-the-lesson/human-screen-recordings/SKILL.md). Real pointer, real keystrokes, real wheel, on Linux or Windows.
  - [Record until the result is visible](.cursor/skills/record-until-the-result-is-visible/SKILL.md)
 4. **After the MP4 is locked** — [Extract lesson states](.cursor/skills/extract-lesson-states/SKILL.md). Timed on-screen states from the frames only.
 5. COURSE_AGENT.md it the GOD

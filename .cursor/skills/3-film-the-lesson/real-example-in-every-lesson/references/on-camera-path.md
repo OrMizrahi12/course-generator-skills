@@ -11,6 +11,7 @@ the places it gets bent.
 - The feature is not the last verb
 - Setup versus the lesson object
 - Writing the steps
+- Rehearsal
 - Invalid takes
 - When the take misses
 
@@ -60,6 +61,27 @@ brief and confirm it is gone before the recorder starts.
 
 A plan whose first step is the payoff is an automatic fail, and it is the most
 common shape a rushed plan takes.
+
+## Rehearsal
+
+Walk the whole plan once before a recorder exists, in the environment you will
+film in. The validator checks that the plan is well formed; a rehearsal is the
+only thing that tells you it is executable here.
+
+What it catches that nothing else does:
+
+- Tool defaults that change what typing produces. Input has to be typed key by
+  key on camera, and an editor's own indentation or autocompletion can turn a
+  correct file into a broken one — a class of defect that is invisible in the
+  plan and fatal at step 15.
+- Outputs that differ from the brief because the plan reordered something, or
+  because an earlier step left state behind.
+- A step whose real duration makes the take unusable, or a prompt the brief did
+  not record.
+
+Then reset. Use the plan's own reset section, confirm the state is back to before
+the lesson object existed, and only then start the recorder. A rehearsal you do
+not clean up is a pre-created lesson object.
 
 ## Invalid takes
 

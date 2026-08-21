@@ -40,7 +40,7 @@ VERDICT_FIELDS = (
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 FIELD_RE = re.compile(r"^-\s+([A-Z][A-Za-z -]*?):\s*(.*)$")
 STEP_RE = re.compile(r"^(\d+)\.\s+(\S.*)$")
-STEP_REF_RE = re.compile(r"step\s+(\d+)", re.I)
+STEP_REF_RE = re.compile(r"steps?\s+(\d+)", re.I)
 BACKTICK_RE = re.compile(r"`([^`\n]+)`")
 PLACEHOLDER_RE = re.compile(r"<[^<>]{1,300}>", re.S)
 
@@ -50,6 +50,21 @@ SMOKE_TEST_MARKERS = (
     r"\bhello\.\w+\b",
     r"\btest\.txt\b",
     r"\bfoo\b\s*/\s*\bbar\b",
+    r"\bfoo\.\w+\b",
+    r"\bfoobar\b",
+    r"\bdummy\b",
+    r"reply with only",
+    r"\blorem\b",
+)
+
+# The steps are prose about commands, so 'echo' only counts when it is written as one.
+STEP_SMOKE_MARKERS = (
+    r"`echo\b",
+    r"\becho\s+[\"'$]",
+    r"\becho\b[^\n]*>",
+    r"\bhello[-_ ]?(a|b|world)\b",
+    r"\bhello\.\w+\b",
+    r"\btest\.txt\b",
     r"\bfoo\.\w+\b",
     r"\bfoobar\b",
     r"\bdummy\b",
@@ -267,6 +282,15 @@ def check_steps(lines: list[str], sections: dict, report: Report) -> list[int]:
     if not numbers:
         report.error(sections["Steps"][0], "the plan has no numbered steps")
         return []
+    for number, text in section_lines(lines, sections["Steps"]):
+        lowered = text.lower()
+        matched = next((p for p in STEP_SMOKE_MARKERS if re.search(p, lowered)), None)
+        if matched:
+            report.warn(
+                number,
+                f"this step matches a smoke-test marker ({matched!r}); incidental use is "
+                "fine, but check it is not the work the lesson shows",
+            )
     if len(numbers) < MIN_STEPS:
         report.error(
             sections["Steps"][0],
@@ -425,6 +449,16 @@ def check_context(data: dict[str, str], path: str, report: Report) -> tuple[str,
         )
     elif len(" ".join(pedagogy[1]).split()) < MIN_PEDAGOGY_WORDS:
         report.error(None, "pedagogy.md is too thin to judge an example against")
+
+    refusal = read_reference(os.path.join(lesson_dir, "example-verdict.md"))
+    if refusal is not None:
+        verdict = refusal[0].get("verdict", "")
+        if verdict.strip().lower() != "film":
+            report.error(
+                None,
+                f"example-verdict.md beside this plan records {verdict!r}; the refusal has "
+                "not been resolved, so this example is not filmed",
+            )
 
     brief = read_reference(os.path.join(lesson_dir, "brief.md"))
     if brief is None:

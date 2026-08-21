@@ -119,6 +119,22 @@ existed, and the film shows the feature being the reason they got it.
 Say which criterion failed, in one sentence, with the evidence you could not
 write. Then hand it back to `/research-the-current-lesson`.
 
+Write the refusal to `example-verdict.md`, beside the brief, and write no take
+plan. It carries frontmatter with `course`, `lesson`, `lesson_slug`, and a
+`verdict:` naming the handback, then:
+
+- the section you judged, quoted, so the next pass judges the same text
+- all five criteria with the evidence you could and could not write
+- the finding in one sentence
+- what stage 2 does not have to redo, so a one-section fix does not become a
+  re-run of the research
+- what must not change while it is fixed, from the brief's
+  `## Constrains later lessons`
+
+The file is replaced when the example is re-judged and passes. Until then the
+take-plan validator refuses to approve a plan for this lesson, which is what
+stops a later pass from filming an example that was already refused.
+
 Do not repair the example yourself. Choosing an example requires the material
 mastery that stage 2 has and this stage does not, and an example patched at film
 time is how a course ends up with a lesson that works on camera and teaches

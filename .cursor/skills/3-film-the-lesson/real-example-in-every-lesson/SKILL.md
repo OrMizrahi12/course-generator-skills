@@ -14,7 +14,7 @@ color: purple
 metadata:
   stage: 3-film-the-lesson
   consumes: courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md
-  produces: courses/<course-slug>/lessons/<NN>-<lesson-slug>/take-plan.md
+  produces: courses/<course-slug>/lessons/<NN>-<lesson-slug>/take-plan.md, lesson.mp4
   runs_with: human-screen-recordings, record-until-the-result-is-visible
 ---
 
@@ -78,8 +78,9 @@ Lesson <N> take:
 - [ ] 2. Example judged against all five criteria, verdict recorded
 - [ ] 3. Take plan written, every created object mapped to a step
 - [ ] 4. Validator clean on the take plan
-- [ ] 5. Filmed with /human-screen-recordings and /record-until-the-result-is-visible
-- [ ] 6. Both gates checked against the MP4 itself
+- [ ] 5. Plan rehearsed off camera end to end, then reset
+- [ ] 6. Filmed with /human-screen-recordings and /record-until-the-result-is-visible
+- [ ] 7. Both gates checked against the MP4 itself
 ```
 
 ### 1. Preconditions
@@ -102,6 +103,13 @@ Score all five criteria from
 **Gate:** every criterion passes, or the example goes back to stage 2. A single
 failure is enough — an example that is real and finishable but confusing teaches
 nothing, and one that is clear but trivial teaches nothing worth knowing.
+
+A refusal is written down, not just said. Record it beside the brief as
+`example-verdict.md`, with `verdict:` in its frontmatter naming the handback, and
+write no take plan — the plan is the artifact of an example that passed. Ask stage
+2 to lower the brief to `draft` while it re-chooses. The validator refuses to
+approve a plan while an unresolved refusal sits beside it, so a later pass cannot
+walk past the judgment by skipping it.
 
 ### 3. Write the take plan
 
@@ -131,13 +139,26 @@ the recorder starts.
 
 **Gate:** validator clean, then set `status: approved`.
 
-### 5. Film
+### 5. Rehearse the plan off camera
+
+Walk the whole plan once, in the environment you will film in, before a recorder
+exists. A validator can only check that the plan is well formed; only a rehearsal
+tells you it is executable here.
+
+What to watch for, and how to reset afterwards, is in
+[references/on-camera-path.md](references/on-camera-path.md#rehearsal).
+
+**Gate:** the rehearsal produced the outputs the plan promises, and the state it
+created is reset so the take starts from zero.
+
+### 6. Film
 
 Run `/human-screen-recordings` for how the input must look and
 `/record-until-the-result-is-visible` for when the recorder may stop. They are
-not optional companions; all three run on the same take.
+not optional companions; all three run on the same take. The take is saved beside
+the plan, as `lesson.mp4`.
 
-### 6. The two gates, checked against the MP4
+### 7. The two gates, checked against the MP4
 
 1. **Path on camera, 0% to 100%** — every step a new user needs, including how
    the lesson object came to exist.
@@ -162,10 +183,10 @@ failing means the take is deleted and reshot from the reset in the brief.
 
 ## Done when
 
-The take plan is `approved`, the MP4 shows creation, path, and result with
-nothing critical off camera, the last frames hold the finished result, and the
-example still reads — to a stranger watching only the film — as work a person
-would want to do.
+The take plan is `approved`, `lesson.mp4` sits beside it showing creation, path,
+and result with nothing critical off camera, the last frames hold the finished
+result, and the example still reads — to a stranger watching only the film — as
+work a person would want to do.
 
 On any conflict between this skill and the repo-root `COURSE_AGENT.md`, that
 document wins.

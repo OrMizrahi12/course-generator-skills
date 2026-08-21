@@ -53,8 +53,15 @@ chat message is lost by the next lesson, so lesson 4 quietly violates what was
 agreed at lesson 2. And an instruction you paraphrase becomes an instruction you
 have edited — "keep examples short" is not "no example longer than three minutes".
 
-Confirm the file with the user the first time you write it. After that, add to it
-as instructions arrive.
+Production artifacts are written in English, and this one exception is deliberate:
+quote the instruction in the language the user wrote it in, and put your English
+rendering beside it, labeled as a rendering. A translated instruction is a
+paraphrase, and the point of quoting is that it cannot be edited by accident.
+
+Tell the user what you wrote the first time. That is not a gate — an unreachable
+user does not stop production — so if you cannot reach them, mark the file
+unconfirmed, say which lines are derivations rather than instructions, and carry
+on. After that, add to it as instructions arrive.
 
 ## When there are no instructions
 

@@ -71,6 +71,10 @@ there beats any inference from the docs. Probing is off-camera work and does not
 count as filming — but do not create the object a lesson must show being
 created.
 
+Write the result into the artifact's `## Capability probe` section: what passes,
+what is blocked and what would unblock it, and how the state each lesson creates
+gets reset. Stage 2 should not have to rediscover any of it.
+
 ## The source ledger
 
 Every syllabus carries its sources, so stage 2 starts from evidence instead of

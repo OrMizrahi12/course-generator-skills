@@ -119,7 +119,8 @@ Never carried "we will fix it when we film it".
 python3 scripts/validate_syllabus.py courses/<course-slug>/syllabus.md
 ```
 
-Fix every reported error and run it again until it exits clean. Warnings are
+The script path is relative to this skill's folder; the artifact path is relative
+to the workspace. Fix every reported error and run it again until it exits clean. Warnings are
 judgment calls: fix them or be able to say why you kept them.
 
 **Gate:** never show the user a draft the validator rejects.

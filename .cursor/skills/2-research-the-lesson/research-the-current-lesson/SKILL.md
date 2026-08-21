@@ -53,6 +53,11 @@ Before anything else, confirm all three. Any failure stops the stage.
 Never research a lesson off a draft syllabus. A spine the user has not accepted
 is still a proposal, and researching it is work done against a moving target.
 
+If the user says they accepted the spine but the artifact still says `draft`, the
+acceptance was never recorded. Hand back to `/build-a-course-syllabus` to record
+it, then resume here. Do not flip the status yourself, and do not proceed on the
+strength of a chat message.
+
 ## Workflow
 
 Copy this checklist into your reply and keep it current:
@@ -133,27 +138,37 @@ Copy [assets/lesson-brief-template.md](assets/lesson-brief-template.md) to
 `courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md`, two digits for the
 number, then:
 
+From the workspace root:
+
 ```bash
-python3 scripts/validate_brief.py courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md
+python3 .cursor/skills/2-research-the-lesson/research-the-current-lesson/scripts/validate_brief.py \
+  courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md
 ```
 
-The script path is relative to this skill's folder; the artifact path is relative
-to the workspace. It also cross-checks the brief against the accepted syllabus,
-so a brief that quietly drifts from the spine fails here.
+It also cross-checks the brief against the accepted syllabus, so a brief that has
+quietly drifted from the spine fails here rather than at film time.
 
 **Gate:** validator clean, then set `status: ready`. Filming starts from a `ready`
 brief and from nothing else.
 
-## When the research contradicts the syllabus line
+## When the research contradicts the syllabus
 
-It happens, and it is a finding rather than a nuisance: the feature was renamed,
-it now needs an account the course does not have, or the line cannot be filmed
-0% to 100% after all.
+Two different cases, and they get different treatment.
 
-Do not quietly rewrite the lesson, and do not proceed with a line you now know is
-wrong. Stop, say plainly what the research established and which line it breaks,
-and hand it back to `/build-a-course-syllabus` with the user. The syllabus goes
-back to `draft`, gets fixed, and gets accepted again before this stage resumes.
+**This lesson's line is wrong.** The feature was renamed, it now needs an account
+the course does not have, or the line cannot be filmed 0% to 100% after all. Do
+not quietly rewrite the lesson and do not proceed with a line you know is broken.
+Stop, say plainly what the research established and which line it breaks, and
+hand it back to `/build-a-course-syllabus` with the user. The syllabus returns to
+`draft`, gets fixed, and gets accepted again before this stage resumes.
+
+**This lesson constrains a later line.** What you build or refuse here can decide
+whether a later lesson is filmable at all — the state this lesson creates is the
+state that lesson inherits. That is a finding, not permission to research the
+later lesson. Record it in the brief's `## Constrains later lessons` section, tell
+the user in one line, and leave the later line alone unless they change it.
+
+Both cases are cheap now and expensive after the first take.
 
 ## Scope boundary
 

@@ -32,7 +32,13 @@ REQUIRED_FIELDS = {
     ),
     "Live operation": ("Entry", "Steps observed", "Done on screen", "Waits and interruptions"),
     "Reset": ("Method", "Verified"),
-    "Best practice": ("Path we teach", "Why this path", "Shortcut refused", "Viewer verification"),
+    "Best practice": (
+        "Path we teach",
+        "Why this path",
+        "Order traps",
+        "Shortcut refused",
+        "Viewer verification",
+    ),
     "The human example": (
         "Job",
         "Because",
@@ -40,7 +46,7 @@ REQUIRED_FIELDS = {
         "Not a smoke test because",
     ),
 }
-PROSE_SECTIONS = ("Dead paths", "Must be created on camera")
+PROSE_SECTIONS = ("Dead paths", "Must be created on camera", "Constrains later lessons")
 REQUIRED_SECTIONS = tuple(REQUIRED_FIELDS) + PROSE_SECTIONS + ("Sources",)
 
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -53,14 +59,14 @@ SYLLABUS_LESSON_RE = re.compile(r"^###\s+Lesson\s+(\d+)\s*(?:—|–|-)\s*(\S.*?
 # An example that only proves the machinery is wired up is not an example.
 SMOKE_TEST_MARKERS = (
     r"\becho\b",
-    r"\bhello[-_. ]?(a|b|world|\.txt|file)\b",
-    r"\bhello\.txt\b",
+    r"\bhello[-_ ]?(a|b|world)\b",
+    r"\bhello\.\w+\b",
     r"\btest\.txt\b",
-    r"\bfoo\b",
-    r"\bbar\b",
+    r"\bfoo\b\s*/\s*\bbar\b",
+    r"\bfoo\.\w+\b",
+    r"\bfoobar\b",
     r"\bdummy\b",
     r"reply with only",
-    r"\bit ran\b",
     r"\blorem\b",
 )
 
@@ -72,8 +78,8 @@ OFF_CAMERA_MARKERS = (
     r"pre-?creat",
     r"pre-?exist",
     r"created earlier",
-    r"off[- ]camera",
-    r"\bnothing\b",
+    r"creat\w*\s+off[- ]camera",
+    r"off[- ]camera\s+creat",
 )
 
 MIN_FIELD_WORDS = 4  # Enough to be an answer rather than a label.
@@ -106,6 +112,35 @@ def normalize_url(url: str) -> str:
 def is_real_url(url: str) -> bool:
     """True for a URL that was actually fetched, false for 'https://...' shaped stubs."""
     return bool(REAL_URL_RE.match(url)) and "..." not in url
+
+
+def ledger_key(url: str) -> str:
+    """Compare sources without letting http vs https look like two different pages."""
+    return re.sub(r"^https?://", "", normalize_url(url)).lower()
+
+
+def protected_ranges(text: str) -> list[tuple[int, int]]:
+    """Character ranges inside fenced blocks or inline code, where <angle> is a signature."""
+    ranges = [(match.start(), match.end()) for match in re.finditer(r"```.*?```", text, re.S)]
+    ranges += [(match.start(), match.end()) for match in re.finditer(r"`[^`\n]*`", text)]
+    return ranges
+
+
+def inside(ranges: list[tuple[int, int]], position: int) -> bool:
+    return any(start <= position < end for start, end in ranges)
+
+
+def bullet_entries(lines: list[str], span: tuple[int, int]) -> list[tuple[int, str]]:
+    """Bullets in a section, each joined with the lines its value wraps onto."""
+    entries: list[tuple[int, str]] = []
+    for number, text in section_lines(lines, span):
+        stripped = text.strip()
+        if stripped.startswith("- "):
+            entries.append((number, stripped[2:]))
+        elif entries and text.startswith("  ") and stripped:
+            first_line, value = entries[-1]
+            entries[-1] = (first_line, f"{value} {stripped}")
+    return entries
 
 
 def parse_frontmatter(lines: list[str], report: Report) -> tuple[dict[str, str], int]:
@@ -235,15 +270,29 @@ def check_against_syllabus(
         )
 
     lesson_block = syllabus.split(f"### Lesson {int(number)} ", 1)[-1].split("\n### ", 1)[0]
-    for match in re.finditer(r"^-\s*Sources:\s*(.+)$", lesson_block, re.M):
-        for raw_url in URL_RE.findall(match.group(1)):
-            url = normalize_url(raw_url)
-            if is_real_url(url) and url not in ledger:
-                report.warn(
-                    None,
-                    f"{raw_url} is a source the syllabus already found for this lesson "
-                    "and it is not in this brief's ledger",
-                )
+    for raw_url in syllabus_lesson_sources(lesson_block):
+        url = normalize_url(raw_url)
+        if is_real_url(url) and ledger_key(url) not in ledger:
+            report.warn(
+                None,
+                f"{raw_url} is a source the syllabus already found for this lesson "
+                "and it is not in this brief's ledger",
+            )
+
+
+def syllabus_lesson_sources(lesson_block: str) -> list[str]:
+    """Collect the lesson's Sources field, including values continued on later lines."""
+    collected: list[str] = []
+    inside = False
+    for raw in lesson_block.splitlines():
+        if re.match(r"^-\s*Sources:", raw):
+            inside = True
+            collected.extend(URL_RE.findall(raw))
+        elif inside and raw.startswith("  ") and raw.strip():
+            collected.extend(URL_RE.findall(raw))
+        elif raw.strip().startswith("- ") or not raw.strip():
+            inside = False
+    return collected
 
 
 def check_placeholders(text: str, lines: list[str], report: Report) -> None:
@@ -254,9 +303,10 @@ def check_placeholders(text: str, lines: list[str], report: Report) -> None:
             report.error(number, "template comment left in the brief; delete it")
             commented.add(number)
 
+    protected = protected_ranges(text)
     for match in PLACEHOLDER_RE.finditer(text):
         line = text.count("\n", 0, match.start()) + 1
-        if line in commented:
+        if line in commented or inside(protected, match.start()):
             continue
         found = match.group(0)
         if any(is_real_url(normalize_url(url)) for url in URL_RE.findall(found)):
@@ -375,12 +425,7 @@ def check_ledger(lines: list[str], sections: dict, report: Report) -> set[str]:
     ledger: set[str] = set()
     if "Sources" not in sections:
         return ledger
-    entries = [
-        (number, text)
-        for number, text in section_lines(lines, sections["Sources"])
-        if text.strip().startswith("- ")
-    ]
-    for number, text in entries:
+    for number, text in bullet_entries(lines, sections["Sources"]):
         urls = URL_RE.findall(text)
         if not urls:
             report.error(number, "source entry has no URL")
@@ -389,7 +434,7 @@ def check_ledger(lines: list[str], sections: dict, report: Report) -> set[str]:
             if not is_real_url(normalize_url(raw_url)):
                 report.error(number, f"{raw_url} is not a real URL you fetched")
         ledger.update(
-            normalize_url(url) for url in urls if is_real_url(normalize_url(url))
+            ledger_key(url) for url in urls if is_real_url(normalize_url(url))
         )
         tail = text.split(urls[-1], 1)[-1]
         if len(re.sub(r"^[\s—–\-:>]+", "", tail).split()) < MIN_DESCRIPTION_WORDS:

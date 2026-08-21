@@ -170,9 +170,10 @@ def check_placeholders(text: str, lines: list[str], report: Report) -> None:
             report.error(number, "template comment left in the artifact; delete it")
             commented.add(number)
 
+    protected = protected_ranges(text)
     for match in PLACEHOLDER_RE.finditer(text):
         line = text.count("\n", 0, match.start()) + 1
-        if line in commented:
+        if line in commented or inside(protected, match.start()):
             continue
         found = match.group(0)
         if any(is_real_url(normalize_url(url)) for url in URL_RE.findall(found)):
@@ -265,16 +266,41 @@ def is_real_url(url: str) -> bool:
     return bool(REAL_URL_RE.match(url)) and "..." not in url
 
 
+def ledger_key(url: str) -> str:
+    """Compare sources without letting http vs https look like two different pages."""
+    return re.sub(r"^https?://", "", normalize_url(url)).lower()
+
+
+def protected_ranges(text: str) -> list[tuple[int, int]]:
+    """Character ranges inside fenced blocks or inline code, where <angle> is a signature."""
+    ranges = [(match.start(), match.end()) for match in re.finditer(r"```.*?```", text, re.S)]
+    ranges += [(match.start(), match.end()) for match in re.finditer(r"`[^`\n]*`", text)]
+    return ranges
+
+
+def inside(ranges: list[tuple[int, int]], position: int) -> bool:
+    return any(start <= position < end for start, end in ranges)
+
+
+def bullet_entries(lines: list[str], span: tuple[int, int]) -> list[tuple[int, str]]:
+    """Bullets in a section, each joined with the lines its value wraps onto."""
+    entries: list[tuple[int, str]] = []
+    for number, text in section_text(lines, span):
+        stripped = text.strip()
+        if stripped.startswith("- "):
+            entries.append((number, stripped[2:]))
+        elif entries and text.startswith("  ") and stripped:
+            first_line, value = entries[-1]
+            entries[-1] = (first_line, f"{value} {stripped}")
+    return entries
+
+
 def check_ledger(lines: list[str], sections: dict, report: Report) -> set[str]:
     ledger: set[str] = set()
     if "Sources" not in sections:
         return ledger
     start = sections["Sources"][0]
-    entries = [
-        (number, text)
-        for number, text in section_text(lines, sections["Sources"])
-        if text.strip().startswith("- ")
-    ]
+    entries = bullet_entries(lines, sections["Sources"])
     if not entries:
         report.error(start, "Sources ledger is empty; every spine traces to live sources")
     for number, text in entries:
@@ -285,7 +311,7 @@ def check_ledger(lines: list[str], sections: dict, report: Report) -> set[str]:
         for url in urls:
             if not is_real_url(normalize_url(url)):
                 report.error(number, f"{url} is not a real URL you fetched")
-        ledger.update(normalize_url(url) for url in urls if is_real_url(normalize_url(url)))
+        ledger.update(ledger_key(url) for url in urls if is_real_url(normalize_url(url)))
         tail = text.split(urls[-1], 1)[-1]
         if len(re.sub(r"^[\s—–\-:>]+", "", tail).split()) < MIN_DESCRIPTION_WORDS:
             report.error(number, "source entry must say what it established")
@@ -427,7 +453,7 @@ def check_one_lesson(lesson: dict, ledger: set[str], report: Report) -> None:
                     lesson["field_lines"]["Sources"],
                     f"{raw_url} is not a real URL you fetched",
                 )
-            elif url not in ledger:
+            elif ledger_key(url) not in ledger:
                 report.error(
                     lesson["field_lines"]["Sources"],
                     f"{raw_url} is not in the ## Sources ledger",

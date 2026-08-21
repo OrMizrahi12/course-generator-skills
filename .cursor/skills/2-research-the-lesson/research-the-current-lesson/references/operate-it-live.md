@@ -66,8 +66,22 @@ connection, the branch, the file — remove it and confirm it is gone before the
 recorder starts. Being able to say "it was already there" is not a defense; the
 viewer needs to see it come into existence.
 
-Everything else that is merely context — an open window, a signed-in session, an
-existing repository the lesson does not claim to create — can stay.
+The line, precisely: anything the lesson's claim depends on is created on camera,
+unless a **prior shipped lesson** in this course already filmed its creation.
+Everything the lesson makes no claim about — an open window, a signed-in session,
+an installed tool, a machine that exists — may pre-exist.
+
+Two consequences worth stating, because they are where this gets argued:
+
+- If the lesson asserts something about the state of a project (its history, its
+  contents, its failing test), that state is part of the claim and is built on
+  camera. A viewer who never saw it arrive cannot judge the assertion.
+- The first lesson of a course has no prior lesson to point at, so it builds
+  whatever it claims. That makes lesson 1 longer than the ones after it, and
+  that is correct rather than a problem to design away.
+
+List the objects in the brief's `## Must be created on camera` section, named
+exactly. That list is a contract with the filming stage.
 
 ## When the product disagrees with the docs
 

@@ -115,12 +115,14 @@ Never carried "we will fix it when we film it".
 
 ### 5. Validate
 
+From the workspace root:
+
 ```bash
-python3 scripts/validate_syllabus.py courses/<course-slug>/syllabus.md
+python3 .cursor/skills/1-plan-the-course/build-a-course-syllabus/scripts/validate_syllabus.py \
+  courses/<course-slug>/syllabus.md
 ```
 
-The script path is relative to this skill's folder; the artifact path is relative
-to the workspace. Fix every reported error and run it again until it exits clean. Warnings are
+Fix every reported error and run it again until it exits clean. Warnings are
 judgment calls: fix them or be able to say why you kept them.
 
 **Gate:** never show the user a draft the validator rejects.

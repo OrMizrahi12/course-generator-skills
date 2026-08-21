@@ -2,7 +2,7 @@
 
 Cursor skills for recording any course as silent screen lessons.
 
-Each skill is a folder under `.cursor/skills/`. Clone this repo, or copy that folder into `~/.cursor/skills/`.
+Skills live under `.cursor/skills/`, grouped into the production stage they belong to. The stage folder is organizational; a skill's identity is the folder that holds its `SKILL.md`, so `build-a-course-syllabus` is still `/build-a-course-syllabus`. Clone this repo, or copy `.cursor/skills/` into `~/.cursor/skills/`.
 
 ## Skills
 

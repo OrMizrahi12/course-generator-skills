@@ -48,6 +48,7 @@ checks them, and cross-checks this brief against the accepted syllabus. -->
 
 - Path we teach: <the path a practitioner would use>
 - Why this path: <what it reveals that the alternatives hide>
+- Order traps: <steps that only work one way round, and why. If none, say so.>
 - Shortcut refused: <the shortcut we are not showing, and what it costs>
 - Viewer verification: <the visible check that proves it worked>
 
@@ -61,6 +62,11 @@ checks them, and cross-checks this brief against the accepted syllabus. -->
 ## Must be created on camera
 
 - <the object the viewer must see come into existence, named exactly>
+
+## Constrains later lessons
+
+- <anything this lesson's research forces on a later lesson's accepted line, so a
+  later stage cannot undo it by reflex. If nothing, say so.>
 
 ## Sources
 

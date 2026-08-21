@@ -1,0 +1,261 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "kicker": "LESSON 35",
+        "title": "Make a workshop at home. mkdir creates a place. It starts empty. Later work lives here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "photo": "weathered carpenter shop with open doors and a CARPENTER sign",
+        "tag": "CREATE",
+        "name": "A place, not a file",
+        "line": "mkdir ~/linux-workshop builds a directory under home. Touch would make a file. This is a room."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A carpenter shop is labeled A place, not a file."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "photo": "empty apartment room with dark floor and two windows",
+        "tag": "EMPTY",
+        "name": "Nothing in it yet",
+        "line": "A new directory is an empty room. Notes come next. Today only the walls exist."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An empty room is labeled Nothing in it yet."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "photo": "wood-carving chisels laid on a workbench",
+        "tag": "LATER",
+        "name": "Work lives here",
+        "line": "The continuous project starts in this folder. Tools and notes will sit on this bench."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A workbench of chisels is labeled Work lives here."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "photo": "carpenter at a Paris workshop bench",
+        "tag": "RESULT",
+        "name": "Prove it",
+        "line": "ls -ld ~/linux-workshop prints a d line. The house now has a workshop next to the papers."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A working carpenter is labeled Prove it."
+  },
+  {
+    "start": 37.85,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "35"},
+      "main": {
+        "line": "mkdir ~/linux-workshop. Then ls ~. Then ls -ld ~/linux-workshop.",
+        "cards": ["Create MKDIR", "Empty NEW ROOM", "Later WORK LIVES HERE"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Create, Empty, Later."
+  },
+  {
+    "start": 51.1,
+    "end": 52.65,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.65,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Run Program..."
+    },
+    "changed": "The applications menu opens with Run Program... at the top."
+  },
+  {
+    "start": 53.2,
+    "end": 53.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.8,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.2,
+    "end": 54.85,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.85,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.5,
+    "end": 57.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed."
+  },
+  {
+    "start": 57.6,
+    "end": 59.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/workspace", "prompt_after": "workspace $"}
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 59.2,
+    "end": 62.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "mkdir ~/linux-workshop"}
+    },
+    "changed": "mkdir ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.8,
+    "end": 64.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "mkdir ~/linux-workshop", "prompt_after": "workspace $"}
+    },
+    "changed": "mkdir returns to the prompt with no error."
+  },
+  {
+    "start": 64.4,
+    "end": 66.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "ls ~"}
+    },
+    "changed": "ls ~ is typed."
+  },
+  {
+    "start": 66.2,
+    "end": 68.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls ~", "output": "go  linux-workshop  rent-receipts", "prompt_after": "workspace $"}
+    },
+    "changed": "ls ~ prints go, linux-workshop, and rent-receipts."
+  },
+  {
+    "start": 68.8,
+    "end": 72.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "ls -ld ~/linux-workshop"}
+    },
+    "changed": "ls -ld ~/linux-workshop is typed."
+  },
+  {
+    "start": 72.2,
+    "end": 77.733,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "pwd", "output": "/workspace"},
+          {"command": "mkdir ~/linux-workshop"},
+          {"command": "ls ~", "output": "go  linux-workshop  rent-receipts"},
+          {"command": "ls -ld ~/linux-workshop", "output": "drwxr-xr-x 2 ubuntu ubuntu 4096 Aug 21 21:55 /home/ubuntu/linux-workshop"}
+        ],
+        "prompt_after": "workspace $"
+      },
+      "cursor": "block caret after workspace $"
+    },
+    "changed": "ls -ld ~/linux-workshop prints a directory line for /home/ubuntu/linux-workshop. That result stays until the file ends."
+  }
+]

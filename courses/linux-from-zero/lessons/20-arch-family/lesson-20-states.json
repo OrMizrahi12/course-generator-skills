@@ -1,0 +1,162 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 20 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "kicker": "LESSON 20",
+        "title": "Arch family uses pacman. Rolling means the box keeps moving. This host has apt, not pacman."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 20 and Arch family uses pacman. Rolling means the box keeps moving. This host has apt, not pacman."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "mark": "Arch crystal A, blue mountain",
+        "tag": "PICTURES ONLY",
+        "name": "Arch",
+        "line": "Arch Wiki: independently developed GNU/Linux, pacman, rolling release. We never boot Arch here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Arch crystal A is labeled Arch, pictures only."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "photo": "bicycle wheel with spokes, silver rim, black tire",
+        "tag": "ROLLING",
+        "name": "Keeps moving",
+        "line": "One install, then continuous upgrades. The box does not freeze on a numbered year the way an LTS box does."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A bicycle wheel is labeled Keeps moving, rolling."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "mark": "Manjaro three green bars",
+        "tag": "ARCH, EASIER",
+        "name": "Manjaro",
+        "line": "manjaro.org: Arch’s power, made more accessible, still rolling. Still a picture."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Manjaro green bars are labeled Manjaro, still a picture."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "photo": "Steam Deck handheld, front, screen off, on a cream plate",
+        "tag": "STEAMOS 3",
+        "name": "Steam Deck",
+        "line": "Collabora: SteamOS 3 is Arch-based. Handheld Linux, still a picture. This host has apt, not pacman."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A Steam Deck photo is labeled Steam Deck, SteamOS 3, still a picture."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "20"},
+      "main": {
+        "line": "Arch family uses pacman and keeps moving. This Debian-family box uses apt. We do not boot Arch.",
+        "cards": ["Arch Picture", "SteamOS Picture", "This host Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Arch Picture, SteamOS Picture, This host Live next."
+  },
+  {
+    "start": 51.0,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 59.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /usr/bin/apt",
+        "output": "/usr/bin/apt"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/bin/apt is typed and prints /usr/bin/apt."
+  },
+  {
+    "start": 59.8,
+    "end": 68.167,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /usr/bin/apt", "ls /usr/bin/pacman"],
+        "apt_path": "/usr/bin/apt",
+        "pacman_error": "ls: cannot access '/usr/bin/pacman': No such file or directory",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/bin/pacman prints No such file or directory. That error stays until the file ends."
+  }
+]

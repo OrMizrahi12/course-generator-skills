@@ -42,15 +42,16 @@ def pkill_exact(name: str) -> None:
             pass
 
 
-def wait_win(patterns: list[str], timeout: float = 8.0) -> str | None:
+def wait_win(patterns: list[str], timeout: float = 3.0, by: str = "class") -> str | None:
+    flag = "--class" if by == "class" else "--name"
     t0 = time.time()
     while time.time() - t0 < timeout:
         for pat in patterns:
-            r = run(["xdotool", "search", "--name", pat], capture_output=True, text=True)
+            r = run(["xdotool", "search", flag, pat], capture_output=True, text=True)
             ids = [x for x in r.stdout.split() if x]
             if ids:
                 return ids[-1]
-        time.sleep(0.12)
+        time.sleep(0.08)
     return None
 
 
@@ -125,9 +126,9 @@ def main() -> None:
         env=ENV,
     )
     time.sleep(0.5)
-    fullscreen(wait_win(["mpv", "lesson-01-viz"]))
+    fullscreen(wait_win(["mpv"], timeout=2.0, by="class"))
     mpv.wait()
-    time.sleep(0.35)
+    time.sleep(0.25)
 
     subprocess.Popen(
         [
@@ -140,10 +141,10 @@ def main() -> None:
         ],
         env=ENV,
     )
-    time.sleep(0.7)
-    tw = wait_win(["Terminal", "ubuntu@", "xfce4-terminal"])
+    time.sleep(0.35)
+    tw = wait_win(["xfce4-terminal"], timeout=2.5, by="class")
     fullscreen(tw)
-    time.sleep(0.25)
+    time.sleep(0.15)
     h.move_to(960, 540, target_w=220)
     h.click()
     time.sleep(0.35)

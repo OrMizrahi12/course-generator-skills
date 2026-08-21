@@ -165,7 +165,7 @@ def main() -> None:
     h.type_line("less --version")
     time.sleep(2.2)
     h.type_line("less rent-log.txt")
-    time.sleep(3.5)
+    time.sleep(5.0)
     h.type_text("q")
     time.sleep(1.6)
     h.type_line("head -n 1 rent-log.txt")

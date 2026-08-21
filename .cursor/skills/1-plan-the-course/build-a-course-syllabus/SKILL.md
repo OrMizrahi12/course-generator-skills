@@ -152,8 +152,8 @@ specific to lock onto.
 ## Handoff
 
 When `status: accepted`, hand off to `/research-the-current-lesson`
-(`.cursor/skills/research-the-current-lesson/SKILL.md`) for lesson 1, and to
-that same skill again, from scratch, for every lesson after it. Pass the lesson
+(`.cursor/skills/2-research-the-lesson/research-the-current-lesson/SKILL.md`) for
+lesson 1, and to that same skill again, from scratch, for every lesson after it. Pass the lesson
 line and its sources; do not pass your own guesses about the shot.
 
 ## Do not

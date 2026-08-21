@@ -186,8 +186,8 @@ belong to the filming stages, which read the brief you write here.
 ## Handoff
 
 With `status: ready`, hand off to `/real-example-in-every-lesson`
-(`.cursor/skills/real-example-in-every-lesson/SKILL.md`) for the 0% to 100% path
-and its ship gates, then to the recording skills. Pass the brief; do not pass
+(`.cursor/skills/3-film-the-lesson/real-example-in-every-lesson/SKILL.md`) for the
+0% to 100% path and its ship gates, then to the recording skills. Pass the brief; do not pass
 guesses that are not in it.
 
 Then, for the next lesson, start this skill again from step 1. Last lesson's

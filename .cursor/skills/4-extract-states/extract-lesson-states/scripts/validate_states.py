@@ -32,7 +32,7 @@ ALLOWED_KEYS = {"start", "end", "on_screen", "changed"}
 # Narration is the other model's job. These are the field names it arrives under.
 FORBIDDEN_KEYS = {
     "say", "must_cover", "narration", "narrate", "voiceover", "vo", "script",
-    "caption", "subtitle", "line", "lines", "suggested", "suggestion", "tone",
+    "caption", "subtitle", "suggested", "suggestion", "tone",
     "emphasis", "advice", "teaching", "takeaway", "note_to_narrator", "speak",
 }
 
@@ -106,12 +106,31 @@ def video_duration(path: str) -> float | None:
         return None
 
 
+def frame_step(path: str) -> float:
+    """One frame's worth of seconds, so the checks either side of a boundary land right."""
+    done = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+         "stream=avg_frame_rate", "-of", "default=noprint_wrappers=1:nokey=1", path],
+        capture_output=True, text=True,
+    )
+    try:
+        numerator, _, denominator = done.stdout.strip().partition("/")
+        fps = float(numerator) / float(denominator or 1)
+        return 1.0 / fps if fps > 0 else 1.0 / 60
+    except ValueError:
+        return 1.0 / 60
+
+
 def extract_frames(video: str, states: list[dict], out_dir: str) -> int:
     os.makedirs(out_dir, exist_ok=True)
+    step = frame_step(video)
     written = 0
     for index, state in enumerate(states, start=1):
-        for label, when in (("start", state["start"]),
-                            ("end", max(state["start"], state["end"] - 0.05))):
+        start, end = float(state["start"]), float(state["end"])
+        for label, when in (("before", max(0.0, start - step)),
+                            ("start", start),
+                            ("end", max(start, end - step)),
+                            ("after", end + step)):
             target = os.path.join(out_dir, f"{index:03d}-{label}.png")
             done = subprocess.run(
                 ["ffmpeg", "-v", "error", "-y", "-ss", f"{float(when):.3f}",

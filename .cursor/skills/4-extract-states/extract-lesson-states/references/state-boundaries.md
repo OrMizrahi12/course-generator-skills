@@ -69,6 +69,12 @@ over.
 Where it ends is where it stops changing, and that timestamp comes from frames, not
 from an estimate.
 
+One state, two pictures: at the start of a typing stretch the row holds one
+character and at the end it holds the whole command. Record both — the strings
+visible at `start` and the strings visible at `end` — because a single field cannot
+hold a picture that changed, and the narration writer needs to know where the
+stretch began as well as where it landed.
+
 ## Worked example
 
 A lesson opens on a terminal, a command is typed, it runs, and its output appears.

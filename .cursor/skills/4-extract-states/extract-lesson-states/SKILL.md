@@ -32,7 +32,10 @@ purpose sets every requirement below:
   of film with nothing to say over it, and an overlap is two lines competing for
   the same second.
 - **Timestamps are exact**, in seconds with three decimals, because they are what
-  the narration is aligned against.
+  the narration is aligned against. At 60fps a frame time is `n/60`, and only every
+  third frame lands on an exact three-decimal value — round to the nearest, so that
+  seeking to the timestamp lands on the frame the boundary is about. `end` is
+  exclusive: the next state owns the frame at that timestamp.
 - **Each object is readable on its own.** The narration writer should not have to
   open the video to know what is on screen. If a state's description only makes
   sense to someone who watched the take, it is not written yet.
@@ -51,6 +54,13 @@ screenshot.
 
 The output sits beside the video, at
 `courses/<course-slug>/lessons/<NN>-<lesson-slug>/states.json`.
+
+If there is no `brief.md` and no `take-plan.md` beside the MP4, the film did not
+come through the earlier stages. Extract the states anyway — a locked recording is
+a legitimate input — but establish the recording gate from the film itself with
+`/record-until-the-result-is-visible` first, and tell the user which upstream
+artifacts are missing. A states file whose lesson has no brief is honest; one that
+pretends the brief existed is not.
 
 ## Source of truth
 
@@ -98,10 +108,14 @@ The whole video is one array. No narration fields: no `say`, no `must_cover`, no
 
 `on_screen` is structured fact: visible strings copied exactly, which panel is
 open, what is selected or highlighted, whether a menu is open and what its items
-are, spinner or not, the pointer's target if it is visible. Use the region names
-that fit the application in the frames — a terminal has a prompt and output, an
-editor has a sidebar and a tab, a browser has an address bar. Fill the regions
-that exist in that frame and do not invent widgets that are not there.
+are, spinner or not. Use the region names that fit the application in the frames —
+a terminal has a prompt and output, an editor has a sidebar and a tab, a browser
+has an address bar. Fill the regions that exist in that frame and do not invent
+widgets that are not there.
+
+`cursor` is the mouse pointer: where it is, and what it is over if that matters. A
+text caret is a different thing and belongs in the region that holds it, named so
+that nobody can confuse the two.
 
 `changed` is the event that opened this state, stated as a fact about the picture,
 not as a teaching line.

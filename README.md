@@ -10,5 +10,5 @@ Skills live under `.cursor/skills/`, grouped into the production stage they belo
 - `2-research-the-lesson/research-the-current-lesson` — master one lesson to teaching depth, operate it live, then write `courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md`
 - `3-film-the-lesson/real-example-in-every-lesson` — judge the example against the course's pedagogical bar, then hold the film to 0% to 100% with the result in the last frames
 - `3-film-the-lesson/human-screen-recordings` — ballistic mouse, burst typing and clicked scrolling, with a working injector for Linux X11 and Windows
-- `record-until-the-result-is-visible` — do not stop until the MP4 last frames show the result
+- `3-film-the-lesson/record-until-the-result-is-visible` — the whole arc on camera: the state before the action, the path, and the finished result in the MP4's own last frames
 - `extract-lesson-states` — timed on-screen states from the locked MP4, no narration

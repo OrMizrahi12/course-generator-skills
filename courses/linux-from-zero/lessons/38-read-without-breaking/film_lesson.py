@@ -153,7 +153,7 @@ def main() -> None:
     time.sleep(2.2)
     h.type_line("head -n 2 rent-log.txt")
     time.sleep(1.8)
-    h.type_line("tail -n 1 rent-log.txt")
+    h.type_line("tail -n 2 rent-log.txt")
     time.sleep(1.8)
     h.type_line("less rent-log.txt")
     time.sleep(2.0)
@@ -168,7 +168,7 @@ def main() -> None:
     time.sleep(3.5)
     h.type_text("q")
     time.sleep(1.6)
-    h.type_line("tail -n 1 rent-log.txt")
+    h.type_line("head -n 1 rent-log.txt")
     time.sleep(6.0)
 
     rec.send_signal(signal.SIGINT)

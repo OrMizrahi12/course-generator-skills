@@ -24,19 +24,20 @@ Read a file without opening an editor. GNU `cat` dumps the whole file. GNU `head
 - `~/linux-workshop/rent-log.txt` exists (92 bytes, three rent sentences). Do not edit it. `sep-due-draft.txt` also exists from lesson 37; leave it.
 - Menu-launched xfce4-terminal cwd is `/workspace`. `cd ~/linux-workshop`.
 - `cat rent-log.txt` prints the three sentences to the terminal.
-- `head -n 2 rent-log.txt` prints the first two lines. `tail -n 1 rent-log.txt` prints `Next due 21 Sep.`
-- `less rent-log.txt` fails with `command not found` until `sudo apt-get install -y less` finishes. Then `less rent-log.txt` pages the note. `q` returns to the prompt. The file is unchanged.
+- `head -n 2 rent-log.txt` prints the first two lines. The file has a trailing blank line from Write Out, so `tail -n 2 rent-log.txt` prints `Next due 21 Sep.` and that blank. `tail -n 1` would print only the blank.
+- `less rent-log.txt` fails with `command not found` until `sudo apt-get update` and `sudo apt-get install -y less` finish. Then `less rent-log.txt` pages the note. `q` returns to the prompt. The file is unchanged.
+- Last command: `head -n 1 rent-log.txt` still prints `21 Aug rent is paid.`
 - Open Terminal Emulator from the desktop menu. Fullscreen. Font already JetBrains Mono 19.
 
 ## Human job
 
 A person needs to read the paid-August rent log without opening nano, which can accidentally change it. `cat` shows the whole note. `head` and `tail` peek at the start and the due date. `less` is the pager for looking, and on this minimized image it must be installed first. Without those tools they would edit to look.
 
-Candidates considered: (1) `echo` the note — smoke test, forbidden. (2) `more` — installed here, not the syllabus pager. (3) `cd ~/linux-workshop`, `cat`/`head`/`tail` the real note, install `less` on camera after `command not found`, page the note, `q`, `tail -n 1` still shows the due date. Picked (3).
+Candidates considered: (1) `echo` the note — smoke test, forbidden. (2) `more` — installed here, not the syllabus pager. (3) `cd ~/linux-workshop`, `cat`/`head -n 2`/`tail -n 2` the real note, install `less` on camera after `command not found`, page the note, `q`, `head -n 1` still shows the first sentence. Picked (3).
 
 ## Done on screen
 
-Fullscreen terminal. Cwd `~/linux-workshop`. `tail -n 1 rent-log.txt` prints `Next due 21 Sep.` The note was looked at, not rewritten.
+Fullscreen terminal. Cwd `~/linux-workshop`. `head -n 1 rent-log.txt` prints `21 Aug rent is paid.` The note was looked at, not rewritten.
 
 ## Terminal font
 
@@ -48,4 +49,4 @@ JetBrains Mono 19 already set (1.75× default). Filming setup, not on-camera.
 
 ## Viewer must see created on camera
 
-Opening Terminal Emulator, walking into the workshop, `cat`/`head`/`tail` of the real note, `less` missing, `apt-get install` of `less`, paging the note, `q`, and `tail -n 1` still showing the due date.
+Opening Terminal Emulator, walking into the workshop, `cat`/`head`/`tail` of the real note, `less` missing, `apt-get` of `less`, paging the note, `q`, and `head -n 1` still showing `21 Aug rent is paid.`

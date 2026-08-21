@@ -8,7 +8,7 @@ Use every skill below. Do not skip one because the lesson "seems simple". Do not
 
 ## Skill order (required)
 
-1. **New course** — [Build a course syllabus](.cursor/skills/build-a-course-syllabus/SKILL.md). Intake first, then live research, then a high-level spine. Do not write per-lesson shot lists here.
+1. **New course** — [Build a course syllabus](.cursor/skills/1-plan-the-course/build-a-course-syllabus/SKILL.md). Intake first, then live research, then a high-level spine, written to `courses/<course-slug>/syllabus.md` and accepted by the user. Do not write per-lesson shot lists here.
 2. **Before each lesson** — [Research the current lesson](.cursor/skills/research-the-current-lesson/SKILL.md). Lock onto that lesson only. Master the live material, then pick the human example.
 3. **Film** — all three, together:
    - [Human screen recordings](.cursor/skills/human-screen-recordings/SKILL.md)

@@ -1,0 +1,341 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "kicker": "LESSON 34",
+        "title": "Walk the tree. An address from the root. A step from here. One step back is the parent."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "photo": "winding garden path through trees and grass",
+        "tag": "ABSOLUTE",
+        "name": "From the root",
+        "line": "cd /home/ubuntu starts with a slash. CDPATH is skipped. The whole address is the destination."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A garden path is labeled From the root."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "photo": "Hart House hallway with wood ceiling and chandelier",
+        "tag": "RELATIVE",
+        "name": "From here",
+        "line": ". is this directory. cd ./rent-receipts walks into the papers from the house you already stand in."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A hallway is labeled From here."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "photo": "stone stairs up a grassy park hill",
+        "tag": "PARENT",
+        "name": "One step back",
+        "line": ".. removes the last piece of the path. From the papers, cd .. returns to the house."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Stone stairs are labeled One step back."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "photo": "oak trunk and canopy seen from below",
+        "tag": "RESULT",
+        "name": "You moved",
+        "line": "pwd after cd .. prints /home/ubuntu. The prompt is ~. Listing from afar is not walking."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An oak canopy is labeled You moved."
+  },
+  {
+    "start": 37.85,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "34"},
+      "main": {
+        "line": "cd /home/ubuntu. Then cd ./rent-receipts. Then cd .. and pwd of the house.",
+        "cards": ["Absolute STARTS WITH /", "Relative . PLUS A NAME", "Parent CD .."]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Absolute, Relative, Parent."
+  },
+  {
+    "start": 51.1,
+    "end": 52.65,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.65,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Run Program..."
+    },
+    "changed": "The applications menu opens with Run Program... at the top."
+  },
+  {
+    "start": 53.2,
+    "end": 53.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.8,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.2,
+    "end": 54.85,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.85,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.5,
+    "end": 57.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed."
+  },
+  {
+    "start": 57.8,
+    "end": 59.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/workspace", "prompt_after": "workspace $"}
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 59.5,
+    "end": 62.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "cd /home/ubuntu"}
+    },
+    "changed": "cd /home/ubuntu is typed."
+  },
+  {
+    "start": 62.5,
+    "end": 63.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd /home/ubuntu", "prompt_after": "~ $"}
+    },
+    "changed": "The prompt becomes ~ $ after the absolute cd."
+  },
+  {
+    "start": 63.8,
+    "end": 64.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed at the house."
+  },
+  {
+    "start": 64.8,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/home/ubuntu", "prompt_after": "~ $"}
+    },
+    "changed": "pwd prints /home/ubuntu."
+  },
+  {
+    "start": 66.5,
+    "end": 70.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": "cd ./rent-receipts"}
+    },
+    "changed": "cd ./rent-receipts is typed."
+  },
+  {
+    "start": 70.2,
+    "end": 71.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd ./rent-receipts", "prompt_after": "rent-receipts $"}
+    },
+    "changed": "The prompt becomes rent-receipts $."
+  },
+  {
+    "start": 71.8,
+    "end": 72.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "rent-receipts $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed inside the papers folder."
+  },
+  {
+    "start": 72.8,
+    "end": 74.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/home/ubuntu/rent-receipts", "prompt_after": "rent-receipts $"}
+    },
+    "changed": "pwd prints /home/ubuntu/rent-receipts."
+  },
+  {
+    "start": 74.5,
+    "end": 75.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "rent-receipts $", "typed": "ls"}
+    },
+    "changed": "ls is typed."
+  },
+  {
+    "start": 75.5,
+    "end": 78.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls",
+        "output": "'21 Aug receipt.txt'  landlord-note.txt  late-notice.txt",
+        "prompt_after": "rent-receipts $"
+      }
+    },
+    "changed": "ls lists the three receipt files."
+  },
+  {
+    "start": 78.2,
+    "end": 79.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "rent-receipts $", "typed": "cd .."}
+    },
+    "changed": "cd .. is typed."
+  },
+  {
+    "start": 79.8,
+    "end": 81.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd ..", "prompt_after": "~ $"}
+    },
+    "changed": "The prompt becomes ~ $ after one step back."
+  },
+  {
+    "start": 81.5,
+    "end": 82.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed after cd .."
+  },
+  {
+    "start": 82.5,
+    "end": 87.617,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "pwd", "output": "/workspace", "prompt": "workspace $"},
+          {"command": "cd /home/ubuntu", "prompt_after": "~ $"},
+          {"command": "pwd", "output": "/home/ubuntu"},
+          {"command": "cd ./rent-receipts", "prompt_after": "rent-receipts $"},
+          {"command": "pwd", "output": "/home/ubuntu/rent-receipts"},
+          {"command": "ls", "output": "'21 Aug receipt.txt'  landlord-note.txt  late-notice.txt"},
+          {"command": "cd ..", "prompt_after": "~ $"},
+          {"command": "pwd", "output": "/home/ubuntu"}
+        ],
+        "prompt_after": "~ $"
+      },
+      "cursor": "block caret after ~ $"
+    },
+    "changed": "pwd after cd .. prints /home/ubuntu. The prompt is ~ $. That result stays until the file ends."
+  }
+]

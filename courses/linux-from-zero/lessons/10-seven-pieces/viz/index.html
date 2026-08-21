@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./assets/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #080C14; }
+      #root {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        background:
+          radial-gradient(ellipse 90% 70% at 18% 12%, rgba(21, 32, 56, 0.95), transparent 55%),
+          radial-gradient(ellipse 70% 60% at 88% 88%, rgba(28, 22, 12, 0.55), transparent 50%),
+          #080C14;
+        color: #F3EDE4; font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .clip { position: absolute; inset: 0; }
+      .wordmark { position: absolute; top: 48px; left: 64px; font-size: 13px; letter-spacing: 0.32em; font-weight: 600; color: rgba(243,237,228,0.55); }
+      .lesson-no { position: absolute; top: 44px; right: 64px; font-size: 22px; font-weight: 600; color: #E8A53A; }
+      .title-wrap { position: absolute; left: 64px; right: 64px; top: 300px; }
+      .kicker { font-size: 18px; letter-spacing: 0.22em; text-transform: uppercase; color: #E8A53A; margin: 0 0 28px; font-weight: 600; }
+      h1 { margin: 0; font-size: 84px; line-height: 0.95; font-weight: 650; letter-spacing: -0.03em; max-width: 1600px; }
+      .part { display: grid; grid-template-columns: 900px 1fr; gap: 72px; align-items: center; height: 100%; padding: 140px 80px 80px; box-sizing: border-box; }
+      .well { height: 720px; border-radius: 28px; background: #10141E; border: 1px solid rgba(243,237,228,0.08); display: grid; place-items: center; overflow: hidden; }
+      .well img { max-width: 92%; max-height: 92%; object-fit: contain; }
+      .well.photo img { max-width: none; max-height: none; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+      .disc { width: 520px; height: 520px; border-radius: 50%; background: #F3EDE4; display: grid; place-items: center; }
+      .disc img { max-width: 78%; max-height: 78%; }
+      .copy .tag { display: inline-block; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; color: #E8A53A; font-weight: 650; margin-bottom: 18px; }
+      .copy .name { font-size: 72px; line-height: 0.92; font-weight: 650; margin: 0 0 24px; }
+      .copy .line { font-size: 34px; line-height: 1.35; color: #8B93A7; margin: 0; max-width: 640px; }
+      .end-line { position: absolute; left: 64px; top: 88px; font-size: 26px; color: #8B93A7; margin: 0; }
+      .grid7 {
+        position: absolute; left: 48px; right: 48px; top: 150px; bottom: 40px;
+        display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr 1fr; gap: 16px;
+      }
+      .grid7 .card:nth-child(5) { grid-column: 1; }
+      .card { background: #10141E; border: 1px solid rgba(243,237,228,0.08); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
+      .card .shot { height: 310px; display: grid; place-items: center; background: #0C1018; padding: 16px; box-sizing: border-box; overflow: hidden; }
+      .card .shot img { max-width: 100%; max-height: 100%; object-fit: contain; }
+      .card .shot.photo { padding: 0; }
+      .card .shot.photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; max-width: none; max-height: none; }
+      .card h2 { margin: 0; padding: 16px 18px 18px; font-size: 24px; font-weight: 600; }
+      .card .sub { display: block; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #E8A53A; font-weight: 650; margin-top: 4px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="50" data-width="1920" data-height="1080">
+      <div class="clip" data-start="0" data-duration="50" data-track-index="0">
+        <div class="wordmark">LINUX FROM ZERO</div>
+        <div class="lesson-no">10</div>
+      </div>
+      <section class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="title-wrap">
+          <p class="kicker" id="tk">Lesson 10</p>
+          <h1 id="th">Seven pieces. One Linux OS.</h1>
+        </div>
+      </section>
+      <section class="clip" data-start="5" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w1"><img src="./assets/grub.png" alt="GRUB menu" /></div>
+          <div class="copy" id="c1"><span class="tag">Picture only here</span><p class="name">Bootloader</p><p class="line">GRUB starts the machine. This host never shows that screen.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="13" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well" id="w2"><div class="disc"><img src="./assets/tux.png" alt="Tux" /></div></div>
+          <div class="copy" id="c2"><span class="tag">linux.com</span><p class="name">Kernel</p><p class="line">The one piece actually called Linux. You already asked it.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="21" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w3"><img src="./assets/matches.jpg" alt="Matches" /></div>
+          <div class="copy" id="c3"><span class="tag">PID 1</span><p class="name">Init</p><p class="line">The first program. On this machine it is tini, not systemd.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="29" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well" id="w4"><img src="./assets/xfce.png" alt="XFCE" /></div>
+          <div class="copy" id="c4"><span class="tag">This desktop</span><p class="name">XFCE</p><p class="line">Graphical server, desktop, apps. You can see the session file.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="37" data-duration="13" data-track-index="1">
+        <p class="end-line" id="el">Seven pieces. Bootloader is a picture. Ask init and the desktop.</p>
+        <div class="grid7">
+          <article class="card" id="a1"><div class="shot photo"><img src="./assets/grub.png" alt="" /></div><h2>Bootloader<span class="sub">Picture</span></h2></article>
+          <article class="card" id="a2"><div class="shot"><div class="disc" style="width:180px;height:180px"><img src="./assets/tux.png" alt="" /></div></div><h2>Kernel</h2></article>
+          <article class="card" id="a3"><div class="shot photo"><img src="./assets/matches.jpg" alt="" /></div><h2>Init</h2></article>
+          <article class="card" id="a4"><div class="shot photo"><img src="./assets/bee.jpg" alt="" /></div><h2>Daemons</h2></article>
+          <article class="card" id="a5"><div class="shot"><img src="./assets/xorg.png" alt="" /></div><h2>Graphical</h2></article>
+          <article class="card" id="a6"><div class="shot"><img src="./assets/xfce.png" alt="" /></div><h2>Desktop</h2></article>
+          <article class="card" id="a7"><div class="shot photo"><img src="./assets/apps.png" alt="" /></div><h2>Apps</h2></article>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const t = gsap.timeline({ paused: true });
+      t.fromTo("#tk", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+      t.fromTo("#th", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.4);
+      t.fromTo("#w1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 5.15);
+      t.fromTo("#c1", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 5.4);
+      t.fromTo("#w2", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 13.15);
+      t.fromTo("#c2", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 13.4);
+      t.fromTo("#w3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 21.15);
+      t.fromTo("#c3", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 21.4);
+      t.fromTo("#w4", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 29.15);
+      t.fromTo("#c4", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 29.4);
+      t.fromTo("#el", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.1);
+      ["#a1","#a2","#a3","#a4","#a5","#a6","#a7"].forEach((sel, i) => {
+        t.fromTo(sel, { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.2 + i * 0.08);
+      });
+      window.__timelines.main = t;
+    </script>
+  </body>
+</html>

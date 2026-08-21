@@ -24,6 +24,18 @@ the end of the course.>
 <One line: who watches, what they can already do, and the level the course
 reaches.>
 
+## The project
+
+<The one real thing every lesson is filmed on, and what makes it real enough for
+the skills to transfer. If the course has no continuous project, say that here
+and say why — an unstated answer is not an answer.>
+
+## Capability probe
+
+<What you confirmed in this environment before promising these lessons: what
+passes, what is blocked and what unblocks it, and how the state each lesson
+creates gets reset so creation can be filmed from zero.>
+
 ## Out of scope
 
 - <Something a viewer might reasonably expect that this course does not cover.>

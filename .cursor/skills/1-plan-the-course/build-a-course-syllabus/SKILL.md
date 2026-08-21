@@ -91,7 +91,9 @@ account, tier, or connector it needs is available, and that its result appears
 on screen where a camera can see it.
 
 The probe procedure is in
-[references/research.md](references/research.md#capability-probe).
+[references/research.md](references/research.md#capability-probe). Record what it
+found in the artifact's `## Capability probe` section — a gate that leaves no
+trace is a gate the next stage has to run again.
 
 **Gate:** anything blocked gets resolved, replaced, or told to the user before
 acceptance. Never plan a lesson you already know cannot be filmed.

@@ -18,7 +18,15 @@ import re
 import sys
 
 REQUIRED_KEYS = ("course", "slug", "status", "level", "delivery", "lessons_planned")
-REQUIRED_SECTIONS = ("Promise", "Audience and level", "Out of scope", "Spine", "Sources")
+REQUIRED_SECTIONS = (
+    "Promise",
+    "Audience and level",
+    "The project",
+    "Capability probe",
+    "Out of scope",
+    "Spine",
+    "Sources",
+)
 REQUIRED_LESSON_FIELDS = (
     "Can do after",
     "Feature taught",
@@ -76,6 +84,7 @@ SOFT_TITLE_PATTERNS = (
 
 MAX_PROMISE_WORDS = 35  # One sentence to the viewer. Longer means it is a paragraph.
 MIN_DESCRIPTION_WORDS = 3  # A source entry has to say what it established.
+MIN_SECTION_WORDS = 15  # Enough to be a decision rather than a placeholder.
 
 
 class Report:
@@ -214,6 +223,19 @@ def check_promise(lines: list[str], sections: dict, report: Report) -> None:
             sections["Promise"][0],
             f"promise is {len(words)} words; one sentence to the viewer is the target",
         )
+
+
+def check_prose_sections(lines: list[str], sections: dict, report: Report) -> None:
+    """The project and the capability probe are decisions, so they cannot be left blank."""
+    for name in ("The project", "Capability probe"):
+        if name not in sections:
+            continue
+        words = " ".join(text for _, text in section_text(lines, sections[name])).split()
+        if len(words) < MIN_SECTION_WORDS:
+            report.error(
+                sections[name][0],
+                f"'{name}' needs an actual answer; an unstated decision is not a decision",
+            )
 
 
 def check_out_of_scope(lines: list[str], sections: dict, report: Report) -> None:
@@ -441,6 +463,7 @@ def main() -> int:
             report.error(None, f"missing required section '## {name}'")
 
     check_promise(lines, sections, report)
+    check_prose_sections(lines, sections, report)
     check_out_of_scope(lines, sections, report)
     ledger = check_ledger(lines, sections, report)
     lessons = parse_lessons(lines, sections, report)

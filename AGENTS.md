@@ -6,6 +6,8 @@ Chat with the user in Hebrew. Skills, instructions, course production, on-screen
 
 Use every skill below. Do not skip one because the lesson "seems simple". Do not invent a parallel process.
 
+Each skill is the gate for its own stage. Run them in order and do not open the next stage until the current gate passes — for a new course, that means the user has accepted the syllabus. "Use every skill" spans the whole course, not a single reply.
+
 ## Skill order (required)
 
 1. **New course** — [Build a course syllabus](.cursor/skills/1-plan-the-course/build-a-course-syllabus/SKILL.md). Intake first, then live research, then a high-level spine, written to `courses/<course-slug>/syllabus.md` and accepted by the user. Do not write per-lesson shot lists here.

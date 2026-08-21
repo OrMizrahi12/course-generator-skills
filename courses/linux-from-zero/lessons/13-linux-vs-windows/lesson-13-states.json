@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 13 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {"kicker": "LESSON 13", "title": "Windows uses C: and NT. This Linux is one tree from /."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 13 and Windows uses C: and NT. This Linux is one tree from /."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {
+        "marks": ["Windows four-square logo", "CPU photograph, gold contacts"],
+        "tag": "PICTURES ONLY",
+        "name": "NT and Win32",
+        "line": "The kernel lives in Ntoskrnl.exe. Win32 is the desktop API. We never boot them here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Windows mark and a CPU photo are labeled NT and Win32, pictures only."
+  },
+  {
+    "start": 14.05,
+    "end": 21.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {
+        "photo": "Windows properties dialog, German, Laufwerk C: NTFS, Zelda-Laufwerk",
+        "tag": "DRIVE LETTERS",
+        "name": "C:",
+        "line": "Windows assigns a letter to each disk. This picture is Laufwerk C: on NTFS."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A Windows Laufwerk C: properties picture is labeled C:, drive letters."
+  },
+  {
+    "start": 21.9,
+    "end": 29.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {
+        "photo": "bakery shelves with red-and-white price tags in Bulgarian and euro",
+        "tag": "PAID LICENSES",
+        "name": "Server CALs",
+        "line": "Windows Server needs a paid license and a CAL per user or device. This Linux is not that shop."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Price-tag photograph is labeled Server CALs, paid licenses."
+  },
+  {
+    "start": 29.9,
+    "end": 37.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "One tree",
+        "line": "Everything hangs from /. ls / lists the tree. pwd prints a path with no drive letter."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled One tree, with ls / and pwd."
+  },
+  {
+    "start": 37.9,
+    "end": 50.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "13"},
+      "main": {
+        "line": "Windows stays a picture. This machine has one root.",
+        "cards": ["Windows Picture", "C: Picture", "This Linux One tree"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Windows Picture, C: Picture, This Linux One tree."
+  },
+  {
+    "start": 50.9,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 58.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /",
+        "visible_names": ["bin", "boot", "cursor", "dev", "etc", "home", "proc", "tini", "usr", "var", "workspace"]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls / is typed and lists one root tree with no C:."
+  },
+  {
+    "start": 58.8,
+    "end": 64.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /", "pwd"],
+        "pwd": "/home/ubuntu",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "pwd prints /home/ubuntu. The path with no drive letter stays until the file ends."
+  }
+]

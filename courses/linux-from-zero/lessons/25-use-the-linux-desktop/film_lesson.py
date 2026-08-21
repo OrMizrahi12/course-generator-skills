@@ -120,37 +120,35 @@ def main() -> None:
 
     open_file_manager(h)
 
-    # Home in Places (left sidebar)
-    h.move_to(92, 92, target_w=70)
+    # Go to home (Thunar last-dir may be /workspace)
+    h.move_to(900, 420, target_w=160)
     h.click()
-    time.sleep(0.55)
+    time.sleep(0.2)
+    h.alt_home()
+    time.sleep(0.7)
 
-    # File → Create Folder...
-    h.move_to(36, 18, target_w=28)
-    h.click()
-    time.sleep(0.4)
-    h.move_to(110, 96, target_w=40)
-    time.sleep(0.15)
-    h.click()
-    time.sleep(0.55)
+    # Create Folder... (Shift+Ctrl+N — same item as File → Create Folder...)
+    h.shift_ctrl_n()
+    time.sleep(0.6)
 
     h.type_text("rent-receipts")
     time.sleep(0.25)
     h.press_return()
-    time.sleep(1.4)
+    time.sleep(1.6)
 
-    # Hold on the new folder in home
-    h.move_to(640, 220, target_w=80)
+    h.move_to(720, 240, target_w=80)
     time.sleep(2.8)
 
     h.ctrl_key("q")
-    time.sleep(0.8)
+    time.sleep(0.9)
 
     open_file_manager(h)
-    h.move_to(92, 92, target_w=70)
+    h.move_to(900, 420, target_w=160)
     h.click()
-    time.sleep(0.5)
-    h.move_to(640, 220, target_w=90)
+    time.sleep(0.2)
+    h.alt_home()
+    time.sleep(0.7)
+    h.move_to(720, 240, target_w=90)
     time.sleep(5.2)
 
     rec.send_signal(signal.SIGINT)

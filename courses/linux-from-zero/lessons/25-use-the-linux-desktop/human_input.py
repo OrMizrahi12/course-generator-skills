@@ -42,6 +42,9 @@ class HumanInput:
         self.d = display.Display(dpy or os.environ.get("DISPLAY", ":1"))
         self.shift = self.d.keysym_to_keycode(XK.XK_Shift_L)
         self.ctrl = self.d.keysym_to_keycode(XK.XK_Control_L)
+        self.alt = self.d.keysym_to_keycode(XK.XK_Alt_L)
+        self.home = self.d.keysym_to_keycode(XK.XK_Home)
+        self.nkey = self.d.keysym_to_keycode(XK.XK_n)
         self.sync_pointer()
 
     def sync_pointer(self) -> None:
@@ -167,6 +170,38 @@ class HumanInput:
         time.sleep(random.uniform(0.04, 0.07))
         self.tap(ch)
         xtest.fake_input(self.d, X.KeyRelease, self.ctrl)
+        self.d.flush()
+        time.sleep(random.uniform(0.12, 0.22))
+
+    def alt_home(self) -> None:
+        time.sleep(random.uniform(0.18, 0.32))
+        xtest.fake_input(self.d, X.KeyPress, self.alt)
+        self.d.flush()
+        time.sleep(random.uniform(0.04, 0.07))
+        xtest.fake_input(self.d, X.KeyPress, self.home)
+        self.d.flush()
+        time.sleep(random.uniform(0.05, 0.09))
+        xtest.fake_input(self.d, X.KeyRelease, self.home)
+        self.d.flush()
+        xtest.fake_input(self.d, X.KeyRelease, self.alt)
+        self.d.flush()
+        time.sleep(random.uniform(0.12, 0.22))
+
+    def shift_ctrl_n(self) -> None:
+        time.sleep(random.uniform(0.18, 0.32))
+        xtest.fake_input(self.d, X.KeyPress, self.shift)
+        self.d.flush()
+        xtest.fake_input(self.d, X.KeyPress, self.ctrl)
+        self.d.flush()
+        time.sleep(random.uniform(0.04, 0.07))
+        xtest.fake_input(self.d, X.KeyPress, self.nkey)
+        self.d.flush()
+        time.sleep(random.uniform(0.05, 0.09))
+        xtest.fake_input(self.d, X.KeyRelease, self.nkey)
+        self.d.flush()
+        xtest.fake_input(self.d, X.KeyRelease, self.ctrl)
+        self.d.flush()
+        xtest.fake_input(self.d, X.KeyRelease, self.shift)
         self.d.flush()
         time.sleep(random.uniform(0.12, 0.22))
 

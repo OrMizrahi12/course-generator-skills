@@ -1,148 +1,220 @@
 # Linux From Zero — See It, Then Do It
 
-**Promise:** A person who has never heard the word Linux can watch a picture of each idea, then do that same idea on a real GNU/Linux machine, until they can run their own workshop like a power user.
+**Promise:** A person who has never heard the words *operating system* or *Linux* can watch pictures until those words have meaning, then do real work on a real GNU/Linux machine until they can run and understand a Linux system in depth.
 
-**Audience and level:** Complete beginner (no computer background). Visual language is simple enough for a small child. Hands stay on real Linux the whole way, ending at daily power-user competence — not exam trivia, not kernel C.
+**Audience and level:** Zero computer background. Opening acts are picture-first (a child could follow the drawing). After the pictures, the hands go as deep as a working Linux administrator: files, users, processes, packages, scripts, disks, boot, network, and the truth of this machine.
 
-**How every lesson is built (course rule, not a shot list):**
+**Honest scope of “A to Z”:**  
+This is Linux as a **system you can see and operate** — from first picture through power-user administration of a running GNU/Linux box.  
+It is **not** writing the Linux kernel, not Linux From Scratch, and not installing on bare metal (those cannot finish 0–100% on this host). Those boundaries are listed at the end, not hidden inside the spine.
 
-1. A HyperFrames visualization of **this** concept (one picture-story, no narration).
-2. The same concept done for real on **this** Ubuntu 24.04 GNU/Linux machine, 0% to 100% on camera: create, path, result.
+**How every lesson is built:**
 
-HyperFrames is the picture engine ([heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)). Linux is the subject. Visuals never replace a command that the viewer must see run.
+1. A HyperFrames visualization of **this** concept (especially dense in Acts I–III).
+2. The same concept proven on **this** Ubuntu 24.04 GNU/Linux machine, 0% to 100%: create, path, result.
 
-Windows and macOS appear only as **labeled pictures**. We do not boot them. The Linux side of every comparison is proven on this machine.
+Windows, macOS, other distros, bootloaders, and Android appear as **labeled pictures** unless this machine can prove the Linux side live. We never fake a boot of another OS.
 
-**Continuous project:** `~/linux-workshop/` — a personal drawer that becomes a real toolbox: notes, tools, archives, and a backup the viewer wrote themselves.
+**Continuous project:** `~/linux-workshop/` — starts when the hands start, then becomes notes, tools, archives, and a backup the viewer wrote.
 
-**Practice machine (honest):** Ubuntu 24.04.4 LTS (Debian family), Linux kernel 6.12.x, XFCE desktop, bash, apt. PID 1 on this host is `tini` in a container with an overlay root — not systemd on bare metal. That fact is taught, not hidden.
+**Practice machine:** Ubuntu 24.04.4 LTS (Debian family), Linux 6.12.x, XFCE, bash, apt. PID 1 here is `tini` on overlay — taught, not faked as systemd-on-bare-metal.
 
 ---
 
 ## Spine
 
-### Act I — What a computer even needs
+### Act I — Pictures: what a computer even is
 
-These four lessons exist because "Linux" is a meaningless stamp until the viewer has a picture of an operating system, then a picture of Linux as one OS among others, then a picture of how it differs from Windows and from Mac.
-
-| # | Title | After this lesson the viewer can | Why it comes next |
-|---|---|---|---|
-| 1 | See what an operating system is | Point at this screen and name three layers: hardware, operating system, apps — and prove the OS is doing a job (two programs share the machine; a file still exists after an app closes) | IBM: an OS is the software that manages hardware and apps. Without this picture, "Linux" is just a word |
-| 2 | See what Linux is | After the picture: open the live [kernel.org / Linux.com definition](https://www.linux.com/what-is-linux/) on this computer and match it — Linux is an operating system, like Windows and macOS are operating systems | linux.com: "Just like Windows, iOS, and Mac OS, Linux is an operating system." Name the family before naming this machine |
-| 3 | See how Linux is different from Windows | After the three-house picture: show the Linux side live — one file tree from `/`, no `C:`, the system is inspectable. Windows stays a labeled picture (NT kernel, drive letters, vendor OS) | LPI 4.1 and Microsoft's own user-mode/kernel-mode docs. One difference, proven on the Linux side |
-| 4 | See how Linux is different from Mac | After the picture: show the Linux side live — this OS is not tied to Apple hardware; it is a distro on this machine, not Darwin/XNU. macOS stays a labeled picture (Unix-like, Apple's kernel) | Apple: macOS sits on XNU/Darwin. Same "Unix-like" neighborhood, different kernel, different rules |
-
-### Act II — Put a word on this computer
+Lots of visualization. No `uname` yet. The job in each lesson is to **match the picture to something real on this screen**.
 
 | # | Title | After this lesson the viewer can | Why it comes next |
 |---|---|---|---|
-| 5 | Name the operating system this computer is running | Point at this screen and prove, with a real command, that **this** computer is Linux | Now "Linux" has a meaning, so identifying this machine is a proof, not the first sentence of the course |
-| 6 | See the kernel as the engine | Show the running kernel version from the system itself | kernel.org: Linux **is** the kernel; the rest of the course sits on this fact |
-| 7 | See GNU tools sitting on that kernel | Tell kernel apart from the GNU programs they type, with real `--version` proof | Stops the myth that "Linux" means every file on disk |
-| 8 | Name this distribution | Read `/etc/os-release` and say this is Ubuntu 24.04, Debian family | kernel.org: a beginner wants a distro, not a raw kernel tarball |
-| 9 | Tell Linux distro families apart | Map Debian/Ubuntu → apt, Fedora/RHEL → dnf, Arch → pacman, SUSE → zypper, and run **apt** here | LPI 1.1: families differ by packages, defaults, and release model — not by a different species of kernel |
+| 1 | See what a computer is made of | Name CPU, memory, disk, and screen, then show this machine’s CPU from `/proc` or `lscpu` | Hardware is the stage; nothing “Linux” makes sense before a computer is a picture |
+| 2 | See hardware vs software | Point at the metal vs the running program, and start a real program that uses the CPU | IBM/linux.com: the OS sits between these two |
+| 3 | See what an operating system is | Name three layers on this screen — hardware, OS, apps — and prove the OS does a job (two apps share the machine; a file survives closing an app) | An OS is software that manages hardware and programs |
+| 4 | See the four jobs an OS does | Match files, programs, users, and devices on this desktop to the picture | Prepares the Linux-specific pictures without naming Linux yet |
+| 5 | See the three household operating systems | After the three-house picture, say this screen is *a* computer with *an* OS, and name the three families people mean: Windows, Mac, Linux | linux.com: Linux is an OS “just like Windows and Mac OS” |
 
-### Act III — Get hands on the tree
-
-| # | Title | After this lesson the viewer can | Why it comes next |
-|---|---|---|---|
-| 10 | Open a terminal and run a command | Open the terminal and get real output from a command they typed | The terminal is the hands; the picture of kernel/shell now has a door |
-| 11 | Read the prompt | Decode `user`, host, and path from the prompt on this account | Before walking, know whose house and which room |
-| 12 | Find home | Use `pwd`, `~`, and `$HOME` to land in this user's home | All later work lives relative to here |
-| 13 | List what is here | Use `ls` (including long and hidden views) on a real directory | See before you move |
-| 14 | Walk the tree | `cd` with absolute paths, relative paths, `.`, `..`, and back to home | The filesystem is a tree; walking comes before building |
-| 15 | Create the Linux workshop | `mkdir ~/linux-workshop` and prove the folder exists | The continuous project starts as a real object, not a story |
-| 16 | Make a real note in the workshop | Create a file with real content and show that content | Files are the nouns of Linux |
-| 17 | Copy, rename, and remove on purpose | `cp`, `mv`, `rm` inside the workshop without destroying the project | LPI 2.4: case sensitivity and names on real files |
-| 18 | Read a file without breaking it | `cat`, `less`, `head`, `tail` on a workshop note | Looking is safer than editing |
-| 19 | Make and find a hidden file | Create a dotfile in the workshop and list it | Linux config is often a hidden file |
-
-### Act IV — Maps, help, and identity
+### Act II — Pictures: what Linux is, and why it is not the others
 
 | # | Title | After this lesson the viewer can | Why it comes next |
 |---|---|---|---|
-| 20 | Ask the system for help | Use `--help` and `man` (installing man pages on this minimized image if they are missing) to find a flag they need | Help is a skill; on this host, restoring docs is part of the path, not off-camera magic |
-| 21 | Put the workshop in the right part of the tree | Inspect `/home`, `/tmp`, `/etc`, `/var`, `/usr` and keep human work in home | FHS 3.0: the map of Linux, used, not recited |
-| 22 | Treat devices and kernel facts as files | Read a real line from `/proc` and see a real node in `/dev` | Unix "everything is a file"; LPI 4.3 |
-| 23 | See who you are | `whoami`, `id`, and your line in `/etc/passwd` | Security starts with identity |
-| 24 | Lock a workshop file | `chmod` so the note is private, prove it with `ls -l` | LPI 5.3: rwx as bits on a file they care about |
-| 25 | Do one admin job as sudo | Use sudo for one real privileged step, then return to being a normal user | Arch Wiki / LPI 5.1: root is a tool, not a lifestyle |
+| 6 | See what Unix is | After the family-tree picture: this Linux box still speaks Unix ideas (users, files as a tree). Unix is the grandparent, not the stickers on this screen | Linux cloned Unix ideas; Mac is Unix-certified; Windows is not Unix |
+| 7 | See what GNU is | After the picture of the GNU project: show a real GNU program’s `--version` on this machine | The userland most people type is GNU; the kernel is not |
+| 8 | See what the Linux kernel is | After Linus / 1991 / engine picture: still do **not** treat “Linux” as the whole disk — the kernel is the engine in the picture | kernel.org: Linux **is** the kernel |
+| 9 | See GNU/Linux as a whole system | Combine kernel + GNU + other pieces into one picture of “a Linux computer” | Stops both myths: “Linux is only a kernel” and “Linux is every file” |
+| 10 | See the seven pieces of a Linux OS | After linux.com’s picture (bootloader, kernel, init, daemons, graphical server, desktop, apps): match each piece you can see on this XFCE machine, and label the ones that are only a picture here (bootloader) | This is the map of the whole OS before distros |
+| 11 | See why Linux is open | After the four freedoms picture: open a real GPL text shipped with a GNU tool on this disk | Open source is a rule about copies, not a vibe |
+| 12 | See why Linux is different from a vendor OS | After the picture: this system is inspectable (you can read `/etc`, `/proc`, licenses). Windows and Mac stay labeled as company OSes | The difference is ownership, visibility, and who is allowed to change it |
+| 13 | See how Linux differs from Windows | After the picture (NT kernel, `C:`, Win32, paid server licenses): prove the Linux side — one tree from `/`, no drive letter, inspectable | LPI 4.1 + Microsoft kernel-mode docs. Windows is never booted here |
+| 14 | See how Linux differs from Mac | After the picture (XNU/Darwin, Apple hardware bundle, Unix-like cousin): prove this is not Darwin — it is a Linux distro on non-Apple hardware | Apple’s own kernel architecture vs kernel.org |
+| 15 | See where Linux actually lives | After the picture (phones, TVs, cars, supercomputers, the internet, Android): prove this host is one real Linux computer in that world | linux.com: Linux is already everywhere; this course is one of those machines |
 
-### Act V — Software and running programs
+### Act III — Pictures: distributions, all of them that matter
 
-| # | Title | After this lesson the viewer can | Why it comes next |
-|---|---|---|---|
-| 26 | Install a real tool with apt and use it | Search, install, and **run** a package that the workshop needs | This distro's difference is apt; a package is not installed until it does work |
-| 27 | Start a program and find its process | Start something and identify it with `ps` | The kernel's job is running processes |
-| 28 | Stop a process on purpose | Interrupt or `kill` that process and prove it is gone | Programs do not vanish by magic |
-
-### Act VI — Unix power on the workshop
+A distro is not a different kernel species. It is a different **box** around the same idea.
 
 | # | Title | After this lesson the viewer can | Why it comes next |
 |---|---|---|---|
-| 29 | Build a workshop report with redirects and pipes | Save command output to a file and pipe a filter | LPI 3.2: the Unix power move |
-| 30 | Search inside workshop files | `grep` a phrase they actually wrote | Extracting data from files they own |
-| 31 | Find a file by name | `find` a workshop file without remembering the full path | The tree is bigger than one folder |
-| 32 | Edit a workshop note in nano | Change a file, save, and verify the new text | LPI 3.3: an editor the viewer can finish |
-| 33 | Pack the workshop into an archive | `tar` + gzip a snapshot they can list and restore | LPI 3.1: backups are real files |
+| 16 | See what a distribution is | After the picture (kernel + GNU + package manager + defaults + installer): say why kernel.org tells beginners to download a distro, not a kernel tarball | Distro is the thing a human installs |
+| 17 | See the Debian family | After the picture (`dpkg`/`apt`, stable, Ubuntu/Mint as children): read `ID_LIKE=debian` on this machine | This host *is* that family — first live distro proof |
+| 18 | See Ubuntu and LTS | After the picture (Ubuntu, LTS, derivatives): read Ubuntu 24.04 LTS from `os-release` | Narrows “Debian family” to this exact flavor |
+| 19 | See the Fedora / RHEL family | After the picture (`rpm`/`dnf`, Fedora, RHEL, CentOS stream): show this machine has `apt` and not `dnf` — different family, same kernel idea | Contrast must be honest; we do not boot Fedora here |
+| 20 | See the Arch family | After the picture (`pacman`, rolling, Arch/Manjaro/SteamOS): say rolling means the box keeps moving | LPI 1.1 + Arch Wiki |
+| 21 | See the SUSE family | After the picture (`zypper`, openSUSE, SLES): another enterprise/desktop line, still Linux | Completes the four classic packaging families |
+| 22 | See LTS vs rolling vs immutable | After the picture (Ubuntu LTS, Arch rolling, Silverblue/Aeon/NixOS): say this Ubuntu is an LTS-style box, not an atomic image | 2026 distro reality without pretending we booted Silverblue |
+| 23 | See desktop vs server vs embedded vs Android | After the picture: this XFCE session is a desktop-shaped Linux; Android is Linux-the-kernel in a phone box | Same kernel, different boxes, different jobs |
+| 24 | Name this computer’s exact Linux | Prove: Linux kernel + GNU userland + Ubuntu 24.04 Debian-family distro, with real commands | Now identification is the **end** of the pictures, not the first sentence |
 
-### Act VII — Turn work into a tool
-
-| # | Title | After this lesson the viewer can | Why it comes next |
-|---|---|---|---|
-| 34 | Run a workshop command by name | Put a directory on `PATH` for a session and run a command without the full path | LPI 2.1: how Linux finds programs |
-| 35 | Write a backup script and run it | A `#!/bin/bash` script that archives the workshop | LPI 3.3 (highest weight): commands become a tool |
-| 36 | Make the script take arguments and fail honestly | Arguments, `if`, and a non-zero exit when input is wrong | Real scripts are not `echo hello` |
-| 37 | Loop the script over real files | A `for` loop that does useful work on workshop files | Automation over a set they created |
-
-### Act VIII — Share, point, talk, remember
+### Act IV — Hands: the desktop, then the terminal
 
 | # | Title | After this lesson the viewer can | Why it comes next |
 |---|---|---|---|
-| 38 | Point at a file with a symlink | `ln -s` in the workshop, then use the link | LPI 5.4: a name that is not a copy |
-| 39 | Ask the network who this computer is | `ip` plus a real reachability or DNS lookup that produces output | LPI 4.4: this machine on a network |
-| 40 | Read the system's memory of what happened | Pick a real line from `dmesg` or `/var/log` and say what it means | LPI 4.3: logs; `journalctl` is used only if it actually talks on this host |
+| 25 | Use the Linux desktop | Open the file manager, make a folder you can see, close it, open it again | The graphical server + XFCE are real; the terminal is next, not instead |
+| 26 | Open a terminal and run a command | Get real output from a command they typed | Hands |
+| 27 | Read the prompt | Decode user, host, and path | Whose house |
+| 28 | See a command’s shape | Split a line into command, options, arguments on a real command | Syntax before navigation tricks |
+| 29 | Use history and completion | Re-run a previous command; complete a path with Tab | Humans do not retype everything |
+| 30 | Quote text so the shell does not eat it | Make a filename with a space and use it safely | Quoting is why beginners think Linux is “broken” |
+| 31 | Match names with globbing | Select a set of workshop files with `*` | Patterns before copying lots of files |
+| 32 | Find home | `pwd`, `~`, `$HOME` | All later files live here |
+| 33 | List what is here | `ls`, long view, hidden view | See before you move |
+| 34 | Walk the tree | `cd` absolute, relative, `.`, `..` | The tree is walkable |
+| 35 | Create the Linux workshop | `mkdir ~/linux-workshop` and prove it | Continuous project starts |
+| 36 | Make a real note | A file with real content | Files are nouns |
+| 37 | Copy, rename, and remove on purpose | `cp` `mv` `rm` without destroying the project | LPI / LPIC file management |
+| 38 | Read a file without breaking it | `cat` `less` `head` `tail` | Looking is safer than editing |
+| 39 | Make and find a hidden file | A dotfile in the workshop | Config is often hidden |
+| 40 | Ask the system for help | `--help` and `man` (install man pages on this minimized image if missing) | Help is a skill |
 
-### Act IX — How this Linux is really built
+### Act V — Hands: the filesystem for real
 
 | # | Title | After this lesson the viewer can | Why it comes next |
 |---|---|---|---|
-| 41 | See how a normal Linux boots — and how **this** one started | After the boot picture: show PID 1 here (`tini`) and read a real systemd unit file Ubuntu still ships | LFS101 startup, without faking systemd as PID 1 |
-| 42 | Make a tiny filesystem and write on it | Mount a `tmpfs` (or write on a real extra mount) and prove the file lives there | Filesystems are mountable trees, not a single disk cartoon |
-| 43 | See that this Linux is a container | Inspect overlay on `/`, cgroup, and namespace facts on **this** host | 2026 Linux reality; this machine is the example |
-| 44 | Run the workshop backup end to end | One command they wrote produces a dated archive plus a log in `~/linux-workshop/` | Reproduction test: the course's own project finishes on camera |
+| 41 | Put the workshop in the right part of the tree | Inspect `/home` `/tmp` `/etc` `/var` `/usr` `/bin` and keep human work in home | FHS 3.0 |
+| 42 | See kernel facts as files | Read a real line from `/proc` and `/sys` | Everything-is-a-file, kernel side |
+| 43 | See devices as files | Find a real node in `/dev` and say what kind of file it is | Devices are files too |
+| 44 | See file types | From `ls -l`, tell file, directory, link, device apart | The first character is a map |
+| 45 | See that a name is not the file | `ls -i` / link count: inode vs name | Prepares hard links |
+| 46 | Measure disk and directory size | `df` and `du` on real paths | Storage is not the tree drawing |
+| 47 | Make a tiny filesystem and write on it | Mount `tmpfs`, write, prove, unmount | Filesystems are mountable trees |
+| 48 | Make a hard link | Two names, one inode, in the workshop | LPIC 104.6 |
+| 49 | Make a symlink | A pointer name that is not a copy | LPI 5.4 |
+
+### Act VI — Hands: people and locks
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 50 | See who you are | `whoami` `id` and your `/etc/passwd` line | Identity |
+| 51 | See users and groups | Read `/etc/group` and say which groups this account is in | Access is not only “me” |
+| 52 | Add a person to this Linux | Create a user (or group) with sudo and prove they exist | LPIC 107.1 — if sudo blocks, stop and report; do not fake |
+| 53 | Lock a file with letters | `chmod u/g/o` + `ls -l` on a workshop file | rwx as language |
+| 54 | Lock a file with numbers | `chmod 644` / `755` and prove it | Numeric mode |
+| 55 | See umask | Create a file, show umask, explain the default bits | Defaults are a policy |
+| 56 | Use the sticky bit on a shared directory | A directory where people cannot delete each other’s files | `/tmp` is the real example |
+| 57 | Change ownership | `chown` / `chgrp` on a workshop file | Locks belong to someone |
+| 58 | Do one admin job as sudo | One real privileged step, then back to a normal user | Root is a tool |
+
+### Act VII — Hands: programs that are alive
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 59 | Start a program and find its process | `ps` on something they started | Kernel’s job |
+| 60 | See the process tree | Parent/child of a real process | Processes are a family |
+| 61 | Stop a process on purpose | SIGINT / `kill`, prove it is gone | Signals |
+| 62 | Park a process in the background | `jobs`, `fg`, `bg` on a real job | Job control |
+| 63 | Watch load and memory | `top` or `free` while something runs | The machine is finite |
+| 64 | Change a process’s niceness | `nice`/`renice` on a workshop command | LPIC 103.6 |
+
+### Act VIII — Hands: Unix power
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 65 | Catch stdout and stderr | Redirect both, including `/dev/null`, on a real command | Streams |
+| 66 | Build a pipeline | Pipe a filter into a workshop report | The Unix move |
+| 67 | Search inside files | `grep` a phrase they wrote | Extract |
+| 68 | Search with a regular expression | One real regex on workshop or log text | LPIC 103.7 |
+| 69 | Find files by name | `find` a workshop file | The tree is big |
+| 70 | Feed names into the next command | `xargs` (or `find -exec`) on real files | Glue |
+| 71 | Slice and count text | `cut` `sort` `uniq` `wc` on a real report | Filters |
+| 72 | Rewrite a file with sed | One real substitution, verified | Stream edit |
+| 73 | Extract columns with awk | One real awk on the report | LPIC text processing |
+| 74 | Edit in nano | Change, save, verify | Editor of record |
+| 75 | Pack and unpack an archive | `tar` + gzip a workshop snapshot you can restore | Backups |
+
+### Act IX — Hands: software on this distro
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 76 | Install a real tool with apt and use it | Search, install, run | Debian-family hands |
+| 77 | See what a package actually contains | `dpkg -L` (or `apt show`) on a package they installed | A package is files |
+| 78 | See where apt looks for software | Read Ubuntu’s sources on this host | Repos are policy |
+| 79 | See shared libraries | `ldd` on a real binary | LPIC 102.3 |
+| 80 | Build a tiny program from source | Write, compile with `gcc`, run the binary in the workshop | Software is not only apt |
+| 81 | Put a command on PATH | Session PATH + a workshop command by name | How Linux finds programs |
+| 82 | Make the shell remember you | A real alias or `bashrc` line that changes a later command | LPIC 105.1 |
+
+### Act X — Hands: turn work into a tool
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 83 | Write a backup script and run it | `#!/bin/bash` that archives the workshop | LPI 3.3 |
+| 84 | Make it take arguments and fail honestly | Args, `if`, non-zero exit | Real scripts |
+| 85 | Loop over real files | `for` that does useful work | Automation |
+| 86 | Put a function in the script | One function used twice | Structure |
+| 87 | Repeat a job without sitting there | A cron line, a systemd user timer if the bus exists, or an honest loop + log if this host has no scheduler — **never fake systemd timers** | LPIC 107.2 |
+
+### Act XI — Hands: network, time, memory of the system
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 88 | See this computer on the network | `ip` plus a real reachability or DNS lookup | LPI 4.4 / LPIC 109 |
+| 89 | See who is listening | `ss` on real sockets | Ports are not magic |
+| 90 | Read DNS client config | `/etc/resolv.conf` and `/etc/hosts` used in a real lookup | LPIC 109.4 |
+| 91 | Fetch something with curl | A real HTTP response saved into the workshop | Network as a tool |
+| 92 | Read the system’s memory of what happened | A real line from `dmesg` or `/var/log` | Logs |
+| 93 | See time and locale | `date`, timezone or `locale`, one real setting inspected | LPIC 107.3 / 108.1 |
+
+### Act XII — Hands: how this Linux is really built
+
+| # | Title | After this lesson the viewer can | Why it comes next |
+|---|---|---|---|
+| 94 | See how a normal Linux boots | After GRUB → kernel → initramfs → init picture: inspect what this host *does* expose (`/proc/cmdline`, PID 1) | linux.com bootloader/kernel/init — bootloader is a picture if `/boot` is empty |
+| 95 | See systemd as the usual init — and tini as **this** init | Read a real Ubuntu unit file; show PID 1 is `tini` here | No fake `systemctl start` |
+| 96 | See kernel modules | `lsmod` (or `/proc/modules`) and name one loaded module | The kernel is not one blob in practice |
+| 97 | Read a sysctl | One real `/proc/sys` or `sysctl` value | Kernel knobs |
+| 98 | See that this Linux is a container | Overlay on `/`, cgroup, namespaces on **this** host | 2026 Linux; this machine is the example |
+| 99 | Run the workshop backup end to end | One command they wrote → dated archive + log in `~/linux-workshop/` | Reproduction test |
 
 ---
 
-## Out of scope
+## Out of scope (named, so the A–Z claim stays honest)
 
-- Installing Linux on bare metal, dual-boot, partitioning a physical disk, or writing a GRUB config (cannot be finished 0–100% on this host)
-- Linux From Scratch; compiling a kernel; writing kernel modules
-- Living as systemd PID 1 on this host (taught as contrast in lesson 41, never faked)
-- Kubernetes, Docker-as-the-course, cloud certifications, RHCSA/LFCS cram
-- Printing (LFS101 chapter 17)
-- vi/emacs as the editor of record (nano is the editor; vim exists here but is not the path)
-- SELinux policy, nftables firewall design, kernel C
-- Booting Windows or macOS (comparison is HyperFrames + Linux-side proof only)
+Cannot finish 0–100% on this host, so they are pictures + disclosure, not fake labs:
+
+- Bare-metal install, dual-boot, partitioning a physical disk, writing GRUB
+- Linux From Scratch; compiling the Linux kernel; writing kernel modules
+- Booting Windows, macOS, Fedora, Arch, or SUSE
+- systemd as live PID 1 (`systemctl` against this host’s init)
+- Mail servers (MTA), printing, accessibility stacks, X11 *installation*
+- Kubernetes, Docker-as-the-course, cloud certifications, exam cram
+- SELinux policy writing, nftables firewall design, kernel C
+- vi/emacs as the editor of record (nano is the editor)
 
 ---
 
 ## Sources (live)
 
-- What an OS is: [IBM — What is an Operating System?](https://www.ibm.com/think/topics/operating-systems)
-- What Linux is, next to Windows and Mac: [linux.com/what-is-linux](https://www.linux.com/what-is-linux/)
-- Linux kernel: [What is Linux?](https://www.kernel.org/linux.html)
-- Windows kernel/user split: [Microsoft — User mode and kernel mode](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
-- macOS kernel: [Apple — XNU / Darwin architecture](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Architecture/Architecture.html)
-- LPI 4.1: differences between Windows, OS X, and Linux — [exam-010-objectives](https://www.lpi.org/our-certifications/exam-010-objectives/)
-- Distros vs kernel: kernel.org — beginners need a distribution
-- FHS 3.0: [Linux Foundation refspec](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.txt)
-- Linux Foundation LFS101 outline: [Introduction to Linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
-- Red Hat RH104 topic list: [Getting Started with Linux Fundamentals](https://www.redhat.com/en/services/training/getting-started-with-linux-fundamentals)
-- Debian Reference (2026): [debian-reference](https://www.debian.org/doc/manuals/debian-reference/)
+- Seven pieces of Linux, distros, why Linux, open source tenets: [linux.com/what-is-linux](https://www.linux.com/what-is-linux/)
+- Kernel definition: [kernel.org/linux.html](https://www.kernel.org/linux.html)
+- What an OS is: [IBM — Operating systems](https://www.ibm.com/think/topics/operating-systems)
+- Windows kernel/user: [Microsoft — User mode and kernel mode](https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
+- macOS kernel: [Apple — XNU / Darwin](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Architecture/Architecture.html)
+- LPI Essentials 010: [exam-010-objectives](https://www.lpi.org/our-certifications/exam-010-objectives/)
+- LPIC-1 101/102 (depth target for the hands): [exam-101-102-objectives](https://www.lpi.org/our-certifications/exam-101-102-objectives/)
+- FHS 3.0: [refspecs.linuxfoundation.org](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.txt)
+- LFS101 outline: [Introduction to Linux](https://training.linuxfoundation.org/training/introduction-to-linux/)
 - Arch Wiki: [General recommendations](https://wiki.archlinux.org/title/General_recommendations)
-- systemd unit files: [systemd.unit(5)](https://www.freedesktop.org/software/systemd/man/systemd.unit)
-- Ubuntu on this host: `/etc/os-release` (Ubuntu 24.04.4 LTS), `apt` 2.8.x
-- HyperFrames: [github.com/heygen-com/hyperframes](https://github.com/heygen-com/hyperframes), [quickstart](https://hyperframes.heygen.com/quickstart)
+- HyperFrames: [github.com/heygen-com/hyperframes](https://github.com/heygen-com/hyperframes)
 
-This spine is a draft. Lesson count, act boundaries, and the container lesson can be edited before any recording starts.
+This spine is a draft. Recording does not start until it is accepted.

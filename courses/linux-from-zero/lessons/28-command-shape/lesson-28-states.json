@@ -1,0 +1,193 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "kicker": "LESSON 28",
+        "title": "A command is a sentence. Name the verb, the switches, and the thing it acts on."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "photo": "green-and-red steam locomotive with a yellow star",
+        "tag": "COMMAND",
+        "name": "The verb",
+        "line": "First word is the program. Here it is ls. echo is a toy. Inspect a real folder."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A locomotive photo is labeled The verb."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "photo": "two light switches on a blue wall",
+        "tag": "OPTIONS",
+        "name": "The switches",
+        "line": "Letters after a hyphen. -l is a long listing. -d lists the folder itself, not the empty inside."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A switch-plate photo is labeled The switches."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "photo": "two manila folders on wood",
+        "tag": "ARGUMENT",
+        "name": "The thing",
+        "line": "The path comes last. Point at /home/ubuntu/rent-receipts, the folder you already made."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Manila folders are labeled The thing."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "photo": "steam locomotive",
+        "tag": "ONE LINE",
+        "name": "ls -ld path",
+        "line": "Command, grouped options, operand. POSIX puts options before the thing they act on."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The locomotive returns, labeled ls -ld path."
+  },
+  {
+    "start": 38.0,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "28"},
+      "main": {
+        "line": "Open Terminal Emulator. Type ls -ld /home/ubuntu/rent-receipts. Hold on the directory line.",
+        "cards": ["Command ls", "Options -ld", "Argument rent-receipts"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Command, Options, Argument."
+  },
+  {
+    "start": 51.1,
+    "end": 52.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.7,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "The applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.7,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center"
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.2,
+    "end": 54.7,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center of the terminal"
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.7,
+    "end": 57.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen. The prompt is still empty."
+  },
+  {
+    "start": 57.4,
+    "end": 63.15,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "ls -ld /home/ubuntu/rent-receipts"},
+      "cursor": "block caret on the command line"
+    },
+    "changed": "ls -ld /home/ubuntu/rent-receipts is typed at the prompt."
+  },
+  {
+    "start": 63.15,
+    "end": 68.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls -ld /home/ubuntu/rent-receipts",
+        "output": "drwxr-xr-x 2 ubuntu ubuntu 4096 Aug 21 19:56 /home/ubuntu/rent-receipts",
+        "prompt_after": "workspace $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls -ld prints the rent-receipts directory line. That line stays until the file ends."
+  }
+]

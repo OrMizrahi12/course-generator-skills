@@ -1,0 +1,182 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.883,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {
+        "wallpaper": "abstract peach, cream, teal, and green blur",
+        "panel": "none",
+        "dock": "none"
+      },
+      "cursor": "white arrow, lower-right, inside the screen"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.883,
+    "end": 5.88,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "02"
+      },
+      "main": {
+        "kicker": "LESSON 02",
+        "title": "Hardware is metal. Software is a program."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears on the dark course frame."
+  },
+  {
+    "start": 5.88,
+    "end": 15.883,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "02"
+      },
+      "main": {
+        "photo": "underside of a CPU, gold contact grid",
+        "tag": "YOU CAN TOUCH IT",
+        "name": "Hardware",
+        "line": "The chip. The metal. It does the physical work."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real CPU photograph is labeled Hardware."
+  },
+  {
+    "start": 15.883,
+    "end": 25.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "02"
+      },
+      "main": {
+        "photo": "LibreOffice Writer window with document pages and toolbars",
+        "tag": "YOU RUN IT",
+        "name": "Software",
+        "line": "A program. Instructions that tell the hardware what to do."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real LibreOffice Writer screenshot is labeled Software."
+  },
+  {
+    "start": 25.9,
+    "end": 48.933,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "02"
+      },
+      "main": {
+        "line": "Software uses the hardware.",
+        "cards": ["Hardware", "Software"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Both photographs sit side by side under Software uses the hardware."
+  },
+  {
+    "start": 48.933,
+    "end": 49.783,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {
+        "wallpaper": "abstract peach, cream, teal, and green blur",
+        "panel": "none"
+      },
+      "cursor": "present"
+    },
+    "changed": "The visualization closes. The empty desktop is visible."
+  },
+  {
+    "start": 49.783,
+    "end": 53.2,
+    "on_screen": {
+      "window": "Mousepad, fullscreen",
+      "menu": ["File", "Edit", "Search", "View", "Document", "Help"],
+      "main": {
+        "document": "empty white page",
+        "caret": "top-left"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "Mousepad fills the screen with an empty document."
+  },
+  {
+    "start": 53.2,
+    "end": 62.4,
+    "on_screen": {
+      "window": "Mousepad, fullscreen",
+      "menu": ["File", "Edit", "Search", "View", "Document", "Help"],
+      "main": {
+        "typed": "This is software. It tells the CPU what to do."
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "The sentence is typed into Mousepad one character at a time."
+  },
+  {
+    "start": 62.4,
+    "end": 65.2,
+    "on_screen": {
+      "window": "Mousepad, fullscreen",
+      "main": {
+        "text": "This is software. It tells the CPU what to do.",
+        "caret": "after the final period"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "The finished sentence sits on screen with Mousepad still running."
+  },
+  {
+    "start": 65.2,
+    "end": 68.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "~ $",
+        "typed": "ps"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal covers Mousepad. Typing of the ps command begins."
+  },
+  {
+    "start": 68.8,
+    "end": 73.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "~ $",
+        "typed": "ps -C mousepad -o pid,pcpu,cmd"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "The rest of ps -C mousepad -o pid,pcpu,cmd is typed."
+  },
+  {
+    "start": 73.4,
+    "end": 77.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ps -C mousepad -o pid,pcpu,cmd",
+        "header": "PID %CPU CMD",
+        "row": "22148  1.0 mousepad",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center of the white field"
+    },
+    "changed": "ps prints mousepad as a live process using CPU. The prompt waits under the finished output until the file ends."
+  }
+]

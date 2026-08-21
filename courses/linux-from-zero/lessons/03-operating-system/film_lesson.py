@@ -51,10 +51,12 @@ def wait_win(patterns: list[str], timeout: float = 3.0, by: str = "class") -> st
     return None
 
 
-def fullscreen(wid: str | None) -> None:
+def fill_screen(wid: str | None) -> None:
     if not wid:
         return
-    run(["wmctrl", "-i", "-r", wid, "-b", "add,fullscreen"])
+    run(["wmctrl", "-i", "-r", wid, "-e", "0,0,0,1920,1080"])
+    run(["xdotool", "windowmove", "--sync", wid, "0", "0"])
+    run(["xdotool", "windowsize", "--sync", wid, str(W), str(H)])
     run(["xdotool", "windowactivate", "--sync", wid])
 
 
@@ -68,7 +70,7 @@ def play_viz() -> None:
         env=ENV,
     )
     time.sleep(0.45)
-    fullscreen(wait_win(["mpv"], timeout=2.0, by="class"))
+    fill_screen(wait_win(["mpv"], timeout=2.0, by="class"))
     mpv.wait()
     time.sleep(0.25)
 
@@ -105,7 +107,7 @@ def main() -> None:
 
     subprocess.Popen(["mousepad"], env=ENV)
     time.sleep(0.45)
-    fullscreen(wait_win(["Mousepad", "mousepad"], timeout=3.0, by="class"))
+    fill_screen(wait_win(["Mousepad", "mousepad"], timeout=3.0, by="class"))
     time.sleep(0.2)
     h.move_to(960, 540, target_w=240)
     h.click()
@@ -115,7 +117,7 @@ def main() -> None:
     h.ctrl_key("s")
     time.sleep(0.55)
     sw = wait_win(["Save As"], timeout=3.0, by="name")
-    fullscreen(sw)
+    fill_screen(sw)
     time.sleep(0.35)
     h.ctrl_key("l")
     time.sleep(0.35)
@@ -131,7 +133,7 @@ def main() -> None:
         env=ENV,
     )
     time.sleep(0.4)
-    fullscreen(wait_win(["xfce4-terminal"], timeout=2.5, by="class"))
+    fill_screen(wait_win(["xfce4-terminal"], timeout=2.5, by="class"))
     time.sleep(0.15)
     h.move_to(980, 500, target_w=200)
     h.click()

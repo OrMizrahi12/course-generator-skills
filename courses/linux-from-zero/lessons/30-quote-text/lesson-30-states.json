@@ -1,0 +1,319 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "kicker": "LESSON 30",
+        "title": "A filename with spaces is one name. Quote it, or the shell cuts it into three files."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "photo": "United Daily Press paper subscription receipt",
+        "tag": "THE JOB",
+        "name": "21 Aug receipt",
+        "line": "August rent needs one file in rent-receipts. The name has two spaces. That is a real receipt name."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A receipt photo is labeled 21 Aug receipt."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "photo": "shattered white plate inside a microwave",
+        "tag": "UNQUOTED",
+        "name": "The shell splits",
+        "line": "Without quotes, touch sees three words. You get 21 in the folder, and Aug plus receipt.txt in the wrong house."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A cracked plate is labeled The shell splits."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "photo": "Heath Hospital entrance signs with quotation marks around English text",
+        "tag": "QUOTED",
+        "name": "Quotes hold it",
+        "line": "Single quotes make the spaces ordinary. The quotes are not part of the name. They glue the words."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A hospital sign with quotation marks is labeled Quotes hold it."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "photo": "two manila folders on wood",
+        "tag": "RESULT",
+        "name": "One empty file",
+        "line": "ls -l of the quoted path shows one file: 21 Aug receipt.txt inside rent-receipts."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Manila folders are labeled One empty file."
+  },
+  {
+    "start": 37.85,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "30"},
+      "main": {
+        "line": "Touch without quotes. See the three pieces. Remove them. Touch with quotes. Hold on the one file.",
+        "cards": ["Receipt A name with spaces", "Split Three pieces", "Quotes One name"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Receipt, Split, Quotes."
+  },
+  {
+    "start": 51.1,
+    "end": 52.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.7,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "The applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.7,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.2,
+    "end": 55.2,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 55.2,
+    "end": 56.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.8,
+    "end": 67.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "workspace $",
+        "typed": "touch /home/ubuntu/rent-receipts/21 Aug receipt.txt"
+      },
+      "cursor": "block caret on the command line"
+    },
+    "changed": "Unquoted touch /home/ubuntu/rent-receipts/21 Aug receipt.txt is typed."
+  },
+  {
+    "start": 67.5,
+    "end": 75.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prior": {"command": "touch /home/ubuntu/rent-receipts/21 Aug receipt.txt", "output": ""},
+        "prompt": "workspace $",
+        "typed": "ls -l /home/ubuntu/rent-receipts"
+      }
+    },
+    "changed": "ls -l /home/ubuntu/rent-receipts is typed after the silent touch."
+  },
+  {
+    "start": 75.2,
+    "end": 77.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "touch /home/ubuntu/rent-receipts/21 Aug receipt.txt", "output": ""},
+          {"command": "ls -l /home/ubuntu/rent-receipts", "output": "total 0\n-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 21"}
+        ],
+        "prompt_after": "workspace $"
+      }
+    },
+    "changed": "ls shows one file named 21 inside rent-receipts."
+  },
+  {
+    "start": 77.0,
+    "end": 79.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "workspace $",
+        "typed": "ls -l Aug receipt.txt"
+      }
+    },
+    "changed": "ls -l Aug receipt.txt is typed in the current directory."
+  },
+  {
+    "start": 79.8,
+    "end": 83.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "ls -l /home/ubuntu/rent-receipts", "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 21"},
+          {"command": "ls -l Aug receipt.txt", "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 Aug\n-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 receipt.txt"}
+        ],
+        "prompt_after": "workspace $"
+      }
+    },
+    "changed": "ls lists Aug and receipt.txt in the current directory."
+  },
+  {
+    "start": 83.5,
+    "end": 91.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "workspace $",
+        "typed": "rm /home/ubuntu/rent-receipts/21 Aug receipt.txt"
+      }
+    },
+    "changed": "Unquoted rm of the three pieces is typed."
+  },
+  {
+    "start": 91.8,
+    "end": 94.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "rm /home/ubuntu/rent-receipts/21 Aug receipt.txt", "output": ""}
+        ],
+        "prompt_after": "workspace $"
+      }
+    },
+    "changed": "rm returns with no output. The three split files are gone."
+  },
+  {
+    "start": 94.5,
+    "end": 103.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "workspace $",
+        "typed": "touch '/home/ubuntu/rent-receipts/21 Aug receipt.txt'"
+      }
+    },
+    "changed": "Quoted touch of the same path is typed."
+  },
+  {
+    "start": 103.8,
+    "end": 106.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "touch '/home/ubuntu/rent-receipts/21 Aug receipt.txt'", "output": ""}
+        ],
+        "prompt_after": "workspace $"
+      }
+    },
+    "changed": "Quoted touch returns with no output."
+  },
+  {
+    "start": 106.0,
+    "end": 114.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "workspace $",
+        "typed": "ls -l '/home/ubuntu/rent-receipts/21 Aug receipt.txt'"
+      }
+    },
+    "changed": "Quoted ls -l of the spaced filename is typed."
+  },
+  {
+    "start": 114.2,
+    "end": 119.617,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          {"command": "touch /home/ubuntu/rent-receipts/21 Aug receipt.txt", "output": ""},
+          {"command": "ls -l /home/ubuntu/rent-receipts", "output": "total 0\n-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 21"},
+          {"command": "ls -l Aug receipt.txt", "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 Aug\n-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:56 receipt.txt"},
+          {"command": "rm /home/ubuntu/rent-receipts/21 Aug receipt.txt", "output": ""},
+          {"command": "touch '/home/ubuntu/rent-receipts/21 Aug receipt.txt'", "output": ""},
+          {"command": "ls -l '/home/ubuntu/rent-receipts/21 Aug receipt.txt'", "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 21 20:57 '/home/ubuntu/rent-receipts/21 Aug receipt.txt'"}
+        ],
+        "prompt_after": "workspace $"
+      },
+      "cursor": "block caret after workspace $"
+    },
+    "changed": "ls -l prints one empty file whose name contains two spaces. That line stays until the file ends."
+  }
+]

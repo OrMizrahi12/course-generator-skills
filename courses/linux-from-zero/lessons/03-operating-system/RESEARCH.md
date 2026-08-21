@@ -18,7 +18,7 @@ A person now knows metal vs program. They need to see the **middle layer**, beca
 
 1. HyperFrames: three layers — CPU photograph (hardware), Xubuntu/XFCE desktop photograph (operating system), LibreOffice Writer (apps).
 2. Mousepad, fullscreen, 19pt: type a real sentence, save `/tmp/still-here.txt` on camera.
-3. Terminal 19pt: `ps -C mousepad,xfce4-terminal -o pid,pcpu,cmd` while both run; then close Mousepad; `cat /tmp/still-here.txt` still prints the sentence. Last frames hold that file.
+3. Terminal 19pt: `ps -C mousepad,xfce4-terminal -o pid,pcpu,cmd` while both run; then `pkill -x mousepad`; `cat /tmp/still-here.txt` still prints the sentence. Last frames hold that file.
 
 ## Sources used
 

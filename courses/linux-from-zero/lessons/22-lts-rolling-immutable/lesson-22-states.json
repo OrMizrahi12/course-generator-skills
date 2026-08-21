@@ -1,0 +1,162 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 22 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "kicker": "LESSON 22",
+        "title": "LTS freezes a numbered year. Rolling keeps moving. Immutable is an image. This Ubuntu is LTS-style, not atomic."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 22 and LTS freezes a numbered year. Rolling keeps moving. Immutable is an image. This Ubuntu is LTS-style, not atomic."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "mark": "Ubuntu Circle of Friends, orange disc",
+        "tag": "LTS",
+        "name": "Numbered freeze",
+        "line": "ubuntu.com: LTS every two years, years of standard maintenance. Packages in a frozen box. This host’s model."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Ubuntu mark is labeled Numbered freeze, LTS, this host’s model."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "photo": "bicycle wheel with spokes, silver rim, black tire",
+        "tag": "ROLLING",
+        "name": "Keeps moving",
+        "line": "Arch Wiki: one install, continuous upgrades. The box does not freeze on a year. Picture only."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A bicycle wheel is labeled Keeps moving, rolling, picture only."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "marks": ["Silverblue branching-tree shield", "NixOS lambda snowflake wordmark"],
+        "tag": "IMMUTABLE",
+        "name": "An image",
+        "line": "Silverblue, Aeon, NixOS: update the whole image, reboot, roll back. We never boot them here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Silverblue and NixOS marks are labeled An image, immutable, pictures only."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "Packages, not ostree",
+        "line": "ls /var/lib/dpkg/status finds a file. ls /ostree does not. LTS-style box, not an atomic image."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Packages, not ostree, on this host."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "22"},
+      "main": {
+        "line": "This Ubuntu is an LTS-style package box. Silverblue / Aeon / NixOS stay pictures. We do not boot an atomic image.",
+        "cards": ["LTS This model", "Atomic Picture", "This host Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: LTS This model, Atomic Picture, This host Live next."
+  },
+  {
+    "start": 51.0,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 59.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /var/lib/dpkg/status",
+        "output": "/var/lib/dpkg/status"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /var/lib/dpkg/status is typed and prints /var/lib/dpkg/status."
+  },
+  {
+    "start": 59.8,
+    "end": 68.367,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /var/lib/dpkg/status", "ls /ostree"],
+        "dpkg_status": "/var/lib/dpkg/status",
+        "ostree_error": "ls: cannot access '/ostree': No such file or directory",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /ostree prints No such file or directory. That error stays until the file ends."
+  }
+]

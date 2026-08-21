@@ -83,7 +83,7 @@ OFF_CAMERA_MARKERS = (
 )
 
 MIN_FIELD_WORDS = 4  # Enough to be an answer rather than a label.
-MIN_PROSE_WORDS = 6  # Same, for the two free-form sections.
+MIN_PROSE_WORDS = 6  # Same, for the free-form sections.
 MIN_DESCRIPTION_WORDS = 3  # A source entry has to say what it established.
 MIN_SOURCES = 2  # One source is a summary, not research.
 
@@ -408,17 +408,33 @@ def check_example(values: dict[str, str], sections: dict, report: Report) -> Non
             )
 
 
-def check_created_on_camera(prose: dict[str, str], sections: dict, report: Report) -> None:
-    body = prose.get("Must be created on camera", "").lower()
+def check_created_on_camera(
+    prose: dict[str, str], sections: dict, lesson: str, report: Report
+) -> None:
+    body = prose.get("Must be created on camera", "")
     if not body or "Must be created on camera" not in sections:
         return
-    for pattern in OFF_CAMERA_MARKERS:
-        if re.search(pattern, body):
-            report.error(
-                sections["Must be created on camera"][0],
-                f"this section says the object is not created on camera (matched {pattern!r}); "
-                "the viewer has to see it come into existence",
-            )
+
+    current = int(lesson) if lesson.isdigit() else 0
+    for sentence in re.split(r"(?<=[.!?])\s+", body):
+        lowered = sentence.lower()
+        matched = next((p for p in OFF_CAMERA_MARKERS if re.search(p, lowered)), None)
+        if not matched:
+            continue
+        # Pointing at a lesson that already filmed the creation is the one legitimate
+        # way for something to pre-exist, so the sentence has to name that lesson.
+        earlier = [
+            int(number)
+            for number in re.findall(r"lesson\s+(\d+)", lowered)
+            if int(number) < current
+        ]
+        if earlier:
+            continue
+        report.error(
+            sections["Must be created on camera"][0],
+            f"this section says the object is not created on camera (matched {matched!r}); "
+            "either film its creation, or name the earlier lesson that already filmed it",
+        )
 
 
 def check_ledger(lines: list[str], sections: dict, report: Report) -> set[str]:
@@ -479,7 +495,7 @@ def main() -> int:
     values = check_fields(lines, sections, report)
     prose = check_prose_sections(lines, sections, report)
     check_example(values, sections, report)
-    check_created_on_camera(prose, sections, report)
+    check_created_on_camera(prose, sections, frontmatter.get("lesson", ""), report)
     ledger = check_ledger(lines, sections, report)
 
     course_dir = check_location(frontmatter, args.path, report)

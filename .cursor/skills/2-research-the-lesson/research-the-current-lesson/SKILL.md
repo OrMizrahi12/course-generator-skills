@@ -168,7 +168,12 @@ state that lesson inherits. That is a finding, not permission to research the
 later lesson. Record it in the brief's `## Constrains later lessons` section, tell
 the user in one line, and leave the later line alone unless they change it.
 
-Both cases are cheap now and expensive after the first take.
+**The syllabus's prose is wrong, but no lesson line depends on it.** Descriptions
+of the project or of production order can go stale without breaking the spine. Do
+not reopen acceptance over prose. State the correction in the brief, which governs
+the film, and tell the user in one line.
+
+All three are cheap now and expensive after the first take.
 
 ## Scope boundary
 

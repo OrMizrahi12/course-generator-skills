@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 12 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {"kicker": "LESSON 12", "title": "This OS is inspectable. Vendor OSes are company boxes."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 12 and This OS is inspectable. Vendor OSes are company boxes."
+  },
+  {
+    "start": 6.2,
+    "end": 14.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {
+        "marks": ["Windows four-square logo", "Apple logo, white"],
+        "tag": "PICTURES ONLY",
+        "name": "Company OSes",
+        "line": "Windows and Mac stay company products. We never boot them here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Windows and Apple marks are labeled Company OSes, pictures only."
+  },
+  {
+    "start": 14.5,
+    "end": 22.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {
+        "photo": "Master padlock on a metal latch, brick wall behind",
+        "tag": "CLOSED",
+        "name": "Their files",
+        "line": "You do not open their /etc. The company keeps the inside."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A padlock photograph is labeled Their files, closed."
+  },
+  {
+    "start": 22.5,
+    "end": 30.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {
+        "photo": "open book lit by a candle",
+        "tag": "OPEN TO READ",
+        "name": "This machine",
+        "line": "/etc and /proc are files you can list and read as a normal user."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An open book is labeled This machine, open to read."
+  },
+  {
+    "start": 30.5,
+    "end": 38.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "Ask the files",
+        "line": "ls /etc names the config. cat /proc/version is the kernel as a file."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Ask the files, with ls /etc and cat /proc/version."
+  },
+  {
+    "start": 38.5,
+    "end": 50.6,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "12"},
+      "main": {
+        "line": "Company boxes stay pictures. This machine you can read.",
+        "cards": ["Windows Picture", "Mac Picture", "This Linux Inspectable"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Windows Picture, Mac Picture, This Linux Inspectable."
+  },
+  {
+    "start": 50.6,
+    "end": 51.6,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.6,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 58.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /etc",
+        "visible_names": ["apt", "hostname", "os-release", "passwd", "ssh", "xfce4"]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /etc is typed and lists readable config names."
+  },
+  {
+    "start": 58.5,
+    "end": 67.317,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /etc", "cat /proc/version"],
+        "proc_version": "Linux version 6.12.94+ (root@35ea6acd4182) (gcc (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Thu Aug 20 16:06:39 UTC 2026",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "cat /proc/version prints Linux version 6.12.94+. The kernel-as-file text stays until the file ends."
+  }
+]

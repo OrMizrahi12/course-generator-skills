@@ -1,0 +1,161 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 11 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {"kicker": "LESSON 11", "title": "Open is four freedoms. Not a vibe."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 11 and Open is four freedoms. Not a vibe."
+  },
+  {
+    "start": 6.2,
+    "end": 14.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {
+        "photo": "Richard Stallman, red shirt, green lanyard",
+        "tag": "FREE AS IN SPEECH",
+        "name": "Liberty",
+        "line": "Free software is freedom, not price. The FSF wrote the four freedoms."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A photograph of Richard Stallman is labeled Liberty."
+  },
+  {
+    "start": 14.5,
+    "end": 22.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {
+        "photo": "office photocopier against a beige wall, blue screen lit",
+        "tag": "A RULE ABOUT COPIES",
+        "name": "Share",
+        "line": "You may copy the program. That is a legal rule, not a feeling."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A photocopier photograph is labeled Share, a rule about copies."
+  },
+  {
+    "start": 22.5,
+    "end": 30.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {
+        "mark": "Heckert GNU head, white on dark well",
+        "tag": "ON THIS DISK",
+        "name": "The GPL",
+        "line": "GNU tools ship the license as a file. Open it like any other file."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The GNU head is labeled The GPL, a file on this disk."
+  },
+  {
+    "start": 30.5,
+    "end": 38.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {
+        "photo": "Richard Stallman",
+        "tag": "FOUR FREEDOMS",
+        "name": "0 1 2 3",
+        "line": "Run. Study. Share copies. Share your changes. Then read the GPL."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Stallman returns with the four numbered freedoms."
+  },
+  {
+    "start": 38.5,
+    "end": 50.6,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "11"},
+      "main": {
+        "line": "Four freedoms. The GPL is a file on this disk.",
+        "cards": ["0 Run", "1 Study", "2 Share", "3 Change"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Four cards sit in a row: 0 Run, 1 Study, 2 Share, 3 Change."
+  },
+  {
+    "start": 50.6,
+    "end": 51.6,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.6,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 65.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /usr/share/common-licenses",
+        "licenses": ["Apache-2.0", "Artistic", "BSD", "CC0-1.0", "GFDL", "GPL", "GPL-3", "LGPL", "MPL-2.0"]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/share/common-licenses lists GPL-3 among the shipped licenses."
+  },
+  {
+    "start": 65.0,
+    "end": 75.733,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /usr/share/common-licenses", "head -n 20 /usr/share/common-licenses/GPL-3"],
+        "gpl_title": "GNU GENERAL PUBLIC LICENSE",
+        "gpl_version": "Version 3, 29 June 2007",
+        "copyright": "Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>",
+        "preamble_visible": "The GNU General Public License is a free, copyleft license",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "head -n 20 of GPL-3 prints the GNU GPL Version 3 preamble. The text stays until the file ends."
+  }
+]

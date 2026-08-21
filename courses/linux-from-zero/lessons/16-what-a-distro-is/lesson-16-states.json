@@ -1,0 +1,162 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 16 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "kicker": "LESSON 16",
+        "title": "A distro is the complete box. Kernel.org says do not start with a kernel tarball."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 16 and A distro is the complete box. Kernel.org says do not start with a kernel tarball."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "photo": "Suzuki engine bay, SUZUKI mark on the cover",
+        "tag": "KERNEL ONLY",
+        "name": "Not enough",
+        "line": "kernel.org: you don’t want to download the kernel. It is just a component in a working Linux system."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A car-engine photograph is labeled Not enough, kernel only."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "marks": ["Tux the penguin on a cream disc", "GNU head, white"],
+        "tag": "STILL INCOMPLETE",
+        "name": "Kernel + GNU",
+        "line": "Engine plus userland is not yet a distro. A human still needs packages, defaults, and an installer."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux and the GNU head are labeled Kernel + GNU, still incomplete."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "photo": "Kingston DataTraveler G4 32GB USB stick, white body, red loop",
+        "tag": "THE THING A HUMAN INSTALLS",
+        "name": "Installer",
+        "line": "A distro arrives as an ISO on a USB stick or disc. That is what you put on a computer — not a kernel tarball."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A USB stick photograph is labeled Installer, the thing a human installs."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "photo": "open cardboard moving box on carpet, UP arrows on the side",
+        "tag": "COMPLETE LINUX SYSTEM",
+        "name": "The distro",
+        "line": "Package manager, defaults, installer: the box around the kernel. This host’s box is visible in /etc/apt."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A cardboard-box photograph is labeled The distro, complete Linux system."
+  },
+  {
+    "start": 38.05,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "16"},
+      "main": {
+        "line": "kernel.org: download a distribution, not a kernel. A distro is a complete Linux system.",
+        "cards": ["Kernel Picture", "Installer Picture", "This Linux Distro Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Kernel Picture, Installer Picture, This Linux Distro Live next."
+  },
+  {
+    "start": 50.95,
+    "end": 51.45,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.45,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 59.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /etc/apt",
+        "output": ["apt.conf.d", "auth.conf.d", "keyrings", "preferences.d", "sources.list", "sources.list.d", "trusted.gpg.d"]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /etc/apt is typed and lists sources.list, sources.list.d, and keyrings."
+  },
+  {
+    "start": 59.8,
+    "end": 67.283,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /etc/apt", "apt --version"],
+        "ls_etc_apt": ["apt.conf.d", "auth.conf.d", "keyrings", "preferences.d", "sources.list", "sources.list.d", "trusted.gpg.d"],
+        "apt_version": "apt 2.8.3 (amd64)",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "apt --version prints apt 2.8.3 (amd64). That line stays until the file ends."
+  }
+]

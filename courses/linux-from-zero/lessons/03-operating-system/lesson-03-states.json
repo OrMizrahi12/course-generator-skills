@@ -1,0 +1,163 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.883,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.883,
+    "end": 5.88,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "03"},
+      "main": {"kicker": "LESSON 03", "title": "The operating system sits in the middle."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears on the dark course frame."
+  },
+  {
+    "start": 5.88,
+    "end": 13.867,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "03"},
+      "main": {
+        "photo": "CPU gold contact grid",
+        "tag": "BOTTOM",
+        "name": "Hardware",
+        "line": "The metal. It cannot run two programs by itself."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A CPU photograph is labeled Hardware, the bottom layer."
+  },
+  {
+    "start": 13.867,
+    "end": 21.88,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "03"},
+      "main": {
+        "photo": "Xubuntu XFCE desktop with Xfce mouse mark",
+        "tag": "MIDDLE",
+        "name": "Operating system",
+        "line": "Software that manages the hardware and the programs."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real XFCE/Xubuntu desktop photograph is labeled Operating system."
+  },
+  {
+    "start": 21.88,
+    "end": 29.867,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "03"},
+      "main": {
+        "photo": "LibreOffice Writer window",
+        "tag": "TOP",
+        "name": "Apps",
+        "line": "Programs you start. They ask the OS for the machine."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A LibreOffice Writer screenshot is labeled Apps."
+  },
+  {
+    "start": 29.867,
+    "end": 50.917,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "03"},
+      "main": {
+        "line": "Three layers. The OS does the sharing.",
+        "cards": ["Hardware", "Operating system", "Apps"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three photo cards sit in a row: Hardware, Operating system, Apps."
+  },
+  {
+    "start": 50.917,
+    "end": 51.483,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.483,
+    "end": 61.2,
+    "on_screen": {
+      "window": "Mousepad, fullscreen",
+      "menu": ["File", "Edit", "Search", "View", "Document", "Help"],
+      "main": {"typed": "The OS keeps this file."},
+      "cursor": "I-beam"
+    },
+    "changed": "Mousepad fills the screen. The sentence is typed."
+  },
+  {
+    "start": 61.2,
+    "end": 76.5,
+    "on_screen": {
+      "window": "Save As dialog, covering the display",
+      "main": {
+        "title": "Save As",
+        "name_field": "/tmp/still-here.txt",
+        "places": ["Home", "Desktop", "03-operating-system"]
+      },
+      "cursor": "arrow over the file list"
+    },
+    "changed": "Save As opens. The path /tmp/still-here.txt is typed and saved."
+  },
+  {
+    "start": 76.5,
+    "end": 90.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ps -C mousepad,xfce4-terminal -o pid,pcpu,cmd",
+        "rows": ["mousepad", "xfce4-terminal --fullscreen ..."]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ps lists mousepad and xfce4-terminal as two live processes on one machine."
+  },
+  {
+    "start": 90.5,
+    "end": 98.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "previous": "ps table still visible",
+        "command": "pkill -x mousepad"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "pkill -x mousepad is typed and run. No error line appears."
+  },
+  {
+    "start": 98.8,
+    "end": 107.633,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          "ps -C mousepad,xfce4-terminal -o pid,pcpu,cmd",
+          "pkill -x mousepad",
+          "cat /tmp/still-here.txt"
+        ],
+        "file_contents": "The OS keeps this file.",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "cat /tmp/still-here.txt prints The OS keeps this file. after Mousepad is gone. The prompt waits until the file ends."
+  }
+]

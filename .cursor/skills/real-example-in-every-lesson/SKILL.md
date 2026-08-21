@@ -2,10 +2,9 @@
 name: Real example in every lesson
 description: >-
   Use when recording a course lesson. Film the feature from 0% to 100% on
-  camera. Run [Research the current
-  lesson](sand-workflow:research-the-current-lesson) first. Examples are never
-  smoke tests. A viewer must be able to reproduce the feature from the MP4
-  alone.
+  camera. Run /research-the-current-lesson first and film from its brief.
+  Examples are never smoke tests. A viewer must be able to reproduce the feature
+  from the MP4 alone.
 ---
 # Real example in every lesson
 
@@ -17,7 +16,7 @@ The model will naturally want to skip setup, film only the last verb, and pick `
 
 ## Before this skill
 
-Run [Research the current lesson](sand-workflow:research-the-current-lesson) first. That skill owns learning the material, live operation, and choosing the human example for **this** lesson only.
+Run `/research-the-current-lesson` (`.cursor/skills/2-research-the-lesson/research-the-current-lesson/SKILL.md`) first, and film from the brief it leaves at `courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md` with `status: ready`. That skill owns learning the material, live operation, and choosing the human example for **this** lesson only.
 
 Do not run a second shallow search here. If that brief does not exist yet, stop and do it. If the example was chosen from habit, send it back.
 
@@ -66,7 +65,7 @@ Research can happen off-camera. Creating the lesson object cannot.
 
 ## Before ffmpeg (preflight)
 
-You already have the lesson brief from [Research the current lesson](sand-workflow:research-the-current-lesson). Then write the on-camera path: the exact UI steps the viewer must see, in order.
+You already have the lesson brief from `/research-the-current-lesson`. Then write the on-camera path: the exact UI steps the viewer must see, in order.
 
 - If any step is "I already wrote this file" or "this already exists", reject the plan. Do not start the recorder.
 - If the example is a smoke test or was chosen without that research, reject the plan.

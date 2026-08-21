@@ -11,7 +11,7 @@ Each skill is the gate for its own stage. Run them in order and do not open the 
 ## Skill order (required)
 
 1. **New course** — [Build a course syllabus](.cursor/skills/1-plan-the-course/build-a-course-syllabus/SKILL.md). Intake first, then live research, then a high-level spine, written to `courses/<course-slug>/syllabus.md` and accepted by the user. Do not write per-lesson shot lists here.
-2. **Before each lesson** — [Research the current lesson](.cursor/skills/research-the-current-lesson/SKILL.md). Lock onto that lesson only. Master the live material, then pick the human example.
+2. **Before each lesson** — [Research the current lesson](.cursor/skills/2-research-the-lesson/research-the-current-lesson/SKILL.md). Lock onto that lesson only. Master the material to teaching depth, operate it live, establish best practice, then pick the human example, and write it all to `courses/<course-slug>/lessons/<NN>-<lesson-slug>/brief.md`. Filming starts from a `ready` brief and from nothing else.
 3. **Film** — all three, together:
    - [Human screen recordings](.cursor/skills/human-screen-recordings/SKILL.md)
    - [Real example in every lesson](.cursor/skills/real-example-in-every-lesson/SKILL.md)

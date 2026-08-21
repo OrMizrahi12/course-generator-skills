@@ -12,6 +12,7 @@ It is **not** writing the Linux kernel, not Linux From Scratch, and not installi
 
 1. A HyperFrames visualization of **this** concept (especially dense in Acts I–III).
 2. The same concept proven on **this** Ubuntu 24.04 GNU/Linux machine, 0% to 100%: create, path, result.
+3. If the lesson uses a terminal: font at about **1.75×** desktop default (three-quarters larger, e.g. 11pt → 19pt) before recording. The window still fills the screen.
 
 Windows, macOS, other distros, bootloaders, and Android appear as **labeled pictures** unless this machine can prove the Linux side live. We never fake a boot of another OS.
 

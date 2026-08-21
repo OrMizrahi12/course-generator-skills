@@ -23,10 +23,12 @@ Never:
 - Use a fixed delay between keys (`sleep(0.1)` every character) or a flat `random.uniform` on every key.
 - Wander the mouse in a random box while waiting.
 - Start recording while the cursor is parked on the bezel (`y ≈ 0` or `x ≈ 0`).
+- Record a terminal at the desktop's default small font. Command text must be about 1.75× larger than default.
 
 Always:
 
 - **Before ffmpeg starts**, make every window that will appear in the take fill the screen (maximize or fullscreen). Confirm it from a still frame. If a second window opens mid-take, maximize it before it is the subject of the shot.
+- **Before ffmpeg starts**, if the take includes a terminal, set the terminal font to about **1.75×** the desktop default (three-quarters larger, e.g. 11pt → 19pt) so command text is readable in 1920×1080. Confirm from a still frame. Default-small terminal text is a failed take.
 - Drive a **high-frequency pointer stream** (hundreds of updates per second, 1px steps, flush every event) so a 60fps recording never shows a jump.
 - Type **one key at a time** with real key-down and key-up (dwell), not an instant press.
 - Park the pointer in a normal rest spot **before** the recorder starts.
@@ -35,9 +37,10 @@ Always:
 
 1. Note screen size. Keep a ~18px margin from every edge unless the target itself is near the edge.
 2. Maximize the subject window so it covers the full display. Do not start the recorder on a restored/small window, a split layout, or a browser that leaves desktop chrome visible around it.
-3. Read the current pointer. If it is on the bezel, lift it inward first (do not crawl the edge). Then move to a rest point a person would actually leave the mouse: mid-desktop, slightly off-center, not a corner. Example rest: around 55–60% width, 50% height.
-4. Start the recorder only after the pointer is at rest **and** the window fills the screen.
-5. Record 60fps, include the hardware cursor (`-draw_mouse 1` on X11). No narration unless asked.
+3. If this lesson runs commands in a terminal: enlarge the terminal **font** to about 1.75× default (three-quarters larger) before the recorder starts. The window still fills the screen; the letters must be big. Do not leave JetBrains Mono 11 (or equivalent) on a 1920×1080 take.
+4. Read the current pointer. If it is on the bezel, lift it inward first (do not crawl the edge). Then move to a rest point a person would actually leave the mouse: mid-desktop, slightly off-center, not a corner. Example rest: around 55–60% width, 50% height.
+5. Start the recorder only after the pointer is at rest **and** the window fills the screen **and** (if a terminal is in the shot) the font is 1.75× default.
+6. Record 60fps, include the hardware cursor (`-draw_mouse 1` on X11). No narration unless asked.
 
 ## Mouse: ballistic then correct
 
@@ -114,4 +117,4 @@ Typical session: maximize the window to fill the screen → `h = HumanInput(widt
 
 ## Done when
 
-A person watching the MP4 should not see a window that fails to fill the screen, edge-crawling, teleporting, pasted text, or a metronome cadence. Consecutive 60fps frames show the cursor mid-path, and letters appear one at a time with faster runs inside words and slower gaps between them.
+A person watching the MP4 should not see a window that fails to fill the screen, edge-crawling, teleporting, pasted text, a metronome cadence, or terminal text at default-small size. Consecutive 60fps frames show the cursor mid-path, and letters appear one by one with faster runs inside words and slower gaps between them. Terminal glyphs must be readable at 1920×1080 without squinting.

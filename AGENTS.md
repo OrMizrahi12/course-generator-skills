@@ -23,3 +23,4 @@ Use every skill below. Do not skip one because the lesson "seems simple". Do not
 - No narration in the video or in the JSON.
 - Every lesson is filmed 0% to 100%: creation, path, and result. Never omit even 1% of the path, including as off-camera setup.
 - Examples are never smoke tests.
+- **Terminal text size:** any lesson that shows a terminal must use a large font so the viewer can read every character. Set the terminal font to about **1.75×** the desktop default (three-quarters larger — e.g. JetBrains Mono 11 → 19). Do this before ffmpeg. A take with default-small terminal text is a failed take.

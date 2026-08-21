@@ -72,6 +72,7 @@ You already have the lesson brief from [Research the current lesson](sand-workfl
 - If the example is a smoke test or was chosen without that research, reject the plan.
 - The timeline must include those create/path steps as first-class actions.
 - A timeline that starts at the last verb (type `/course-hello`, hold Pinned, ask the agent to use a tool) is an automatic fail.
+- If the lesson uses a terminal: the on-camera path includes setting (or confirming) a **1.75× default** terminal font before typing commands. Small default text is an automatic fail.
 
 ## Invalid takes (delete them)
 

@@ -1,0 +1,156 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 08 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 5.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {"kicker": "LESSON 08", "title": "Linux is the kernel. The engine."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 08 and Linux is the kernel. The engine."
+  },
+  {
+    "start": 5.0,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {
+        "photo": "Linus Torvalds, arms crossed, grey polo",
+        "tag": "HELSINKI, 1991",
+        "name": "Linus",
+        "line": "He wrote a Unix clone from scratch. That clone is the kernel."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A photograph of Linus Torvalds is labeled Linus."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {
+        "photo": "Suzuki car engine bay from above",
+        "tag": "ONE PIECE",
+        "name": "The engine",
+        "line": "The kernel talks to the metal. It is not the whole car."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A car-engine photograph is labeled The engine."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "KERNEL.ORG",
+        "name": "Linux",
+        "line": "The word Linux, strictly, is this engine — not every file on disk."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Linux, the kernel, not every file on disk."
+  },
+  {
+    "start": 29.85,
+    "end": 37.867,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {
+        "photo": "Suzuki car engine bay from above",
+        "tag": "ON THIS MACHINE",
+        "name": "Ask the engine",
+        "line": "uname names the kernel. It does not list the whole computer."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The engine photograph returns with Ask the engine and uname."
+  },
+  {
+    "start": 37.867,
+    "end": 50.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "08"},
+      "main": {
+        "line": "The kernel is one piece. Ask it its name and release.",
+        "cards": ["Linus, 1991", "The engine", "Linux"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Linus, 1991, The engine, Linux."
+  },
+  {
+    "start": 50.9,
+    "end": 51.417,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.417,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 57.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "uname -s", "output": "Linux"},
+      "cursor": "I-beam, center"
+    },
+    "changed": "uname -s is typed and prints Linux."
+  },
+  {
+    "start": 57.5,
+    "end": 63.317,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["uname -s", "uname -r"],
+        "kernel_name": "Linux",
+        "kernel_release": "6.12.94+",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "uname -r prints 6.12.94+. The prompt waits until the file ends."
+  }
+]

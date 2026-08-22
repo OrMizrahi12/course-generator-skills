@@ -1,0 +1,250 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.0,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-83-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens windowed playing the visualization."
+  },
+  {
+    "start": 1.0,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 83 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "kicker": "LESSON 83",
+        "title": "Write snap.sh with a shebang. chmod +x. Run it. Hold the archive."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "tag": "SHEBANG",
+        "heading": "nano",
+        "line": "First line must be #!/bin/bash. Then tar packs linux-workshop to workshop-bak.tar.gz.",
+        "photo": "spool of cream twine on wood"
+      }
+    },
+    "changed": "A twine photo appears with the nano card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "tag": "EXECUTE",
+        "heading": "chmod",
+        "line": "chmod +x snap.sh. Without +x the kernel will not run the script.",
+        "photo": "white paper strip tied in a knot"
+      }
+    },
+    "changed": "A knot photo appears with the chmod card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "tag": "RUN",
+        "heading": "./snap.sh",
+        "line": "./snap.sh. The shebang sends the file to bash. tar writes the archive in home.",
+        "photo": "coils of thick blue rope"
+      }
+    },
+    "changed": "Blue rope coils appear with the run card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "archive",
+        "line": "Last ls -l /home/ubuntu/workshop-bak.tar.gz must hold a real file with a size.",
+        "photo": "close-up of woven jute cloth"
+      }
+    },
+    "changed": "Jute cloth appears with the archive card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "83"},
+      "main": {
+        "line": "shebang. chmod. run. Hold the archive.",
+        "cards": ["nano / #!/bin/bash", "chmod / +x snap.sh", "Hold / workshop-bak.tar.gz"]
+      }
+    },
+    "changed": "Three end cards hold the twine, the knot, and the jute."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Run Program... highlighted."
+  },
+  {
+    "start": 53.2,
+    "end": 54.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "The pointer highlights Terminal Emulator."
+  },
+  {
+    "start": 54.8,
+    "end": 57.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.2,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 61.0,
+    "end": 64.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $"],
+      "typing": "nano snap.sh"
+    },
+    "changed": "cd runs. nano snap.sh is typed."
+  },
+  {
+    "start": 64.0,
+    "end": 85.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "snap.sh",
+      "modified": true,
+      "buffer": [
+        "#!/bin/bash",
+        "tar -czf /home/ubuntu/workshop-bak.tar.gz -C /home/ubuntu linux-workshop"
+      ]
+    },
+    "changed": "nano opens snap.sh as a new file. The shebang and tar line are typed."
+  },
+  {
+    "start": 85.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "snap.sh",
+      "status": "[ Wrote 3 lines ]",
+      "buffer": [
+        "#!/bin/bash",
+        "tar -czf /home/ubuntu/workshop-bak.tar.gz -C /home/ubuntu linux-workshop"
+      ]
+    },
+    "changed": "nano writes three lines of snap.sh to disk."
+  },
+  {
+    "start": 90.0,
+    "end": 97.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "chmod +x snap.sh"
+    },
+    "changed": "nano exits. chmod +x snap.sh is typed."
+  },
+  {
+    "start": 97.0,
+    "end": 106.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "./snap.sh",
+      "stdout": "",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "./snap.sh runs and returns to the prompt with no error."
+  },
+  {
+    "start": 106.0,
+    "end": 109.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "ls -l /home/ubuntu/workshop-bak.tar.gz"
+    },
+    "changed": "ls -l of the archive is typed."
+  },
+  {
+    "start": 109.0,
+    "end": 112.083,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /home/ubuntu/workshop-bak.tar.gz",
+      "stdout": "-rw-r--r-- 1 ubuntu ubuntu 3020 Aug 22 10:24 /home/ubuntu/workshop-bak.tar.gz",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds workshop-bak.tar.gz as a 3020-byte regular file."
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.0,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-86-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens windowed playing the visualization."
+  },
+  {
+    "start": 1.0,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 86 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "kicker": "LESSON 86",
+        "title": "pack() is the tool. Call it twice. Hold both archives."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "tag": "DEFINE",
+        "heading": "pack()",
+        "line": "name () { COMMANDS ; }. One body. Arguments become $1 inside the call.",
+        "photo": "socket wrench set laid out by size"
+      }
+    },
+    "changed": "A socket-set photo appears with the pack() card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "tag": "BODY",
+        "heading": "tar",
+        "line": "pack writes tar -czf \"$1\" of linux-workshop. Type the tar line once.",
+        "photo": "green pincers on yellow cloth"
+      }
+    },
+    "changed": "A pincers photo appears with the tar card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "tag": "TWICE",
+        "heading": "two calls",
+        "line": "pack /tmp/workshop-fn-a.tar.gz then pack /tmp/workshop-fn-b.tar.gz.",
+        "photo": "a single wood screw"
+      }
+    },
+    "changed": "A screw photo appears with the two-calls card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "both",
+        "line": "Last ls -l of both archives must hold two real files with sizes.",
+        "photo": "scattered steel nails"
+      }
+    },
+    "changed": "A nails photo appears with the both-archives card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "86"},
+      "main": {
+        "line": "Define. Call twice. Hold both archives.",
+        "cards": ["pack() / the tool", "twice / two calls", "Hold / two archives"]
+      }
+    },
+    "changed": "Three end cards hold the sockets, the screw, and the nails."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Run Program... highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "The pointer highlights Terminal Emulator."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed with workspace $."
+  },
+  {
+    "start": 54.8,
+    "end": 57.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.0,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 61.0,
+    "end": 65.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $"],
+      "typing": "nano twice.sh"
+    },
+    "changed": "cd runs. nano twice.sh is typed."
+  },
+  {
+    "start": 65.0,
+    "end": 94.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "twice.sh",
+      "modified": true,
+      "status": "[ New File ]",
+      "buffer": [
+        "#!/bin/bash",
+        "pack() {",
+        "    tar -czf \"$1\" -C /home/ubuntu linux-workshop",
+        "}",
+        "pack /tmp/workshop-fn-a.tar.gz",
+        "pack /tmp/workshop-fn-b.tar.gz"
+      ]
+    },
+    "changed": "nano opens a new twice.sh. pack() is typed and called twice."
+  },
+  {
+    "start": 94.0,
+    "end": 95.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "twice.sh",
+      "prompt": "File Name to Write: twice.sh"
+    },
+    "changed": "nano asks for the file name to write."
+  },
+  {
+    "start": 95.0,
+    "end": 96.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $ nano twice.sh"]
+    },
+    "changed": "nano exits. The prompt is back."
+  },
+  {
+    "start": 96.0,
+    "end": 103.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "chmod +x twice.sh"
+    },
+    "changed": "chmod +x twice.sh is typed."
+  },
+  {
+    "start": 103.0,
+    "end": 108.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "./twice.sh",
+      "stdout": "",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "./twice.sh runs and returns to the prompt with no error."
+  },
+  {
+    "start": 108.0,
+    "end": 118.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "ls -l /tmp/workshop-fn-a.tar.gz /tmp/workshop-fn-b.tar.gz"
+    },
+    "changed": "ls -l of both archives is typed."
+  },
+  {
+    "start": 118.0,
+    "end": 125.317,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /tmp/workshop-fn-a.tar.gz /tmp/workshop-fn-b.tar.gz",
+      "stdout": [
+        "-rw-r--r-- 1 ubuntu ubuntu 3163 Aug 22 11:04 /tmp/workshop-fn-a.tar.gz",
+        "-rw-r--r-- 1 ubuntu ubuntu 3163 Aug 22 11:04 /tmp/workshop-fn-b.tar.gz"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds two 3163-byte archives written by pack()."
+  }
+]

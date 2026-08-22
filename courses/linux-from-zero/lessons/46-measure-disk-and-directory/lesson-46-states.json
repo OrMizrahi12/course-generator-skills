@@ -1,0 +1,224 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-46-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "kicker": "LESSON 46",
+        "title": "The tree drawing is not the disk. df measures the tank. du weighs the papers in a folder."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "tag": "THE DISK",
+        "heading": "df reads the tank",
+        "line": "df -h / on this machine reports the overlay filesystem: 252G size, 17G used, 223G free.",
+        "photo": "rural concrete water tank"
+      }
+    },
+    "changed": "A water-tank photo appears with the disk card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "tag": "THE FOLDER",
+        "heading": "du weighs a tree",
+        "line": "du -sh ~/linux-workshop is 16K. That is the papers in the workshop, not the 252G tank.",
+        "photo": "vintage kitchen scale with green apples"
+      }
+    },
+    "changed": "A kitchen-scale photo appears with the folder card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "tag": "HUMAN SIZES",
+        "heading": "-h speaks in K and G",
+        "line": "GNU -h prints powers of 1024. The rent papers folder is 4.0K. Home is 3.5G.",
+        "photo": "yellow sewing measuring tape"
+      }
+    },
+    "changed": "A measuring-tape photo appears with the human-size card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "tag": "NOT THE DRAWING",
+        "heading": "A tall barn can be empty",
+        "line": "ls shows names. du shows how much those names use. Do not mount a new filesystem here.",
+        "photo": "timber wheat-barn interior"
+      }
+    },
+    "changed": "A barn-interior photo appears with the empty-volume card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "46"},
+      "main": {
+        "end_line": "df -h /. Then du -sh the workshop, the papers, home, and both folders together.",
+        "cards": [
+          {"title": "Disk", "sub": "df", "photo": "water tank"},
+          {"title": "Folder", "sub": "du", "photo": "kitchen scale"},
+          {"title": "Human", "sub": "-h", "photo": "measuring tape"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize df, du, and -h."
+  },
+  {
+    "start": 51.05,
+    "end": 52.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.9,
+    "end": 53.95,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.95,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 60.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.2,
+    "end": 65.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "df -h /",
+      "output": [
+        "Filesystem      Size  Used Avail Use% Mounted on",
+        "overlay         252G   17G  223G   7% /"
+      ]
+    },
+    "changed": "df -h / reports overlay 252G with 223G free."
+  },
+  {
+    "start": 65.4,
+    "end": 71.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "du -sh ~/linux-workshop",
+      "output": "16K\t/home/ubuntu/linux-workshop"
+    },
+    "changed": "du -sh of the workshop prints 16K."
+  },
+  {
+    "start": 71.2,
+    "end": 76.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "du -sh ~/rent-receipts",
+      "output": "4.0K\t/home/ubuntu/rent-receipts"
+    },
+    "changed": "du -sh of the rent papers prints 4.0K."
+  },
+  {
+    "start": 76.6,
+    "end": 88.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "du -sh ~",
+      "output": "3.5G\t/home/ubuntu"
+    },
+    "changed": "du -sh of home prints 3.5G."
+  },
+  {
+    "start": 88.4,
+    "end": 95.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt_line": "workspace $ du -sh ~/linux-workshop ~/rent-receipts"
+    },
+    "changed": "du -sh of both folders is typed."
+  },
+  {
+    "start": 95.2,
+    "end": 99.85,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "du -sh ~/linux-workshop ~/rent-receipts",
+      "output": [
+        "16K\t/home/ubuntu/linux-workshop",
+        "4.0K\t/home/ubuntu/rent-receipts"
+      ],
+      "disk_still_visible": "overlay 252G 17G 223G 7% /",
+      "prompt": "workspace $"
+    },
+    "changed": "du -sh of both folders shows 16K and 4.0K; the overlay tank numbers remain on screen."
+  }
+]

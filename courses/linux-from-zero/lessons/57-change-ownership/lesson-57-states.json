@@ -1,0 +1,200 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-57-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "kicker": "LESSON 57",
+        "title": "A lock belongs to someone. Hand Sam the September paper. chown then chgrp."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "tag": "THE PAPER",
+        "heading": "sep-due-note.txt",
+        "line": "ls -l starts ubuntu ubuntu. Empty September due. Sam exists. The paper is still yours.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the paper card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "tag": "CHOWN",
+        "heading": "sudo chown sam",
+        "line": "Owner becomes sam. Group stays ubuntu until you say otherwise. Needs sudo.",
+        "photo": "gold antique mailbox name plate"
+      }
+    },
+    "changed": "A mailbox name-plate photo appears with the chown card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "tag": "CHGRP",
+        "heading": "sudo chgrp sam",
+        "line": "Group becomes sam. Two commands, no colon. ls -l must show sam sam.",
+        "photo": "padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the chgrp card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "tag": "LS -L",
+        "heading": "The name on the door",
+        "line": "The bits are the same. The person changed. Locks belong to someone.",
+        "photo": "two empty chairs and one blue table"
+      }
+    },
+    "changed": "A two-chair terrace photo appears with the name card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "57"},
+      "main": {
+        "end_line": "ls -l. sudo chown sam. sudo chgrp sam. Hold sam sam.",
+        "cards": [
+          {"title": "Yours", "sub": "ubuntu ubuntu", "photo": "legal pad"},
+          {"title": "Owner", "sub": "chown", "photo": "mailbox plate"},
+          {"title": "Group", "sub": "chgrp", "photo": "padlock and keys"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize yours, chown, and chgrp."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt_after": "linux-workshop $"
+    },
+    "changed": "cd ~/linux-workshop changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 62.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l sep-due-note.txt",
+      "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 22 02:52 sep-due-note.txt"
+    },
+    "changed": "ls -l shows sep-due-note.txt owned by ubuntu ubuntu."
+  },
+  {
+    "start": 68.0,
+    "end": 80.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo chown sam sep-due-note.txt",
+      "verify": "ls -l sep-due-note.txt",
+      "output": "-rw-r--r-- 1 sam ubuntu 0 Aug 22 02:52 sep-due-note.txt"
+    },
+    "changed": "sudo chown sam changes owner to sam; group stays ubuntu."
+  },
+  {
+    "start": 80.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo chgrp sam sep-due-note.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "sudo chgrp sam runs with no printed output."
+  },
+  {
+    "start": 90.0,
+    "end": 98.667,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l sep-due-note.txt",
+      "output": "-rw-r--r-- 1 sam sam 0 Aug 22 02:52 sep-due-note.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds owner sam and group sam."
+  }
+]

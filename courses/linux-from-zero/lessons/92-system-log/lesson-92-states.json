@@ -1,0 +1,171 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 92 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "kicker": "LESSON 92",
+        "title": "Read a real line from dmesg. This host keeps kernel memory."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "tag": "LOG",
+        "heading": "/var/log",
+        "line": "ls /var/log. apt/history.log recorded the iproute2 install.",
+        "photo": "stone sundial on a pediment"
+      }
+    },
+    "changed": "A sundial photo appears with the /var/log card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "tag": "APT",
+        "heading": "history.log",
+        "line": "tail the apt history that this session wrote.",
+        "photo": "yellow patch-panel bundles"
+      }
+    },
+    "changed": "A patch-panel photo appears with the apt history card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "tag": "KERNEL",
+        "heading": "dmesg",
+        "line": "dmesg prints the kernel ring buffer. No sudo needed here.",
+        "photo": "brass hourglass with flowing sand"
+      }
+    },
+    "changed": "An hourglass photo appears with the dmesg card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "line",
+        "line": "Last dmesg | head -n 1 holds Linux version 6.12.94+.",
+        "photo": "rusty cover with a keyhole slot"
+      }
+    },
+    "changed": "A keyhole-slot photo appears with the hold card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "92"},
+      "main": {
+        "line": "Log. dmesg. Hold the kernel line.",
+        "cards": ["/var/log / apt history", "dmesg / ring buffer", "Hold / 6.12.94+"]
+      }
+    },
+    "changed": "Three end cards hold the sundial, the hourglass, and the keyhole slot."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /var/log",
+      "stdout": ["apt", "dpkg.log", "journal"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /var/log lists apt, dpkg.log, journal, and the other log names."
+  },
+  {
+    "start": 68.0,
+    "end": 76.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tail -n 6 /var/log/apt/history.log",
+      "stdout": [
+        "Start-Date: 2026-08-22  13:00:46",
+        "Commandline: apt-get install -y iproute2",
+        "Requested-By: ubuntu (1000)"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "tail holds the iproute2 install row this session wrote."
+  },
+  {
+    "start": 76.0,
+    "end": 85.167,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "dmesg | head -n 1",
+      "stdout": ["[    0.000000] Linux version 6.12.94+ (root@6d1e61b33cba) (gcc (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Fri Aug 21 17:54:13 UTC 2026"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "dmesg | head -n 1 holds Linux version 6.12.94+."
+  }
+]

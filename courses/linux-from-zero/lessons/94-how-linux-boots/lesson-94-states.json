@@ -1,0 +1,217 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.1,
+    "on_screen": {
+      "window": "mpv",
+      "title": "lesson-94-viz.mp4 - mpv",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "mpv opens on the visualization file."
+  },
+  {
+    "start": 1.1,
+    "end": 1.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {"kicker": "LESSON 94"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 94 are on screen."
+  },
+  {
+    "start": 1.5,
+    "end": 6.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "kicker": "LESSON 94",
+        "title": "GRUB, kernel, initramfs, init. This host has no files in /boot."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.1,
+    "end": 14.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "tag": "PICTURE",
+        "heading": "GRUB",
+        "line": "The bootloader is a labeled picture. /boot on this disk is empty.",
+        "photo": "classic GRUB text menu"
+      }
+    },
+    "changed": "A GRUB menu photo appears with the bootloader card."
+  },
+  {
+    "start": 14.1,
+    "end": 22.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "tag": "KERNEL",
+        "heading": "cmdline",
+        "line": "The running kernel keeps its boot arguments in /proc/cmdline.",
+        "photo": "Tux the Linux mascot"
+      }
+    },
+    "changed": "Tux appears with the cmdline card."
+  },
+  {
+    "start": 22.1,
+    "end": 30.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "tag": "PICTURE",
+        "heading": "initramfs",
+        "line": "The early RAM disk is a picture here. There is no initrd file in /boot.",
+        "photo": "72-pin SIMM RAM stick"
+      }
+    },
+    "changed": "A RAM-stick photo appears with the initramfs card."
+  },
+  {
+    "start": 30.1,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "PID 1",
+        "line": "Last cat /proc/1/comm holds tini. Do not fake systemd.",
+        "photo": "brass door knocker on a wooden door"
+      }
+    },
+    "changed": "A door-knocker photo appears with the PID 1 card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "94"},
+      "main": {
+        "line": "Empty /boot. Live cmdline. Hold tini.",
+        "cards": ["/boot / empty on this host", "cmdline / root=/dev/vda", "Hold / tini"]
+      }
+    },
+    "changed": "Three end cards hold the GRUB picture, Tux, and the knocker."
+  },
+  {
+    "start": 51.1,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.8,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 65.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -la /boot",
+      "stdout": [
+        "total 8",
+        "drwxr-xr-x 2 root root 4096 Jan  1  1970 .",
+        "drwxr-xr-x 1 root root 4096 Aug 22 11:02 .."
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -la /boot shows only . and .. . The directory is empty."
+  },
+  {
+    "start": 65.5,
+    "end": 71.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/cmdline",
+      "stdout": [
+        "console=ttyS0 root=/dev/vda random.trust_cpu=on ip=172.30.0.2::172.30.0.1:255.255.255.0::eth0:off rw loglevel=7 earlyprintk=ttyS0 print-fatal-signals=1 systemd.unified_cgroup_hierarchy=1 systemd.setenv=SWAP_SIZE_MB=0 reboot=k panic=1 nomodule pci=off i8042.noaux=1 i8042.nomux=1 i8042.dumbkbd=1 clocksource=kvm-clock tsc=unstable nosoftlockup pci=off root=/dev/vda rw virtio_mmio.device=4K@0xc0001000:5 virtio_mmio.device=4K@0xc0002000:6 virtio_mmio.device=4K@0xc0003000:7 virtio_mmio.device=4K@0xc0004000:8 virtio_mmio.device=4K@0xc0005000:9"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /proc/cmdline holds the kernel boot arguments, including root=/dev/vda and nomodule."
+  },
+  {
+    "start": 71.5,
+    "end": 77.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -p 1 -o pid,comm",
+      "stdout": ["PID COMMAND", "  1 tini"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ps -p 1 -o pid,comm shows PID 1 is tini."
+  },
+  {
+    "start": 77.5,
+    "end": 88.583,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/1/comm",
+      "stdout": ["tini"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /proc/1/comm holds tini."
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "name": "Course Generator",
+  "start": "bash .cursor/scripts/setup-recording-desktop.sh"
+}

@@ -1,0 +1,215 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 95 are on screen."
+  },
+  {
+    "start": 1.2,
+    "end": 6.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "kicker": "LESSON 95",
+        "title": "systemd is the usual init. On this host PID 1 is tini."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.1,
+    "end": 14.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "tag": "USUAL",
+        "heading": "systemd",
+        "line": "A normal Ubuntu box uses systemd as PID 1. This host does not.",
+        "photo": "pile of household matches, one burnt"
+      }
+    },
+    "changed": "A matches photo appears with the systemd card."
+  },
+  {
+    "start": 14.1,
+    "end": 22.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "tag": "THIS HOST",
+        "heading": "tini",
+        "line": "systemctl is-system-running prints offline. PID 1 is tini 0.19.0.",
+        "photo": "steam locomotive running gear"
+      }
+    },
+    "changed": "A locomotive-gear photo appears with the tini card."
+  },
+  {
+    "start": 22.1,
+    "end": 30.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "tag": "UNIT FILE",
+        "heading": ".service",
+        "line": "A .service file is what systemd would read. Do not systemctl start.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the .service card."
+  },
+  {
+    "start": 30.1,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "dbus.service",
+        "line": "Last cat /lib/systemd/system/dbus.service holds the shipped unit.",
+        "photo": "brass door knocker on a wooden door"
+      }
+    },
+    "changed": "A door-knocker photo appears with the dbus.service card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "95"},
+      "main": {
+        "line": "offline. tini. Hold the unit file.",
+        "cards": ["systemctl / offline", "PID 1 / tini", "Hold / dbus.service"]
+      }
+    },
+    "changed": "Three end cards hold the gear, the matches, and the legal pad."
+  },
+  {
+    "start": 51.1,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.8,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "systemctl is-system-running",
+      "stdout": ["offline"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "systemctl is-system-running prints offline."
+  },
+  {
+    "start": 68.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/1/comm",
+      "stdout": ["tini"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /proc/1/comm holds tini."
+  },
+  {
+    "start": 75.0,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /lib/systemd/system/dbus.service",
+      "stdout": ["/lib/systemd/system/dbus.service"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /lib/systemd/system/dbus.service prints the unit path."
+  },
+  {
+    "start": 82.0,
+    "end": 95.833,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /lib/systemd/system/dbus.service",
+      "stdout": [
+        "[Unit]",
+        "Description=D-Bus System Message Bus",
+        "Documentation=man:dbus-daemon(1)",
+        "Requires=dbus.socket",
+        "# Do not stop on shutdown",
+        "DefaultDependencies=no",
+        "Wants=sysinit.target",
+        "After=sysinit.target basic.target",
+        "[Service]",
+        "Type=notify",
+        "NotifyAccess=main",
+        "ExecStart=@/usr/bin/dbus-daemon @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only",
+        "ExecReload=/usr/bin/dbus-send --print-reply --system --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig",
+        "OOMScoreAdjust=-900"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /lib/systemd/system/dbus.service holds the shipped [Unit] and [Service] Type=notify."
+  }
+]

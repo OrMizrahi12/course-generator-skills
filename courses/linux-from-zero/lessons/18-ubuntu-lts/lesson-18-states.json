@@ -1,0 +1,162 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 18 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "kicker": "LESSON 18",
+        "title": "This Debian-family box is Ubuntu LTS. The name and the clock are on disk."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 18 and This Debian-family box is Ubuntu LTS. The name and the clock are on disk."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "mark": "Ubuntu Circle of Friends, orange disc",
+        "tag": "THIS FLAVOR",
+        "name": "Ubuntu",
+        "line": "A Debian child with its own identity. The Circle of Friends is the mark. We still do not boot another OS."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Ubuntu Circle of Friends is labeled Ubuntu, this flavor."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "photo": "wall calendar pages for September–November 2007, October 24 boxed in red",
+        "tag": "THE CLOCK",
+        "name": "LTS",
+        "line": "ubuntu.com: Long Term Support every two years. Five years of standard security maintenance. This one is 24.04."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A wall-calendar photograph is labeled LTS, the clock."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "marks": ["Kubuntu blue gear", "Xubuntu blue mouse"],
+        "tag": "OFFICIAL FLAVORS",
+        "name": "Kubuntu, Xubuntu",
+        "line": "ubuntu.com: community desktops on the Ubuntu archive. Pictures only. This host’s name is still Ubuntu, not a flavor."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Kubuntu and Xubuntu marks are labeled official flavors, pictures only."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "24.04 LTS",
+        "line": "PRETTY_NAME is Ubuntu 24.04.4 LTS. UBUNTU_CODENAME is noble. Those two lines name this flavor."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled 24.04 LTS, with PRETTY_NAME and UBUNTU_CODENAME."
+  },
+  {
+    "start": 38.05,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "18"},
+      "main": {
+        "line": "Ubuntu is the flavor. LTS is the clock. os-release writes both.",
+        "cards": ["Ubuntu Picture", "LTS Picture", "This 24.04 Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Ubuntu Picture, LTS Picture, This 24.04 Live next."
+  },
+  {
+    "start": 50.95,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.8,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "grep PRETTY_NAME= /etc/os-release",
+        "output": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\""
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "grep PRETTY_NAME= /etc/os-release is typed and prints Ubuntu 24.04.4 LTS."
+  },
+  {
+    "start": 66.5,
+    "end": 74.417,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["grep PRETTY_NAME= /etc/os-release", "grep UBUNTU_CODENAME= /etc/os-release"],
+        "pretty_name": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"",
+        "ubuntu_codename": "UBUNTU_CODENAME=noble",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "grep UBUNTU_CODENAME= /etc/os-release prints noble. That line stays until the file ends."
+  }
+]

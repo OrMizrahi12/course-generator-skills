@@ -1,0 +1,180 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {"background": "#080C14 with navy and amber glows", "kicker": "LESSON 24"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark, 24, and LESSON 24 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "kicker": "LESSON 24",
+        "title": "The pictures end here. This computer’s name is three facts: Linux kernel, GNU tools, Ubuntu 24.04."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 24 and The pictures end here. This computer’s name is three facts: Linux kernel, GNU tools, Ubuntu 24.04."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "mark": "Tux on a cream disc",
+        "tag": "KERNEL",
+        "name": "Linux",
+        "line": "uname prints the kernel name and release. That is one fact, not the whole box."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux on a cream disc is labeled Linux, kernel."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "mark": "white GNU wildebeest head",
+        "tag": "USERLAND",
+        "name": "GNU tools",
+        "line": "ls --version stamps GNU coreutils. This desktop box uses GNU, unlike Android’s kernel-only picture."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The GNU head is labeled GNU tools, userland."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "marks": ["Ubuntu Circle of Friends", "Debian red swirl"],
+        "tag": "DISTRO",
+        "name": "Ubuntu 24.04",
+        "line": "os-release ID and VERSION_ID name the box. Ubuntu is the Debian-family flavor on this host."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Ubuntu and Debian marks sit side by side, labeled Ubuntu 24.04, distro."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "photo": "two veterinary nameplates in a case, Wight and Sinclair, leather bag behind",
+        "tag": "THE NAME",
+        "name": "Three facts",
+        "line": "A nickname is not identification. Kernel, GNU stamp, and distro fields together are the name."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Brass nameplates are labeled Three facts."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "24"},
+      "main": {
+        "line": "This host is Linux + GNU + Ubuntu 24.04 Debian-family. We prove those three facts next.",
+        "cards": ["Linux kernel UNAME -SR", "GNU userland LS --VERSION", "Ubuntu 24.04 GREP ID="]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Linux kernel, GNU userland, Ubuntu 24.04."
+  },
+  {
+    "start": 51.0,
+    "end": 51.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "block caret after prompt"
+    },
+    "changed": "The visualization closes into a fullscreen terminal with an empty ~ $ prompt."
+  },
+  {
+    "start": 51.5,
+    "end": 53.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The I-beam sits in the middle of the empty white terminal."
+  },
+  {
+    "start": 53.8,
+    "end": 58.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "uname -sr",
+        "output": "Linux 6.12.94+",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "uname -sr is typed and prints Linux 6.12.94+."
+  },
+  {
+    "start": 58.5,
+    "end": 65.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["uname -sr", "ls --version"],
+        "uname": "Linux 6.12.94+",
+        "ls_version": "ls (GNU coreutils) 9.4",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls --version prints ls (GNU coreutils) 9.4 and the FSF copyright block."
+  },
+  {
+    "start": 65.5,
+    "end": 74.283,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["uname -sr", "ls --version", "grep ID= /etc/os-release"],
+        "uname": "Linux 6.12.94+",
+        "ls_version": "ls (GNU coreutils) 9.4",
+        "os_release": ["VERSION_ID=\"24.04\"", "ID=ubuntu"],
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "grep ID= /etc/os-release prints VERSION_ID=\"24.04\" and ID=ubuntu. Those lines stay until the file ends."
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 19 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "kicker": "LESSON 19",
+        "title": "Another family uses rpm and dnf. This host has apt, not dnf. Same kernel idea."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 19 and Another family uses rpm and dnf. This host has apt, not dnf. Same kernel idea."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "mark": "Fedora infinity f on a blue bubble",
+        "tag": "PICTURES ONLY",
+        "name": "Fedora",
+        "line": "fedoraproject.org: community distro, dnf, upstream of RHEL. We never boot Fedora here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Fedora infinity mark is labeled Fedora, pictures only."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "mark": "Red Hat fedora hat, red with a black band",
+        "tag": "ENTERPRISE LINE",
+        "name": "RHEL",
+        "line": "Red Hat: Fedora is the community upstream. RHEL is the commercially supported box. Still a picture."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Red Hat fedora is labeled RHEL, enterprise line, picture only."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "mark": "CentOS geometric arrows-and-squares mark",
+        "tag": "MIDSTREAM",
+        "name": "CentOS Stream",
+        "line": "centos.org: tracks just ahead of RHEL, between Fedora and the enterprise release. Picture only."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The CentOS mark is labeled CentOS Stream, midstream, picture only."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "apt, not dnf",
+        "line": "ls /usr/bin/apt finds a file. ls /usr/bin/dnf does not. Different family, same Linux kernel idea."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled apt, not dnf, on this host."
+  },
+  {
+    "start": 38.05,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "19"},
+      "main": {
+        "line": "Fedora / RHEL / CentOS use dnf. This Debian-family box uses apt. We do not boot the other family.",
+        "cards": ["Fedora Picture", "RHEL Picture", "This host Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Fedora Picture, RHEL Picture, This host Live next."
+  },
+  {
+    "start": 50.95,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.4,
+    "end": 59.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /usr/bin/apt",
+        "output": "/usr/bin/apt"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/bin/apt is typed and prints /usr/bin/apt."
+  },
+  {
+    "start": 59.8,
+    "end": 68.35,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /usr/bin/apt", "ls /usr/bin/dnf"],
+        "apt_path": "/usr/bin/apt",
+        "dnf_error": "ls: cannot access '/usr/bin/dnf': No such file or directory",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/bin/dnf prints No such file or directory. That error stays until the file ends."
+  }
+]

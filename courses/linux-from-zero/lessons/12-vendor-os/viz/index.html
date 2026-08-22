@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./assets/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #080C14; }
+      #root {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        background:
+          radial-gradient(ellipse 90% 70% at 18% 12%, rgba(21, 32, 56, 0.95), transparent 55%),
+          radial-gradient(ellipse 70% 60% at 88% 88%, rgba(28, 22, 12, 0.55), transparent 50%),
+          #080C14;
+        color: #F3EDE4; font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .clip { position: absolute; inset: 0; }
+      .wordmark { position: absolute; top: 48px; left: 64px; font-size: 13px; letter-spacing: 0.32em; font-weight: 600; color: rgba(243,237,228,0.55); }
+      .lesson-no { position: absolute; top: 44px; right: 64px; font-size: 22px; font-weight: 600; color: #E8A53A; }
+      .title-wrap { position: absolute; left: 64px; right: 64px; top: 280px; }
+      .kicker { font-size: 18px; letter-spacing: 0.22em; text-transform: uppercase; color: #E8A53A; margin: 0 0 28px; font-weight: 600; }
+      h1 { margin: 0; font-size: 78px; line-height: 0.95; font-weight: 650; letter-spacing: -0.03em; max-width: 1680px; }
+      .part { display: grid; grid-template-columns: 900px 1fr; gap: 72px; align-items: center; height: 100%; padding: 140px 80px 80px; box-sizing: border-box; }
+      .well { height: 720px; border-radius: 28px; background: #10141E; border: 1px solid rgba(243,237,228,0.08); display: grid; place-items: center; overflow: hidden; }
+      .well img { max-width: 70%; max-height: 70%; object-fit: contain; }
+      .well.photo img { max-width: none; max-height: none; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
+      .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; width: 92%; height: 70%; }
+      .pair .mark { background: #0C1018; border-radius: 20px; display: grid; place-items: center; }
+      .pair img { max-width: 62%; max-height: 62%; }
+      .disc { width: 520px; height: 520px; border-radius: 50%; background: #F3EDE4; display: grid; place-items: center; }
+      .disc img { max-width: 78%; max-height: 78%; }
+      .copy .tag { display: inline-block; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; color: #E8A53A; font-weight: 650; margin-bottom: 18px; }
+      .copy .name { font-size: 72px; line-height: 0.92; font-weight: 650; margin: 0 0 24px; }
+      .copy .line { font-size: 34px; line-height: 1.35; color: #8B93A7; margin: 0; max-width: 640px; }
+      .grid3 { position: absolute; left: 64px; right: 64px; top: 180px; bottom: 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+      .card { background: #10141E; border: 1px solid rgba(243,237,228,0.08); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; }
+      .card .shot { height: 480px; display: grid; place-items: center; background: #0C1018; padding: 24px; box-sizing: border-box; overflow: hidden; }
+      .card .shot img { max-width: 70%; max-height: 70%; object-fit: contain; }
+      .card .shot.photo { padding: 0; }
+      .card .shot.photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; max-width: none; max-height: none; }
+      .card h2 { margin: 0; padding: 24px 24px 8px; font-size: 30px; font-weight: 600; }
+      .card .sub { display: block; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #E8A53A; font-weight: 650; margin: 0 24px 24px; }
+      .end-line { position: absolute; left: 64px; top: 96px; font-size: 26px; color: #8B93A7; margin: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="50" data-width="1920" data-height="1080">
+      <div class="clip" data-start="0" data-duration="50" data-track-index="0">
+        <div class="wordmark">LINUX FROM ZERO</div>
+        <div class="lesson-no">12</div>
+      </div>
+      <section class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="title-wrap">
+          <p class="kicker" id="tk">Lesson 12</p>
+          <h1 id="th">This OS is inspectable. Vendor OSes are company boxes.</h1>
+        </div>
+      </section>
+      <section class="clip" data-start="5" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well" id="w1">
+            <div class="pair">
+              <div class="mark"><img src="./assets/windows-mark.png" alt="Windows" /></div>
+              <div class="mark"><img src="./assets/apple-white.png" alt="Apple" /></div>
+            </div>
+          </div>
+          <div class="copy" id="c1"><span class="tag">Pictures only</span><p class="name">Company OSes</p><p class="line">Windows and Mac stay company products. We never boot them here.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="13" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w2"><img src="./assets/padlock.jpg" alt="Padlock" /></div>
+          <div class="copy" id="c2"><span class="tag">Closed</span><p class="name">Their files</p><p class="line">You do not open their /etc. The company keeps the inside.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="21" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w3"><img src="./assets/files.jpg" alt="Open book" /></div>
+          <div class="copy" id="c3"><span class="tag">Open to read</span><p class="name">This machine</p><p class="line">/etc and /proc are files you can list and read as a normal user.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="29" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well" id="w4"><div class="disc"><img src="./assets/tux.png" alt="Tux" /></div></div>
+          <div class="copy" id="c4"><span class="tag">On this host</span><p class="name">Ask the files</p><p class="line">ls /etc names the config. cat /proc/version is the kernel as a file.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="37" data-duration="13" data-track-index="1">
+        <p class="end-line" id="el">Company boxes stay pictures. This machine you can read.</p>
+        <div class="grid3">
+          <article class="card" id="a1"><div class="shot"><img src="./assets/windows-mark.png" alt="" /></div><h2>Windows</h2><span class="sub">Picture</span></article>
+          <article class="card" id="a2"><div class="shot"><img src="./assets/apple-white.png" alt="" /></div><h2>Mac</h2><span class="sub">Picture</span></article>
+          <article class="card" id="a3"><div class="shot photo"><img src="./assets/files.jpg" alt="" /></div><h2>This Linux</h2><span class="sub">Inspectable</span></article>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const t = gsap.timeline({ paused: true });
+      t.fromTo("#tk", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+      t.fromTo("#th", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.4);
+      t.fromTo("#w1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 5.15);
+      t.fromTo("#c1", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 5.4);
+      t.fromTo("#w2", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 13.15);
+      t.fromTo("#c2", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 13.4);
+      t.fromTo("#w3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 21.15);
+      t.fromTo("#c3", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 21.4);
+      t.fromTo("#w4", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 29.15);
+      t.fromTo("#c4", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 29.4);
+      t.fromTo("#el", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.1);
+      t.fromTo("#a1", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.25);
+      t.fromTo("#a2", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.4);
+      t.fromTo("#a3", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.55);
+      window.__timelines.main = t;
+    </script>
+  </body>
+</html>

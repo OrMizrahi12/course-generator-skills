@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 06 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 5.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {"kicker": "LESSON 06", "title": "Unix is the grandparent."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 06 and Unix is the grandparent."
+  },
+  {
+    "start": 5.0,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {
+        "photo": "Ken Thompson and Dennis Ritchie, black and white",
+        "tag": "BELL LABS, 1969",
+        "name": "Unix",
+        "line": "Ken Thompson and Dennis Ritchie. The family starts here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A photograph of Ken Thompson and Dennis Ritchie is labeled Unix."
+  },
+  {
+    "start": 13.85,
+    "end": 21.867,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {
+        "chart": "Unix history family tree, 1969–2023, Linux on a Unix-like branch",
+        "tag": "FAMILY TREE",
+        "name": "Cousins",
+        "line": "Linux cloned the ideas. It is not a Unix sticker on this disk."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A Unix family-tree chart is labeled Cousins."
+  },
+  {
+    "start": 21.867,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {
+        "photo": "English oak branch with leaves and acorns",
+        "tag": "A UNIX IDEA",
+        "name": "A tree of files",
+        "line": "Names hang from a root. This machine still does that."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An oak photograph is labeled A tree of files."
+  },
+  {
+    "start": 29.85,
+    "end": 37.867,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "THIS GRANDCHILD",
+        "name": "This Linux box",
+        "line": "Still speaks Unix ideas: a file tree, and users."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled This Linux box, still speaking Unix ideas."
+  },
+  {
+    "start": 37.867,
+    "end": 50.883,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "06"},
+      "main": {
+        "line": "Match the tree and the users on this computer.",
+        "cards": ["Unix", "File tree", "This Linux box"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Unix, File tree, This Linux box."
+  },
+  {
+    "start": 50.883,
+    "end": 51.417,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.417,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 59.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls /",
+        "entries_include": ["bin", "home", "usr", "tini", "workspace"]
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls / is typed and lists the rooted tree, including home and usr."
+  },
+  {
+    "start": 59.5,
+    "end": 64.817,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ls /", "ls /home"],
+        "home_listing": "ubuntu",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /home prints ubuntu. The prompt waits until the file ends."
+  }
+]

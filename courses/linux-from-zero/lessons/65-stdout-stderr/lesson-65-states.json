@@ -1,0 +1,254 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-65-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "kicker": "LESSON 65",
+        "title": "A command has two outgoing streams. Catch them, or throw them away."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "tag": "STDOUT",
+        "heading": "the listing",
+        "line": "ls of rent-log.txt writes the paper line on the terminal. That stream is stdout.",
+        "photo": "forest river"
+      }
+    },
+    "changed": "A river photo appears with the stdout card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "tag": "STDERR",
+        "heading": "the noise",
+        "line": "A missing nosuch-sep.txt writes cannot access on a second stream. That is stderr.",
+        "photo": "canyon river"
+      }
+    },
+    "changed": "A canyon-river photo appears with the stderr card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "tag": "REDIRECT",
+        "heading": "two papers",
+        "line": "Greater-than catches stdout. 2 greater-than catches stderr. Two files, two streams.",
+        "photo": "two pipes in a stone wall"
+      }
+    },
+    "changed": "A stone-wall pipes photo appears with the redirect card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "tag": "NULL",
+        "heading": "/dev/null",
+        "line": "Send both streams into the hole. The command still fails. The screen stays quiet.",
+        "photo": "dark cave entrance"
+      }
+    },
+    "changed": "A cave-hole photo appears with the /dev/null card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "65"},
+      "main": {
+        "end_line": "ls both names. Catch stdout. Catch stderr. Throw both into /dev/null. Hold the two papers.",
+        "cards": [
+          {"title": "Stdout", "sub": "listing", "photo": "forest river"},
+          {"title": "Stderr", "sub": "noise", "photo": "canyon river"},
+          {"title": "Null", "sub": "/dev/null", "photo": "cave hole"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize stdout, stderr, and /dev/null."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click desktop menu opens with Run Program… under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the desktop menu."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.2,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt nosuch-sep.txt",
+      "output": {
+        "stderr": "ls: cannot access 'nosuch-sep.txt': No such file or directory",
+        "stdout": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+      }
+    },
+    "changed": "Unredirected ls prints the missing-name noise and the rent-log listing."
+  },
+  {
+    "start": 68.0,
+    "end": 80.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt nosuch-sep.txt > ls-out.txt",
+      "output": "ls: cannot access 'nosuch-sep.txt': No such file or directory"
+    },
+    "changed": "Stdout redirect leaves only the missing-name line on the terminal."
+  },
+  {
+    "start": 80.2,
+    "end": 86.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat ls-out.txt",
+      "output": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+    },
+    "changed": "cat ls-out.txt shows the rent-log listing caught on stdout."
+  },
+  {
+    "start": 86.5,
+    "end": 99.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt nosuch-sep.txt > ls-out.txt 2> ls-err.txt",
+      "output": ""
+    },
+    "changed": "Redirecting both streams leaves the terminal quiet."
+  },
+  {
+    "start": 99.2,
+    "end": 104.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat ls-out.txt",
+      "output": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+    },
+    "changed": "cat ls-out.txt still holds only the listing."
+  },
+  {
+    "start": 104.0,
+    "end": 108.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat ls-err.txt",
+      "output": "ls: cannot access 'nosuch-sep.txt': No such file or directory"
+    },
+    "changed": "cat ls-err.txt holds the missing-name noise from stderr."
+  },
+  {
+    "start": 108.5,
+    "end": 121.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt nosuch-sep.txt > /dev/null 2> /dev/null",
+      "output": ""
+    },
+    "changed": "Both streams go to /dev/null. The terminal stays quiet."
+  },
+  {
+    "start": 121.2,
+    "end": 132.867,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l ls-out.txt ls-err.txt",
+      "output": [
+        "-rw-r--r-- 1 ubuntu ubuntu 62 Aug 22 06:08 ls-err.txt",
+        "-rw-r--r-- 1 ubuntu ubuntu 56 Aug 22 06:08 ls-out.txt"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls holds both workshop papers, 62-byte stderr and 56-byte stdout."
+  }
+]

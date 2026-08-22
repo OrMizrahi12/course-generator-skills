@@ -1,0 +1,271 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.0,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-78-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens windowed playing the visualization."
+  },
+  {
+    "start": 1.0,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 78 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "kicker": "LESSON 78",
+        "title": "Apt looks where Ubuntu wrote. Read the sources, then hold the two URIs."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "tag": "MOVED",
+        "heading": "sources.list",
+        "line": "cat /etc/apt/sources.list. Four comments. Ubuntu says the list moved to ubuntu.sources.",
+        "mark": "Ubuntu wordmark and Circle of Friends"
+      }
+    },
+    "changed": "The Ubuntu mark appears with the sources.list card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "tag": "DIRECTORY",
+        "heading": ".d",
+        "line": "ls /etc/apt/sources.list.d. ubuntu.sources is the Ubuntu file. Other files on this host stay honest.",
+        "photo": "historic cream warehouse on cobblestones"
+      }
+    },
+    "changed": "A warehouse photo appears with the sources.list.d card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "tag": "ARCHIVE",
+        "heading": "deb822",
+        "line": "ubuntu.sources is the deb822 warehouse. Types, Suites, Components, then URIs.",
+        "photo": "long warehouse aisle with pallet racks"
+      }
+    },
+    "changed": "A pallet-rack aisle appears with the deb822 card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "tag": "URIS",
+        "heading": "grep",
+        "line": "Last grep '^URIs' must hold archive.ubuntu.com and security.ubuntu.com.",
+        "photo": "rural fingerpost pointing three ways across a field"
+      }
+    },
+    "changed": "A fingerpost photo appears with the URIs card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "78"},
+      "main": {
+        "line": "List. Directory. Warehouse. Hold the URIs.",
+        "cards": ["Moved / sources.list", "Warehouse / ubuntu.sources", "Hold / URIs"]
+      }
+    },
+    "changed": "Three end cards hold the Ubuntu mark, the warehouse aisle, and the fingerpost."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Run Program... highlighted."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "The pointer highlights Terminal Emulator."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 54.8,
+    "end": 57.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.2,
+    "end": 58.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~"
+    },
+    "changed": "cd ~ is typed."
+  },
+  {
+    "start": 58.5,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~", "~ $"],
+      "typing": "ls /etc/apt"
+    },
+    "changed": "cd ~ runs. ls /etc/apt is typed."
+  },
+  {
+    "start": 61.0,
+    "end": 66.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /etc/apt",
+      "stdout": "apt.conf.d  auth.conf.d  keyrings  preferences.d  sources.list  sources.list.d  trusted.gpg.d",
+      "prompt": "~ $"
+    },
+    "changed": "ls /etc/apt lists sources.list and sources.list.d."
+  },
+  {
+    "start": 66.0,
+    "end": 69.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "cat /etc/apt/sources.list"
+    },
+    "changed": "cat /etc/apt/sources.list is typed."
+  },
+  {
+    "start": 69.0,
+    "end": 72.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /etc/apt/sources.list",
+      "stdout": [
+        "# Ubuntu sources have moved to the /etc/apt/sources.list.d/ubuntu.sources",
+        "# file, which uses the deb822 format. Use deb822-formatted .sources files",
+        "# to manage package sources in the /etc/apt/sources.list.d/ directory.",
+        "# See the sources.list(5) manual page for details."
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "sources.list is four comments saying Ubuntu sources moved to ubuntu.sources."
+  },
+  {
+    "start": 72.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "ls /etc/apt/sources.list.d"
+    },
+    "changed": "ls /etc/apt/sources.list.d is typed."
+  },
+  {
+    "start": 75.0,
+    "end": 78.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /etc/apt/sources.list.d",
+      "stdout": "google-chrome.list  google-chrome.sources  ubuntu.sources",
+      "prompt": "~ $"
+    },
+    "changed": "ls sources.list.d lists ubuntu.sources beside this host's chrome files."
+  },
+  {
+    "start": 78.0,
+    "end": 88.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "grep '^URIs' /etc/apt/sources.list.d/ubuntu.sources"
+    },
+    "changed": "grep '^URIs' /etc/apt/sources.list.d/ubuntu.sources is typed."
+  },
+  {
+    "start": 88.0,
+    "end": 92.717,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "grep '^URIs' /etc/apt/sources.list.d/ubuntu.sources",
+      "stdout": [
+        "URIs: http://archive.ubuntu.com/ubuntu/",
+        "URIs: http://security.ubuntu.com/ubuntu/"
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "grep '^URIs' holds archive.ubuntu.com and security.ubuntu.com."
+  }
+]

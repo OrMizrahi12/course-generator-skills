@@ -1,0 +1,166 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 23 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "kicker": "LESSON 23",
+        "title": "Same kernel, different jobs. This session is desktop-shaped. Android is Linux-the-kernel in a phone box."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 23 and Same kernel, different jobs. This session is desktop-shaped. Android is Linux-the-kernel in a phone box."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "photo": "desktop workstation: monitor, keyboard, mouse on a round table",
+        "tag": "DESKTOP",
+        "name": "A sitting screen",
+        "line": "Monitor, keyboard, a session. This host is that job. We prove the session next."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A workstation photo is labeled A sitting screen, desktop."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "photo": "datacenter row of black server racks on a raised floor",
+        "tag": "SERVER",
+        "name": "A rack",
+        "line": "Same kernel idea in a room of boxes, often with no sitting-down screen. Picture only. We do not boot a server OS here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Server racks are labeled A rack, picture only."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "mark": "Android robot, lime green, on a cream disc",
+        "tag": "ANDROID",
+        "name": "A phone box",
+        "line": "source.android.com: Android’s kernel is Linux LTS plus Android patches. Still a picture. We never boot a phone here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Android robot is labeled A phone box, picture only."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "photo": "four Samsung Galaxy phones on a table, screens on",
+        "tag": "ON THIS HOST",
+        "name": "Desktop-shaped",
+        "line": "xfce4-session and xfdesktop are running. That is a desktop job, not a rack and not a phone."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Four phones are on screen; copy says this host is desktop-shaped."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "23"},
+      "main": {
+        "line": "Same Linux kernel idea. Desktop, rack, and phone are different boxes. This session is the desktop job.",
+        "cards": ["Desktop This job", "Android Picture", "This host Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Desktop This job, Android Picture, This host Live next."
+  },
+  {
+    "start": 51.0,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 64.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ps -C xfce4-session -o pid,comm",
+        "headers": "PID COMMAND",
+        "output": "2318 xfce4-session"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ps -C xfce4-session -o pid,comm is typed and prints PID 2318 xfce4-session."
+  },
+  {
+    "start": 64.0,
+    "end": 74.233,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": [
+          "ps -C xfce4-session -o pid,comm",
+          "ps -C xfdesktop -o pid,comm"
+        ],
+        "xfce4_session": "2318 xfce4-session",
+        "xfdesktop": "2427 xfdesktop",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ps -C xfdesktop -o pid,comm prints PID 2427 xfdesktop. That line stays until the file ends."
+  }
+]

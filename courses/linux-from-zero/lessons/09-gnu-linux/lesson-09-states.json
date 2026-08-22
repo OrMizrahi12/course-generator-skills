@@ -1,0 +1,158 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 09 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {"kicker": "LESSON 09", "title": "GNU/Linux is the whole computer."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 09 and GNU/Linux is the whole computer."
+  },
+  {
+    "start": 6.2,
+    "end": 14.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "KERNEL.ORG",
+        "name": "Linux",
+        "line": "The kernel is one piece. It is not the whole computer."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Linux, the kernel, one piece not the whole computer."
+  },
+  {
+    "start": 14.5,
+    "end": 22.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {
+        "mark": "Heckert GNU head, white on dark well",
+        "tag": "GNU PROJECT",
+        "name": "GNU",
+        "line": "The programs you type are GNU. That is another piece."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The GNU head is labeled GNU, the programs you type."
+  },
+  {
+    "start": 22.5,
+    "end": 30.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {
+        "photo": "red Honda Civic sedan, whole car in a parking lot",
+        "tag": "THE WHOLE CAR",
+        "name": "GNU/Linux",
+        "line": "Engine plus body. Kernel plus GNU. One computer."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A whole-car photograph is labeled GNU/Linux."
+  },
+  {
+    "start": 30.5,
+    "end": 38.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {
+        "photo": "Suzuki car engine bay from above",
+        "tag": "ON THIS MACHINE",
+        "name": "Ask both",
+        "line": "uname names the kernel. ls --version names GNU."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The engine photograph returns with Ask both, uname and ls --version."
+  },
+  {
+    "start": 38.5,
+    "end": 50.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "09"},
+      "main": {
+        "line": "Two pieces. One computer. Ask both on this machine.",
+        "cards": ["Linux", "GNU", "GNU/Linux"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Linux, GNU, GNU/Linux."
+  },
+  {
+    "start": 50.9,
+    "end": 51.6,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.6,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 57.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "uname -r", "output": "6.12.94+"},
+      "cursor": "I-beam, center"
+    },
+    "changed": "uname -r is typed and prints 6.12.94+."
+  },
+  {
+    "start": 57.5,
+    "end": 66.05,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["uname -r", "ls --version"],
+        "kernel_release": "6.12.94+",
+        "gnu_banner": "ls (GNU coreutils) 9.4",
+        "copyright": "Copyright (C) 2023 Free Software Foundation, Inc.",
+        "written_by": "Written by Richard M. Stallman and David MacKenzie.",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls --version prints GNU coreutils 9.4. Both pieces stay on screen until the file ends."
+  }
+]

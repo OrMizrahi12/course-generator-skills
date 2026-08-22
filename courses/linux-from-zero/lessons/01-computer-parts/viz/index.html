@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./assets/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #080C14; }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse 90% 70% at 18% 12%, rgba(21, 32, 56, 0.95), transparent 55%),
+          radial-gradient(ellipse 70% 60% at 88% 88%, rgba(28, 22, 12, 0.55), transparent 50%),
+          #080C14;
+        color: #F3EDE4;
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .clip { position: absolute; inset: 0; }
+      .wordmark {
+        position: absolute;
+        top: 48px;
+        left: 64px;
+        font-size: 13px;
+        letter-spacing: 0.32em;
+        font-weight: 600;
+        color: rgba(243, 237, 228, 0.55);
+      }
+      .lesson-no {
+        position: absolute;
+        top: 44px;
+        right: 64px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #E8A53A;
+        letter-spacing: 0.08em;
+      }
+      .title-wrap {
+        position: absolute;
+        left: 64px;
+        right: 64px;
+        top: 340px;
+      }
+      .kicker {
+        font-size: 18px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #E8A53A;
+        margin: 0 0 28px;
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0;
+        font-size: 92px;
+        line-height: 0.95;
+        font-weight: 650;
+        letter-spacing: -0.03em;
+        max-width: 1400px;
+      }
+      .part {
+        display: grid;
+        grid-template-columns: 900px 1fr;
+        gap: 72px;
+        align-items: center;
+        height: 100%;
+        padding: 140px 80px 80px;
+        box-sizing: border-box;
+      }
+      .well {
+        height: 720px;
+        border-radius: 28px;
+        background: #10141E;
+        border: 1px solid rgba(243, 237, 228, 0.08);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+      }
+      .well img {
+        max-width: 86%;
+        max-height: 86%;
+        object-fit: contain;
+      }
+      .copy .name {
+        font-size: 112px;
+        line-height: 0.92;
+        font-weight: 650;
+        letter-spacing: -0.04em;
+        margin: 0 0 28px;
+      }
+      .copy .line {
+        font-size: 36px;
+        line-height: 1.35;
+        color: #8B93A7;
+        margin: 0;
+        max-width: 640px;
+        font-weight: 450;
+      }
+      .copy .tag {
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #E8A53A;
+        font-weight: 650;
+        margin-bottom: 18px;
+      }
+      .grid4 {
+        position: absolute;
+        left: 64px;
+        right: 64px;
+        top: 160px;
+        bottom: 72px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+      }
+      .card {
+        background: #10141E;
+        border: 1px solid rgba(243, 237, 228, 0.08);
+        border-radius: 24px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .card .shot {
+        height: 520px;
+        display: grid;
+        place-items: center;
+        background: #0C1018;
+      }
+      .card .shot img {
+        max-width: 88%;
+        max-height: 88%;
+        object-fit: contain;
+      }
+      .card h2 {
+        margin: 0;
+        padding: 28px 24px 32px;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+      .end-line {
+        position: absolute;
+        left: 64px;
+        top: 96px;
+        font-size: 28px;
+        color: #8B93A7;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="50"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="chrome" class="clip" data-start="0" data-duration="50" data-track-index="0">
+        <div class="wordmark">LINUX FROM ZERO</div>
+        <div class="lesson-no">01</div>
+      </div>
+
+      <section id="title" class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="title-wrap">
+          <p class="kicker" id="title-kicker">Lesson 01</p>
+          <h1 id="title-h">A computer is made<br />of four parts.</h1>
+        </div>
+      </section>
+
+      <section id="cpu" class="clip" data-start="5" data-duration="9" data-track-index="1">
+        <div class="part">
+          <div class="well" id="cpu-well">
+            <img src="./assets/cpu.jpg" alt="Intel CPU" />
+          </div>
+          <div class="copy" id="cpu-copy">
+            <span class="tag">Thinks</span>
+            <p class="name">CPU</p>
+            <p class="line">The brain. It runs every instruction.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="ram" class="clip" data-start="14" data-duration="9" data-track-index="1">
+        <div class="part">
+          <div class="well" id="ram-well">
+            <img src="./assets/ram.jpg" alt="RAM module" />
+          </div>
+          <div class="copy" id="ram-copy">
+            <span class="tag">Holds, for now</span>
+            <p class="name">Memory</p>
+            <p class="line">The desk. Fast. Empty when the power goes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="disk" class="clip" data-start="23" data-duration="9" data-track-index="1">
+        <div class="part">
+          <div class="well" id="disk-well">
+            <img src="./assets/disk.jpg" alt="SSD storage" />
+          </div>
+          <div class="copy" id="disk-copy">
+            <span class="tag">Keeps</span>
+            <p class="name">Disk</p>
+            <p class="line">The cupboard. Files stay when you leave.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen" class="clip" data-start="32" data-duration="9" data-track-index="1">
+        <div class="part">
+          <div class="well" id="screen-well">
+            <img src="./assets/screen.jpg" alt="Computer monitor" />
+          </div>
+          <div class="copy" id="screen-copy">
+            <span class="tag">Shows</span>
+            <p class="name">Screen</p>
+            <p class="line">The window. This is how you look in.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="allfour" class="clip" data-start="41" data-duration="9" data-track-index="1">
+        <p class="end-line" id="all-line">This computer has all four.</p>
+        <div class="grid4">
+          <article class="card" id="card-cpu">
+            <div class="shot"><img src="./assets/cpu.jpg" alt="" /></div>
+            <h2>CPU</h2>
+          </article>
+          <article class="card" id="card-ram">
+            <div class="shot"><img src="./assets/ram.jpg" alt="" /></div>
+            <h2>Memory</h2>
+          </article>
+          <article class="card" id="card-disk">
+            <div class="shot"><img src="./assets/disk.jpg" alt="" /></div>
+            <h2>Disk</h2>
+          </article>
+          <article class="card" id="card-screen">
+            <div class="shot"><img src="./assets/screen.jpg" alt="" /></div>
+            <h2>Screen</h2>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const timeline = gsap.timeline({ paused: true });
+      timeline.fromTo("#title-kicker", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+      timeline.fromTo("#title-h", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.4);
+      timeline.fromTo("#cpu-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 5.15);
+      timeline.fromTo("#cpu-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 5.4);
+      timeline.fromTo("#ram-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 14.15);
+      timeline.fromTo("#ram-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 14.4);
+      timeline.fromTo("#disk-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 23.15);
+      timeline.fromTo("#disk-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 23.4);
+      timeline.fromTo("#screen-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 32.15);
+      timeline.fromTo("#screen-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 32.4);
+      timeline.fromTo("#all-line", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 41.1);
+      timeline.fromTo("#card-cpu", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 41.25);
+      timeline.fromTo("#card-ram", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 41.4);
+      timeline.fromTo("#card-disk", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 41.55);
+      timeline.fromTo("#card-screen", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, 41.7);
+      window.__timelines.main = timeline;
+    </script>
+  </body>
+</html>

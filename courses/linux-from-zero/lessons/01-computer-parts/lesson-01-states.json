@@ -1,0 +1,317 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {
+        "wallpaper": "abstract peach, cream, teal, and green blur",
+        "panel": "none",
+        "dock": "none",
+        "icons": "none"
+      },
+      "cursor": "white arrow, lower-right, inside the screen"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop with the pointer parked off the bezels."
+  },
+  {
+    "start": 0.9,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "background": "#080C14 with navy and amber glows",
+        "title": "not yet visible"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 01 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "kicker": "LESSON 01",
+        "title": "A computer is made of four parts."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 01 and A computer is made of four parts."
+  },
+  {
+    "start": 6.0,
+    "end": 14.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "photo": "underside of a CPU, gold contact grid on green substrate",
+        "tag": "THINKS",
+        "name": "CPU",
+        "line": "The brain. It runs every instruction."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real CPU photograph fills the left well. THINKS, CPU, and The brain. It runs every instruction. sit on the right."
+  },
+  {
+    "start": 14.9,
+    "end": 23.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "photo": "SO-DIMM memory stick in a plastic tray on wood",
+        "tag": "HOLDS, FOR NOW",
+        "name": "Memory",
+        "line": "The desk. Fast. Empty when the power goes."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The CPU photo is replaced by a real RAM-stick photograph. Labels read HOLDS, FOR NOW, Memory, and The desk. Fast. Empty when the power goes."
+  },
+  {
+    "start": 23.9,
+    "end": 32.917,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "photo": "Samsung Solid State Drive, SAMSUNG logo visible",
+        "tag": "KEEPS",
+        "name": "Disk",
+        "line": "The cupboard. Files stay when you leave."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real Samsung SSD photograph replaces memory. Labels read KEEPS, Disk, and The cupboard. Files stay when you leave."
+  },
+  {
+    "start": 32.917,
+    "end": 41.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "photo": "Dell LCD monitor on a silver stand, DELL logo on the bezel",
+        "tag": "SHOWS",
+        "name": "Screen",
+        "line": "The window. This is how you look in."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A real Dell monitor photograph replaces the SSD. Labels read SHOWS, Screen, and The window. This is how you look in."
+  },
+  {
+    "start": 41.9,
+    "end": 50.967,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {
+        "wordmark": "LINUX FROM ZERO",
+        "lesson_no": "01"
+      },
+      "main": {
+        "line": "This computer has all four.",
+        "cards": ["CPU", "Memory", "Disk", "Screen"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Four photo cards sit in a row labeled CPU, Memory, Disk, and Screen under This computer has all four."
+  },
+  {
+    "start": 50.967,
+    "end": 51.467,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {
+        "wallpaper": "abstract peach, cream, teal, and green blur",
+        "panel": "none",
+        "dock": "none"
+      },
+      "cursor": "present"
+    },
+    "changed": "The visualization window closes. The empty desktop is visible again."
+  },
+  {
+    "start": 51.467,
+    "end": 53.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "background": "white",
+        "prompt": "~ $",
+        "typed": "",
+        "output": ""
+      },
+      "cursor": "I-beam, center of the white field"
+    },
+    "changed": "A fullscreen terminal covers the display. Prompt is ~ $ with an empty line and a block caret."
+  },
+  {
+    "start": 53.8,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "prompt": "~ $",
+        "typed": "head /proc/cpuinfo",
+        "output": "none yet; characters appear one by one"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "Characters of head /proc/cpuinfo are typed at the prompt."
+  },
+  {
+    "start": 56.6,
+    "end": 61.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "head /proc/cpuinfo",
+        "output_visible": [
+          "processor : 0",
+          "vendor_id : GenuineIntel",
+          "cpu family : 6",
+          "model : 173",
+          "model name : Intel(R) Xeon(R) Processor",
+          "stepping : 1",
+          "microcode : 0x1",
+          "cpu MHz : 2700.000",
+          "cache size : 491520 KB",
+          "physical id : 0"
+        ],
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "head /proc/cpuinfo prints GenuineIntel and model name Intel(R) Xeon(R) Processor. A new ~ $ prompt waits underneath."
+  },
+  {
+    "start": 61.4,
+    "end": 62.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "above": "cpuinfo output still visible",
+        "typed": "free -h"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "free -h is typed on the next prompt."
+  },
+  {
+    "start": 62.6,
+    "end": 65.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["head /proc/cpuinfo", "free -h"],
+        "memory": {
+          "Mem_total": "15Gi",
+          "Mem_used": "1.4Gi",
+          "Mem_available": "14Gi",
+          "Swap_total": "0B"
+        },
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "free -h prints Mem total 15Gi, available 14Gi, Swap 0B."
+  },
+  {
+    "start": 65.0,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "above": "cpuinfo and free -h still visible",
+        "typed": "lsblk"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "lsblk is typed on the next prompt."
+  },
+  {
+    "start": 67.0,
+    "end": 69.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["head /proc/cpuinfo", "free -h", "lsblk"],
+        "disks": [
+          {"NAME": "vda", "SIZE": "256G", "TYPE": "disk"},
+          {"NAME": "vdb", "SIZE": "256G", "TYPE": "disk"}
+        ],
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "lsblk lists vda and vdb, each 256G disk."
+  },
+  {
+    "start": 69.4,
+    "end": 71.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "above": "cpuinfo, free -h, and lsblk still visible",
+        "typed": "xrandr"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "xrandr is typed on the next prompt."
+  },
+  {
+    "start": 71.8,
+    "end": 76.7,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["free -h", "lsblk", "xrandr"],
+        "cpuinfo_tail_still_visible": [
+          "stepping : 1",
+          "microcode : 0x1",
+          "cpu MHz : 2700.000",
+          "cache size : 491520 KB",
+          "physical id : 0"
+        ],
+        "memory": {
+          "Mem_total": "15Gi",
+          "Mem_available": "14Gi"
+        },
+        "disks": ["vda 256G", "vdb 256G"],
+        "screen": {
+          "line": "Screen 0: minimum 32 x 32, current 1920 x 1080, maximum 32768 x 32768",
+          "output": "VNC-0 connected 1920x1080+0+0",
+          "active_mode": "1920x1080 60.00*"
+        },
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam over the xrandr output"
+    },
+    "changed": "xrandr prints current 1920 x 1080 with 1920x1080 60.00* active. The prompt sits idle under the finished output until the file ends."
+  }
+]

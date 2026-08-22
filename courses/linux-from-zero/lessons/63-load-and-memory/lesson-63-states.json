@@ -1,0 +1,209 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-63-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "kicker": "LESSON 63",
+        "title": "The machine is finite. Watch RAM and load while something is still running."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "tag": "RAM",
+        "heading": "free -h",
+        "line": "This host reports 15Gi Mem and Swap 0B. A snapshot, not a live meter.",
+        "photo": "72-pin SIMM RAM stick"
+      }
+    },
+    "changed": "A RAM-stick photo appears with the free card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "tag": "LOAD",
+        "heading": "sha256sum /dev/zero",
+        "line": "A real hasher. dd into /dev/null finishes too fast here to appear in top.",
+        "photo": "steam locomotive running gear"
+      }
+    },
+    "changed": "A locomotive-wheels photo appears with the load card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "tag": "TOP",
+        "heading": "Watch it live",
+        "line": "top lists sha256sum while it still runs. Mem line stays on screen.",
+        "photo": "vintage kitchen scale with apples"
+      }
+    },
+    "changed": "A kitchen-scale photo appears with the top card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "Leave top open",
+        "line": "Last frame is still top. Do not quit it. Stop the hasher after the take.",
+        "photo": "clockwork kitchen timer"
+      }
+    },
+    "changed": "A kitchen-timer photo appears with the hold card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "63"},
+      "main": {
+        "end_line": "free -h. sha256sum /dev/zero & ps. Hold top with the hasher still listed.",
+        "cards": [
+          {"title": "RAM", "sub": "free -h", "photo": "SIMM stick"},
+          {"title": "Load", "sub": "sha256sum", "photo": "locomotive wheels"},
+          {"title": "Watch", "sub": "top", "photo": "kitchen scale"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize RAM, load, and top."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 68.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "free -h",
+      "output": {
+        "mem": "Mem: 15Gi used 2.6Gi free 7.3Gi available 13Gi",
+        "swap": "Swap: 0B 0B 0B"
+      }
+    },
+    "changed": "free -h prints 15Gi Mem and Swap 0B."
+  },
+  {
+    "start": 68.5,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sha256sum /dev/zero &",
+      "output": "[1] 179991"
+    },
+    "changed": "sha256sum /dev/zero starts as job 1 PID 179991."
+  },
+  {
+    "start": 73.5,
+    "end": 78.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -C sha256sum",
+      "output": {
+        "header": "PID TTY TIME CMD",
+        "row": "179991 pts/0 sha256sum"
+      }
+    },
+    "changed": "ps -C sha256sum lists PID 179991."
+  },
+  {
+    "start": 78.5,
+    "end": 83.533,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "top",
+      "output": {
+        "load_average": "3.12, 1.35, 0.64",
+        "mem": "MiB Mem : 16014.0 total",
+        "swap": "MiB Swap: 0.0 total",
+        "highlighted": "179991 ubuntu 100.0%CPU sha256sum"
+      }
+    },
+    "changed": "top holds sha256sum at 100% CPU with Mem 16014.0 and Swap 0.0."
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-56-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "kicker": "LESSON 56",
+        "title": "Everyone can drop a paper in /tmp. The t means you cannot take someone else’s."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "tag": "SHARED TRAY",
+        "heading": "ls -ld /tmp",
+        "line": "The last letter is t, not x. World-writable, sticky. Mode 1777. That is the real shared directory.",
+        "photo": "three mail slots, one with paper sticking out"
+      }
+    },
+    "changed": "A mail-slot photo appears with the /tmp card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "tag": "TWO PAPERS",
+        "heading": "ubuntu and Sam",
+        "line": "touch your scratch. sudo -u sam touch Sam’s. Two owners in one tray. Sam already exists from lesson 52.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the two-papers card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "tag": "RM",
+        "heading": "Yours goes. Sam’s stays",
+        "line": "rm your file. Then rm -f Sam’s. Operation not permitted. Sticky bit, not a missing write bit.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the rm card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "tag": "PROOF",
+        "heading": "ls -l Sam’s file",
+        "line": "Still there. Owner sam. You can write in /tmp. You cannot throw Sam’s rent scratch away.",
+        "photo": "padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the proof card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "56"},
+      "main": {
+        "end_line": "ls -ld /tmp. Two touch. rm yours. rm -f Sam’s. Hold Operation not permitted.",
+        "cards": [
+          {"title": "Tray", "sub": "/tmp t", "photo": "mail slots"},
+          {"title": "Papers", "sub": "two owners", "photo": "legal pad"},
+          {"title": "Stay", "sub": "not permitted", "photo": "door latch"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize /tmp, two owners, and not permitted."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 62.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld /tmp",
+      "output": "drwxrwxrwt 1 root root 20480 Aug 22 03:07 /tmp"
+    },
+    "changed": "ls -ld /tmp shows drwxrwxrwt with sticky t."
+  },
+  {
+    "start": 62.5,
+    "end": 70.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "touch /tmp/ubuntu-rent-scratch.txt",
+      "verify": "ls -l /tmp/ubuntu-rent-scratch.txt",
+      "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 22 03:08 /tmp/ubuntu-rent-scratch.txt"
+    },
+    "changed": "touch creates ubuntu-rent-scratch.txt owned by ubuntu."
+  },
+  {
+    "start": 70.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo -u sam touch /tmp/sam-rent-scratch.txt",
+      "verify": "ls -l /tmp/sam-rent-scratch.txt",
+      "output": "-rw-rw-r-- 1 sam sam 0 Aug 22 03:09 /tmp/sam-rent-scratch.txt"
+    },
+    "changed": "sudo -u sam touch creates sam-rent-scratch.txt owned by sam."
+  },
+  {
+    "start": 90.0,
+    "end": 98.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "rm /tmp/ubuntu-rent-scratch.txt",
+      "prompt": "workspace $"
+    },
+    "changed": "rm deletes ubuntu’s own scratch with no error."
+  },
+  {
+    "start": 98.0,
+    "end": 110.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "rm -f /tmp/sam-rent-scratch.txt",
+      "output": "rm: cannot remove '/tmp/sam-rent-scratch.txt': Operation not permitted"
+    },
+    "changed": "rm -f of Sam’s file prints Operation not permitted."
+  },
+  {
+    "start": 110.0,
+    "end": 120.55,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /tmp/sam-rent-scratch.txt",
+      "output": "-rw-rw-r-- 1 sam sam 0 Aug 22 03:09 /tmp/sam-rent-scratch.txt",
+      "prompt": "workspace $"
+    },
+    "changed": "ls -l holds Sam’s file still owned by sam."
+  }
+]

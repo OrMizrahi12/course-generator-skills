@@ -1,0 +1,208 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-64-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "kicker": "LESSON 64",
+        "title": "Niceness is how politely a program waits for the CPU."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "tag": "DEFAULT",
+        "heading": "NI is 0",
+        "line": "Start sha256sum /dev/zero. ps -o pid,ni,cmd must show NI 0.",
+        "photo": "people standing in a queue"
+      }
+    },
+    "changed": "A 1954 queue photo appears with the default card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "tag": "POLITE",
+        "heading": "nice -n 19",
+        "line": "A second hasher. Nineteen is as polite as a normal user can start.",
+        "photo": "slow turtle crossing sign"
+      }
+    },
+    "changed": "A turtle-crossing sign photo appears with the polite card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "tag": "PROVE",
+        "heading": "two NI numbers",
+        "line": "Same command. Different niceness. Do not renice the whole login.",
+        "photo": "vintage kitchen scale"
+      }
+    },
+    "changed": "A kitchen-scale photo appears with the prove card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "0 and 19",
+        "line": "Last ps must still list both hashers. Stop them after the take.",
+        "photo": "72-pin SIMM RAM stick"
+      }
+    },
+    "changed": "A RAM-stick photo appears with the hold card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "64"},
+      "main": {
+        "end_line": "sha256sum. ps NI 0. nice -n 19. Hold ps with 0 and 19.",
+        "cards": [
+          {"title": "Default", "sub": "NI 0", "photo": "queue"},
+          {"title": "Polite", "sub": "nice 19", "photo": "turtle sign"},
+          {"title": "Hold", "sub": "both", "photo": "kitchen scale"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize default, polite, and hold."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sha256sum /dev/zero &",
+      "output": "[1] 181442"
+    },
+    "changed": "Default sha256sum starts as job 1 PID 181442."
+  },
+  {
+    "start": 67.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -o pid,ni,cmd -C sha256sum",
+      "output": {
+        "header": "PID NI CMD",
+        "row": "181442 0 sha256sum /dev/zero"
+      }
+    },
+    "changed": "ps shows the hasher with NI 0."
+  },
+  {
+    "start": 75.0,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "nice -n 19 sha256sum /dev/zero &",
+      "output": "[2] 181444"
+    },
+    "changed": "nice -n 19 starts a second hasher as job 2 PID 181444."
+  },
+  {
+    "start": 82.0,
+    "end": 94.967,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -o pid,ni,cmd -C sha256sum",
+      "output": {
+        "header": "PID NI CMD",
+        "rows": [
+          "181442 0 sha256sum /dev/zero",
+          "181444 19 sha256sum /dev/zero"
+        ]
+      },
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ps holds both hashers with NI 0 and NI 19."
+  }
+]

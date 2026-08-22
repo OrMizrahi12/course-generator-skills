@@ -1,0 +1,301 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-47-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "kicker": "LESSON 47",
+        "title": "A filesystem is a table you set down. Write on it. Fold it away and the papers are gone."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "tag": "MOUNT",
+        "heading": "Set down an 8m table",
+        "line": "mkdir ~/rent-scratch then sudo mount -t tmpfs -o size=8m tmpfs ~/rent-scratch. df -h shows tmpfs 8.0M.",
+        "photo": "yellow folding garden table on a lawn"
+      }
+    },
+    "changed": "A folding-table photo appears with the mount card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "tag": "WRITE",
+        "heading": "A real scratch note",
+        "line": "nano scratch-note.txt on the ram disk. Three lines for the 21 Sep landlord call. Not echo. Not the overlay workshop.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the write card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "tag": "PROVE",
+        "heading": "cat the pad",
+        "line": "ls -l and cat show the note while the table is still up. tmpfs(5) says unmount discards the contents.",
+        "photo": "wooden clipboard with a yellow pencil"
+      }
+    },
+    "changed": "A clipboard photo appears with the prove card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "tag": "UNMOUNT",
+        "heading": "Fold the table away",
+        "line": "cd ~ then sudo umount ~/rent-scratch. ls -l is empty. df -h is the overlay tank again.",
+        "photo": "folded red-check linen"
+      }
+    },
+    "changed": "A folded-linen photo appears with the unmount card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "47"},
+      "main": {
+        "end_line": "mkdir the pad. mount tmpfs. nano the call. cat it. umount. Prove the note is gone.",
+        "cards": [
+          {"title": "Mount", "sub": "tmpfs 8m", "photo": "folding table"},
+          {"title": "Write", "sub": "nano", "photo": "legal pad"},
+          {"title": "Gone", "sub": "umount", "photo": "folded linen"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize mount, write, and gone."
+  },
+  {
+    "start": 51.05,
+    "end": 52.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.9,
+    "end": 53.95,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.95,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 62.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 62.4,
+    "end": 72.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "mkdir ~/rent-scratch",
+      "then": "ls -ld ~/rent-scratch",
+      "output": "drwxr-xr-x 2 ubuntu ubuntu 4096 Aug 22 01:19 /home/ubuntu/rent-scratch"
+    },
+    "changed": "mkdir creates ~/rent-scratch; ls -ld starts with d."
+  },
+  {
+    "start": 72.2,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "df -h ~/rent-scratch",
+      "output": [
+        "Filesystem      Size  Used Avail Use% Mounted on",
+        "overlay         252G   18G  222G   8% /"
+      ]
+    },
+    "changed": "df -h of the empty pad is still the overlay disk."
+  },
+  {
+    "start": 82.0,
+    "end": 94.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo mount -t tmpfs -o size=8m tmpfs ~/rent-scratch"
+    },
+    "changed": "sudo mount attaches an 8m tmpfs on ~/rent-scratch."
+  },
+  {
+    "start": 94.5,
+    "end": 102.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "df -h ~/rent-scratch",
+      "output": [
+        "Filesystem      Size  Used Avail Use% Mounted on",
+        "tmpfs           8.0M     0  8.0M   0% /home/ubuntu/rent-scratch"
+      ]
+    },
+    "changed": "df -h now shows tmpfs 8.0M on ~/rent-scratch."
+  },
+  {
+    "start": 102.0,
+    "end": 108.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/rent-scratch",
+      "prompt": "rent-scratch $",
+      "pwd": "/home/ubuntu/rent-scratch"
+    },
+    "changed": "cd into the ram disk; pwd prints /home/ubuntu/rent-scratch."
+  },
+  {
+    "start": 108.5,
+    "end": 128.5,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "title": "scratch-note.txt",
+      "status": "[ New File ]",
+      "body_starts": "Scratch for"
+    },
+    "changed": "nano opens scratch-note.txt as a new file and text is typed."
+  },
+  {
+    "start": 128.5,
+    "end": 133.5,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "title": "scratch-note.txt *",
+      "prompt": "File Name to Write: scratch-note.txt",
+      "body": [
+        "Scratch for the 21 Sep landlord call.",
+        "Do not keep this on the overlay disk.",
+        "Hang up then wipe the pad."
+      ]
+    },
+    "changed": "Write Out asks for the file name scratch-note.txt."
+  },
+  {
+    "start": 133.5,
+    "end": 142.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "rent-scratch $",
+      "command": "cat scratch-note.txt",
+      "output": [
+        "Scratch for the 21 Sep landlord call.",
+        "Do not keep this on the overlay disk.",
+        "Hang up then wipe the pad."
+      ]
+    },
+    "changed": "nano exits; cat prints the three scratch lines."
+  },
+  {
+    "start": 142.0,
+    "end": 150.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l scratch-note.txt",
+      "output": "-rw-r--r-- 1 ubuntu ubuntu 104 Aug 22 01:20 scratch-note.txt"
+    },
+    "changed": "ls -l of the scratch note starts with - and shows 104 bytes."
+  },
+  {
+    "start": 150.0,
+    "end": 158.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~",
+      "prompt": "~ $",
+      "then": "sudo umount ~/rent-scratch"
+    },
+    "changed": "cd ~ then sudo umount ~/rent-scratch."
+  },
+  {
+    "start": 158.5,
+    "end": 164.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l ~/rent-scratch",
+      "output": "total 0"
+    },
+    "changed": "ls -l of the pad is empty; the scratch note is gone."
+  },
+  {
+    "start": 164.5,
+    "end": 173.267,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "df -h ~/rent-scratch",
+      "output": [
+        "Filesystem      Size  Used Avail Use% Mounted on",
+        "overlay         252G   18G  222G   8% /"
+      ],
+      "also_visible": "ls -l ~/rent-scratch total 0",
+      "prompt": "~ $"
+    },
+    "changed": "df -h of the pad is overlay 252G again, not tmpfs 8.0M."
+  }
+]

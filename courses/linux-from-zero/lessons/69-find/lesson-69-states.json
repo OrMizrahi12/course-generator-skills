@@ -1,0 +1,198 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-69-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "kicker": "LESSON 69",
+        "title": "find walks the tree and prints the path whose name you asked for."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "tag": "TREE",
+        "heading": "find",
+        "line": "ls here only lists this folder. find starts at a path and walks every name under it.",
+        "photo": "dark forest of many trunks"
+      }
+    },
+    "changed": "A forest photo appears with the find card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "tag": "HOME",
+        "heading": "ls",
+        "line": "From ~ the rent log is not on the list. find linux-workshop -name rent-log.txt walks in.",
+        "photo": "sunlit path through pine forest"
+      }
+    },
+    "changed": "A forest-path photo appears with the home ls card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "tag": "NAME",
+        "heading": "-name",
+        "line": "-name matches the base name, not the whole path. Quote the pattern so the shell does not expand it.",
+        "photo": "Peabody Library multi-tier stacks"
+      }
+    },
+    "changed": "A library-stacks photo appears with the -name card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "tag": "HOLD",
+        "heading": ".landlord",
+        "line": "Last find -name '.landlord.txt' must still show linux-workshop/.landlord.txt.",
+        "photo": "long library aisle of named shelves"
+      }
+    },
+    "changed": "A library-aisle photo appears with the hold card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "69"},
+      "main": {
+        "end_line": "cd home. ls. find the rent log. Hold find the hidden landlord note.",
+        "cards": [
+          {"title": "Tree", "sub": "find", "photo": "dark forest"},
+          {"title": "Name", "sub": "-name", "photo": "Peabody stacks"},
+          {"title": "Hold", "sub": ".landlord", "photo": "library aisle"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize find, -name, and the hidden note."
+  },
+  {
+    "start": 51.0,
+    "end": 52.45,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.45,
+    "end": 53.05,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click desktop menu opens with Run Program… under the pointer."
+  },
+  {
+    "start": 53.05,
+    "end": 53.65,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the desktop menu."
+  },
+  {
+    "start": 53.65,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.7,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.7,
+    "end": 58.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~",
+      "prompt": "~ $"
+    },
+    "changed": "cd ~ changes the prompt to ~ $."
+  },
+  {
+    "start": 58.6,
+    "end": 62.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls",
+      "output": "go  linux-workshop  rent-receipts  rent-scratch"
+    },
+    "changed": "ls of home lists four names and does not show rent-log.txt."
+  },
+  {
+    "start": 62.4,
+    "end": 71.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "find linux-workshop -name rent-log.txt",
+      "output": "linux-workshop/rent-log.txt"
+    },
+    "changed": "find walks linux-workshop and prints the rent-log path."
+  },
+  {
+    "start": 71.0,
+    "end": 84.733,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "find linux-workshop -name '.landlord.txt'",
+      "output": "linux-workshop/.landlord.txt",
+      "prompt": "~ $"
+    },
+    "changed": "Last find holds the hidden landlord note path."
+  }
+]

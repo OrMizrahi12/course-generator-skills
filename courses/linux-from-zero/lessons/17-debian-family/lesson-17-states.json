@@ -1,0 +1,166 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 17 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "kicker": "LESSON 17",
+        "title": "This computer is in the Debian family. Ubuntu and Mint are children. Debian is the parent."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 17 and This computer is in the Debian family. Ubuntu and Mint are children. Debian is the parent."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "mark": "Debian swirl, magenta, with debian wordmark",
+        "tag": "THE PARENT",
+        "name": "Debian",
+        "line": "dpkg and apt. debian.org: a free OS with tens of thousands of packages. The family starts here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Debian swirl is labeled Debian, the parent."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "mark": "Ubuntu Circle of Friends, orange disc with three white figures",
+        "tag": "A CHILD",
+        "name": "Ubuntu",
+        "line": "debian.org lists Ubuntu as a derivative: based on Debian, with its own identity. We do not name the LTS yet."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Ubuntu Circle of Friends is labeled Ubuntu, a child."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "mark": "Linux Mint mark, green disc with white lm",
+        "tag": "ANOTHER CHILD",
+        "name": "Linux Mint",
+        "line": "Debian’s FAQ: Mint is Debian-based, not Debian. This mark stays a picture. We never boot Mint here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The Linux Mint mark is labeled Linux Mint, another child, picture only."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "Same family",
+        "line": "ID_LIKE=debian is how this box writes the family on disk. dpkg still calls itself Debian’s program."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Same family, with ID_LIKE=debian."
+  },
+  {
+    "start": 38.05,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "17"},
+      "main": {
+        "line": "Debian is the parent. Ubuntu and Mint are children. This host writes ID_LIKE=debian.",
+        "cards": ["Debian Picture", "Linux Mint Picture", "This host Live next"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Debian Picture, Linux Mint Picture, This host Live next."
+  },
+  {
+    "start": 50.95,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.5,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "grep ID_LIKE= /etc/os-release",
+        "output": "ID_LIKE=debian"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "grep ID_LIKE= /etc/os-release is typed and prints ID_LIKE=debian."
+  },
+  {
+    "start": 62.0,
+    "end": 70.25,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["grep ID_LIKE= /etc/os-release", "dpkg --version"],
+        "id_like": "ID_LIKE=debian",
+        "dpkg_version": "Debian 'dpkg' package management program version 1.22.6 (amd64).",
+        "license_lines": [
+          "This is free software; see the GNU General Public License version 2 or",
+          "later for copying conditions. There is NO warranty."
+        ],
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "dpkg --version prints Debian dpkg 1.22.6 (amd64). That line stays until the file ends."
+  }
+]

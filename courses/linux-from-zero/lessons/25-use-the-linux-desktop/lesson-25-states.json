@@ -1,0 +1,219 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {"background": "#080C14 with navy and amber glows", "kicker": "LESSON 25"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark, 25, and LESSON 25 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "kicker": "LESSON 25",
+        "title": "The desktop is a real room. Open the file manager, make a folder you can see, close it, open it again."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "photo": "desk with monitor and keyboard",
+        "tag": "DESKTOP",
+        "name": "A sitting room",
+        "line": "No panel on this host. Right-click the wallpaper. File Manager is in that menu."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A desk photo is labeled A sitting room, desktop."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "photo": "wooden filing cabinet on rollers",
+        "tag": "FILE MANAGER",
+        "name": "Thunar",
+        "line": "XFCE’s file manager. It opens a window of folders. Fill the screen, then make one."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A filing cabinet is labeled Thunar, file manager."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "photo": "two manila folders",
+        "tag": "CREATE",
+        "name": "A folder",
+        "line": "File → Create Folder. Name it for real work: rent-receipts. Not a hello toy."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Manila folders are labeled A folder, create."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "photo": "wooden door",
+        "tag": "CLOSE, REOPEN",
+        "name": "Still there",
+        "line": "Close the window. Open File Manager again. The folder must still be in home."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A wooden door is labeled Still there."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "25"},
+      "main": {
+        "line": "Hands start here. Make rent-receipts in home, close Thunar, open it again. The folder stays.",
+        "cards": ["Open File Manager", "Create rent-receipts", "Reopen Still there"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Open, Create, Reopen."
+  },
+  {
+    "start": 51.0,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "menu": {
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "arrow on the applications menu"
+    },
+    "changed": "The visualization closes. A right-click applications menu lists File Manager."
+  },
+  {
+    "start": 54.2,
+    "end": 57.4,
+    "on_screen": {
+      "window": "Thunar, fullscreen",
+      "main": {
+        "path": "/workspace/",
+        "places": ["ubuntu", "File System"],
+        "icons": ["courses", "AGENTS.md", "COURSE_AGENT.md", "README.md"],
+        "status": "1 folder | 3 files: 21.4 KiB (21,935 bytes) | Free space: 223.7 GiB"
+      },
+      "cursor": "arrow, center"
+    },
+    "changed": "Thunar fills the screen on /workspace/."
+  },
+  {
+    "start": 57.4,
+    "end": 61.2,
+    "on_screen": {
+      "window": "Thunar, fullscreen",
+      "main": {
+        "path": "/home/ubuntu/",
+        "places_selected": "ubuntu",
+        "icons": ["go"],
+        "dialog": {
+          "title": "Create New Folder",
+          "label": "Enter the name:",
+          "field": "New Folder",
+          "buttons": ["Cancel", "Create"]
+        },
+        "status": "1 folder | Free space: 223.7 GiB"
+      },
+      "cursor": "arrow above the dialog"
+    },
+    "changed": "Home /home/ubuntu/ is showing go. Create New Folder is open with New Folder selected."
+  },
+  {
+    "start": 61.2,
+    "end": 67.4,
+    "on_screen": {
+      "window": "Thunar, fullscreen",
+      "main": {
+        "path": "/home/ubuntu/",
+        "places_selected": "ubuntu",
+        "icons": ["go", "rent-receipts"],
+        "selected": "rent-receipts",
+        "status": "\"rent-receipts\" | Folder"
+      },
+      "cursor": "arrow, center"
+    },
+    "changed": "rent-receipts exists next to go and is selected."
+  },
+  {
+    "start": 67.4,
+    "end": 70.4,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, upper-left"
+    },
+    "changed": "Thunar closes. The desktop is empty again."
+  },
+  {
+    "start": 70.4,
+    "end": 74.2,
+    "on_screen": {
+      "window": "Thunar, fullscreen",
+      "main": {
+        "path": "/workspace/",
+        "icons": ["courses", "AGENTS.md", "COURSE_AGENT.md", "README.md"],
+        "status": "1 folder | 3 files: 21.4 KiB (21,935 bytes) | Free space: 223.7 GiB"
+      },
+      "cursor": "arrow, center"
+    },
+    "changed": "File Manager opens again on /workspace/."
+  },
+  {
+    "start": 74.2,
+    "end": 79.767,
+    "on_screen": {
+      "window": "Thunar, fullscreen",
+      "main": {
+        "path": "/home/ubuntu/",
+        "places_selected": "ubuntu",
+        "icons": ["go", "rent-receipts"],
+        "status": "2 folders | Free space: 223.7 GiB"
+      },
+      "cursor": "arrow, center-right"
+    },
+    "changed": "Home again. go and rent-receipts are both there. Status reads 2 folders until the file ends."
+  }
+]

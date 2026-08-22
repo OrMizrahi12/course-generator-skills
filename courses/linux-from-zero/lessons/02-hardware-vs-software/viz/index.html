@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./assets/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #080C14; }
+      #root {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background:
+          radial-gradient(ellipse 90% 70% at 18% 12%, rgba(21, 32, 56, 0.95), transparent 55%),
+          radial-gradient(ellipse 70% 60% at 88% 88%, rgba(28, 22, 12, 0.55), transparent 50%),
+          #080C14;
+        color: #F3EDE4;
+        font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .clip { position: absolute; inset: 0; }
+      .wordmark {
+        position: absolute;
+        top: 48px;
+        left: 64px;
+        font-size: 13px;
+        letter-spacing: 0.32em;
+        font-weight: 600;
+        color: rgba(243, 237, 228, 0.55);
+      }
+      .lesson-no {
+        position: absolute;
+        top: 44px;
+        right: 64px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #E8A53A;
+        letter-spacing: 0.08em;
+      }
+      .title-wrap {
+        position: absolute;
+        left: 64px;
+        right: 64px;
+        top: 320px;
+      }
+      .kicker {
+        font-size: 18px;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #E8A53A;
+        margin: 0 0 28px;
+        font-weight: 600;
+      }
+      h1 {
+        margin: 0;
+        font-size: 88px;
+        line-height: 0.95;
+        font-weight: 650;
+        letter-spacing: -0.03em;
+        max-width: 1500px;
+      }
+      .part {
+        display: grid;
+        grid-template-columns: 900px 1fr;
+        gap: 72px;
+        align-items: center;
+        height: 100%;
+        padding: 140px 80px 80px;
+        box-sizing: border-box;
+      }
+      .well {
+        height: 720px;
+        border-radius: 28px;
+        background: #10141E;
+        border: 1px solid rgba(243, 237, 228, 0.08);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        box-shadow: 0 40px 80px rgba(0, 0, 0, 0.35);
+      }
+      .well img {
+        max-width: 90%;
+        max-height: 88%;
+        object-fit: contain;
+      }
+      .copy .name {
+        font-size: 96px;
+        line-height: 0.92;
+        font-weight: 650;
+        letter-spacing: -0.04em;
+        margin: 0 0 28px;
+      }
+      .copy .line {
+        font-size: 36px;
+        line-height: 1.35;
+        color: #8B93A7;
+        margin: 0;
+        max-width: 640px;
+        font-weight: 450;
+      }
+      .copy .tag {
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #E8A53A;
+        font-weight: 650;
+        margin-bottom: 18px;
+      }
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        height: 100%;
+        padding: 160px 80px 80px;
+        box-sizing: border-box;
+      }
+      .card {
+        background: #10141E;
+        border: 1px solid rgba(243, 237, 228, 0.08);
+        border-radius: 24px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .card .shot {
+        height: 560px;
+        display: grid;
+        place-items: center;
+        background: #0C1018;
+      }
+      .card .shot img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+      }
+      .card h2 {
+        margin: 0;
+        padding: 28px 28px 32px;
+        font-size: 36px;
+        font-weight: 600;
+      }
+      .end-line {
+        position: absolute;
+        left: 80px;
+        top: 96px;
+        font-size: 28px;
+        color: #8B93A7;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="48"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="chrome" class="clip" data-start="0" data-duration="48" data-track-index="0">
+        <div class="wordmark">LINUX FROM ZERO</div>
+        <div class="lesson-no">02</div>
+      </div>
+
+      <section id="title" class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="title-wrap">
+          <p class="kicker" id="title-kicker">Lesson 02</p>
+          <h1 id="title-h">Hardware is metal.<br />Software is a program.</h1>
+        </div>
+      </section>
+
+      <section id="hw" class="clip" data-start="5" data-duration="10" data-track-index="1">
+        <div class="part">
+          <div class="well" id="hw-well">
+            <img src="./assets/cpu.jpg" alt="CPU hardware" />
+          </div>
+          <div class="copy" id="hw-copy">
+            <span class="tag">You can touch it</span>
+            <p class="name">Hardware</p>
+            <p class="line">The chip. The metal. It does the physical work.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sw" class="clip" data-start="15" data-duration="10" data-track-index="1">
+        <div class="part">
+          <div class="well" id="sw-well">
+            <img src="./assets/software.png" alt="LibreOffice Writer" />
+          </div>
+          <div class="copy" id="sw-copy">
+            <span class="tag">You run it</span>
+            <p class="name">Software</p>
+            <p class="line">A program. Instructions that tell the hardware what to do.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="both" class="clip" data-start="25" data-duration="23" data-track-index="1">
+        <p class="end-line" id="both-line">Software uses the hardware.</p>
+        <div class="split">
+          <article class="card" id="card-hw">
+            <div class="shot"><img src="./assets/cpu.jpg" alt="" /></div>
+            <h2>Hardware</h2>
+          </article>
+          <article class="card" id="card-sw">
+            <div class="shot"><img src="./assets/software.png" alt="" /></div>
+            <h2>Software</h2>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const timeline = gsap.timeline({ paused: true });
+      timeline.fromTo("#title-kicker", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+      timeline.fromTo("#title-h", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.4);
+      timeline.fromTo("#hw-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 5.15);
+      timeline.fromTo("#hw-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 5.4);
+      timeline.fromTo("#sw-well", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 15.15);
+      timeline.fromTo("#sw-copy", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 15.4);
+      timeline.fromTo("#both-line", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 25.1);
+      timeline.fromTo("#card-hw", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 25.3);
+      timeline.fromTo("#card-sw", { y: 32, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 25.55);
+      window.__timelines.main = timeline;
+    </script>
+  </body>
+</html>

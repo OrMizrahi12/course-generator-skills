@@ -1,0 +1,233 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-62-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "kicker": "LESSON 62",
+        "title": "Park a running program. Get the prompt back. Bring it forward again."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "tag": "FOREGROUND",
+        "heading": "tail -f the rent log",
+        "line": "It owns the terminal. You cannot type until you park it.",
+        "photo": "marine sandglass"
+      }
+    },
+    "changed": "A sandglass photo appears with the foreground card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "tag": "PARK",
+        "heading": "Ctrl+Z then jobs",
+        "line": "SIGTSTP stops the job. jobs must say Stopped. The prompt is yours again.",
+        "photo": "wall coat hooks"
+      }
+    },
+    "changed": "A coat-hooks photo appears with the park card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "tag": "BG AND FG",
+        "heading": "bg, then fg",
+        "line": "bg lets it run behind you. fg puts it back in front. Ctrl+Z parks it again.",
+        "photo": "empty wave bike rack"
+      }
+    },
+    "changed": "A bike-rack photo appears with the bg/fg card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "jobs still Running",
+        "line": "Last jobs line must still show tail -f rent-log.txt. Do not kill it here.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the hold card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "62"},
+      "main": {
+        "end_line": "tail -f. Ctrl+Z. jobs. bg. fg. Ctrl+Z. bg. Hold jobs Running.",
+        "cards": [
+          {"title": "Park", "sub": "Ctrl+Z", "photo": "coat hooks"},
+          {"title": "bg / fg", "sub": "the job", "photo": "bike rack"},
+          {"title": "Hold", "sub": "jobs", "photo": "latch"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize park, bg/fg, and hold."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.2,
+    "end": 67.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tail -f rent-log.txt",
+      "output": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "Foreground tail -f prints the rent log and holds."
+  },
+  {
+    "start": 67.5,
+    "end": 72.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "interrupt": "^Z",
+      "output": "[1]+ Stopped tail -f rent-log.txt"
+    },
+    "changed": "Ctrl+Z prints ^Z and Stopped job 1."
+  },
+  {
+    "start": 72.5,
+    "end": 76.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "jobs",
+      "output": "[1]+ Stopped tail -f rent-log.txt"
+    },
+    "changed": "jobs lists the stopped rent-log watcher."
+  },
+  {
+    "start": 76.5,
+    "end": 81.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "bg",
+      "output": "[1]+ tail -f rent-log.txt &"
+    },
+    "changed": "bg resumes the job behind the prompt."
+  },
+  {
+    "start": 81.5,
+    "end": 84.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "jobs",
+      "output": "[1]+ Running tail -f rent-log.txt &"
+    },
+    "changed": "jobs now lists the job as Running."
+  },
+  {
+    "start": 84.5,
+    "end": 87.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "fg",
+      "output": "tail -f rent-log.txt"
+    },
+    "changed": "fg brings the watcher back to the foreground."
+  },
+  {
+    "start": 87.5,
+    "end": 91.967,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "jobs",
+      "output": "[1]+ Running tail -f rent-log.txt &",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "After a second Ctrl+Z and bg, jobs holds Running tail -f rent-log.txt."
+  }
+]

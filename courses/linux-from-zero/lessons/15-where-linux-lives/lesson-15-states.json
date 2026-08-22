@@ -1,0 +1,159 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 15 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {"kicker": "LESSON 15", "title": "Linux already lives in the world. This box is one of those computers."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 15 and Linux already lives in the world. This box is one of those computers."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {
+        "marks": ["Android phone in a folio case, home screen on", "Android robot, green"],
+        "tag": "PICTURES ONLY",
+        "name": "Phones",
+        "line": "Android’s kernel is Linux LTS plus Android patches. We never boot a phone here."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An Android phone photo and the Android robot are labeled Phones, pictures only."
+  },
+  {
+    "start": 14.05,
+    "end": 21.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {
+        "photos": ["Samsung TV on a wooden living-room unit", "BMW car cockpit with navigation screen"],
+        "tag": "HOME AND ROAD",
+        "name": "TVs and cars",
+        "line": "linux.com: Linux is in televisions and in cars. Those boxes stay pictures."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A TV photograph and a car cockpit are labeled TVs and cars, home and road."
+  },
+  {
+    "start": 21.9,
+    "end": 29.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {
+        "photo": "Summit supercomputer racks, Oak Ridge National Laboratory and IBM marks",
+        "tag": "THE BIG MACHINES",
+        "name": "TOP500",
+        "line": "linux.com: Linux runs most of the internet and all of the world’s top 500 supercomputers."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Summit supercomputer photograph is labeled TOP500, the big machines."
+  },
+  {
+    "start": 29.9,
+    "end": 37.9,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "ON THIS HOST",
+        "name": "One of them",
+        "line": "hostname names this computer. uname -a is the full Linux identity of this box."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled One of them, with hostname and uname -a."
+  },
+  {
+    "start": 37.9,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "15"},
+      "main": {
+        "line": "The world is full of Linux. This machine is one named computer in it.",
+        "cards": ["Phone Picture", "Supercomputer Picture", "This Linux Named"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Phone Picture, Supercomputer Picture, This Linux Named."
+  },
+  {
+    "start": 50.95,
+    "end": 51.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.5,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 58.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "hostname",
+        "output": "cursor"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "hostname is typed and prints cursor."
+  },
+  {
+    "start": 58.0,
+    "end": 65.167,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["hostname", "uname -a"],
+        "hostname": "cursor",
+        "uname_a": "Linux cursor 6.12.94+ #1 SMP PREEMPT_DYNAMIC Thu Aug 20 16:06:39 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "uname -a prints Linux cursor 6.12.94+ GNU/Linux. The identity line stays until the file ends."
+  }
+]

@@ -1,0 +1,388 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "kicker": "LESSON 37",
+        "title": "Copy, rename, remove. Keep the original. Destroy nothing you still need."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "photo": "Sharp MX-7500 office photocopier",
+        "tag": "COPY",
+        "name": "A second file",
+        "line": "cp rent-log.txt sep-draft.txt. The paid-August note stays. A September draft appears next to it."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A photocopier is labeled A second file."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "photo": "oval house nameplate Knockainy 28 on grey siding",
+        "tag": "RENAME",
+        "name": "A clearer name",
+        "line": "mv sep-draft.txt sep-due-draft.txt. Same bytes. New name. The old name is gone."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A nameplate is labeled A clearer name."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "photo": "wicker wastebasket with a discarded telephone",
+        "tag": "REMOVE",
+        "name": "Only the extra",
+        "line": "A mistaken oops.txt is unlinked with rm. The workshop itself is not removed. The original is not removed."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A wastebasket is labeled Only the extra."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "photo": "stack of documents in a file folder",
+        "tag": "KEEP",
+        "name": "The note remains",
+        "line": "ls -l still lists rent-log.txt beside the draft. echo is not a copy. This is."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A folder of papers is labeled The note remains."
+  },
+  {
+    "start": 37.85,
+    "end": 50.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "37"},
+      "main": {
+        "line": "cd ~/linux-workshop. cp the note. mv the copy. rm only oops.txt. ls -l still shows rent-log.txt.",
+        "cards": ["Copy CP SOURCE DEST", "Rename MV OLD NEW", "Remove RM THE EXTRA ONLY"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Copy, Rename, Remove."
+  },
+  {
+    "start": 50.85,
+    "end": 52.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.5,
+    "end": 53.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "near Run Program..."
+    },
+    "changed": "The applications menu opens with Run Program... at the top."
+  },
+  {
+    "start": 53.0,
+    "end": 53.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.5,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, mid-left"
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.0,
+    "end": 54.7,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.7,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.5,
+    "end": 57.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed."
+  },
+  {
+    "start": 57.6,
+    "end": 59.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/workspace", "prompt_after": "workspace $"}
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 59.2,
+    "end": 62.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "cd ~/linux-workshop"}
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.2,
+    "end": 63.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd ~/linux-workshop", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "The prompt becomes linux-workshop $."
+  },
+  {
+    "start": 63.8,
+    "end": 64.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed."
+  },
+  {
+    "start": 64.8,
+    "end": 66.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "rent-log.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints rent-log.txt."
+  },
+  {
+    "start": 66.8,
+    "end": 73.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "cp rent-log.txt sep-draft.txt"}
+    },
+    "changed": "cp rent-log.txt sep-draft.txt is typed."
+  },
+  {
+    "start": 73.0,
+    "end": 74.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cp rent-log.txt sep-draft.txt", "output": "", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "cp returns with no output."
+  },
+  {
+    "start": 74.6,
+    "end": 75.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed after the copy."
+  },
+  {
+    "start": 75.6,
+    "end": 77.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "rent-log.txt  sep-draft.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints rent-log.txt and sep-draft.txt."
+  },
+  {
+    "start": 77.5,
+    "end": 83.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "mv sep-draft.txt sep-due-draft.txt"}
+    },
+    "changed": "mv sep-draft.txt sep-due-draft.txt is typed."
+  },
+  {
+    "start": 83.5,
+    "end": 84.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "mv sep-draft.txt sep-due-draft.txt", "output": "", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "mv returns with no output."
+  },
+  {
+    "start": 84.8,
+    "end": 85.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed after the rename."
+  },
+  {
+    "start": 85.8,
+    "end": 87.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "rent-log.txt  sep-due-draft.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints rent-log.txt and sep-due-draft.txt."
+  },
+  {
+    "start": 87.8,
+    "end": 92.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "cp rent-log.txt oops.txt"}
+    },
+    "changed": "cp rent-log.txt oops.txt is typed."
+  },
+  {
+    "start": 92.4,
+    "end": 93.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cp rent-log.txt oops.txt", "output": "", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "cp returns with no output."
+  },
+  {
+    "start": 93.8,
+    "end": 94.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed after the extra copy."
+  },
+  {
+    "start": 94.8,
+    "end": 97.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "oops.txt  rent-log.txt  sep-due-draft.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints oops.txt, rent-log.txt, and sep-due-draft.txt."
+  },
+  {
+    "start": 97.0,
+    "end": 99.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "rm oops.txt"}
+    },
+    "changed": "rm oops.txt is typed."
+  },
+  {
+    "start": 99.6,
+    "end": 101.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "rm oops.txt", "output": "", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "rm returns with no output."
+  },
+  {
+    "start": 101.2,
+    "end": 102.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls -l"}
+    },
+    "changed": "ls -l is typed."
+  },
+  {
+    "start": 102.4,
+    "end": 108.167,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls -l",
+        "output": [
+          "total 8",
+          "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+          "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+        ],
+        "prompt_after": "linux-workshop $"
+      },
+      "cursor": "block on the empty prompt"
+    },
+    "changed": "ls -l lists rent-log.txt and sep-due-draft.txt. oops.txt is gone. The original remains until the file ends."
+  }
+]

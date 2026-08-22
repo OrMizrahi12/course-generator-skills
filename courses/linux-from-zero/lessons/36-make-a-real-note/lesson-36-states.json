@@ -1,0 +1,317 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "kicker": "LESSON 36",
+        "title": "A file is a noun. Write real sentences. Write Out puts the words on disk."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "photo": "hand holding a notebook of handwritten notes",
+        "tag": "NOUN",
+        "name": "A note is a thing",
+        "line": "The empty workshop cannot remember the rent facts. A file can. That file has a name."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A notebook is labeled A note is a thing."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "photo": "hands writing in a journal beside coffee",
+        "tag": "WRITE",
+        "name": "Type the facts",
+        "line": "nano rent-log.txt opens a new buffer. Type that 21 Aug rent is paid, where the papers live, and the next due date."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A journal is labeled Type the facts."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "photo": "Parker fountain pens and Quink permanent ink on handwritten pages",
+        "tag": "WRITE OUT",
+        "name": "Ink on disk",
+        "line": "^O Write Out. Enter keeps the name rent-log.txt. The words leave the buffer and become a file."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Parker pens and ink are labeled Ink on disk."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "photo": "two filled notebook pages of handwriting",
+        "tag": "RESULT",
+        "name": "The words stay",
+        "line": "Hold on the three sentences in GNU nano 7.2. echo is not a note. This is."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Filled pages are labeled The words stay."
+  },
+  {
+    "start": 37.85,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "36"},
+      "main": {
+        "line": "cd ~/linux-workshop. nano rent-log.txt. Type the three facts. ^O Write Out.",
+        "cards": ["Noun A NAMED FILE", "Write REAL SENTENCES", "Write Out ^O THEN ENTER"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Noun, Write, Write Out."
+  },
+  {
+    "start": 51.1,
+    "end": 52.65,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.65,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Run Program..."
+    },
+    "changed": "The applications menu opens with Run Program... at the top."
+  },
+  {
+    "start": 53.2,
+    "end": 53.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.8,
+    "end": 54.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.2,
+    "end": 54.85,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.85,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.5,
+    "end": 57.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed."
+  },
+  {
+    "start": 57.8,
+    "end": 59.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/workspace", "prompt_after": "workspace $"}
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 59.4,
+    "end": 62.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "cd ~/linux-workshop"}
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.4,
+    "end": 63.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd ~/linux-workshop", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "The prompt becomes linux-workshop $."
+  },
+  {
+    "start": 63.6,
+    "end": 64.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed in the workshop."
+  },
+  {
+    "start": 64.6,
+    "end": 66.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/home/ubuntu/linux-workshop", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "pwd prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 66.2,
+    "end": 67.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed."
+  },
+  {
+    "start": 67.4,
+    "end": 69.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints nothing. The workshop is empty."
+  },
+  {
+    "start": 69.2,
+    "end": 72.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "nano rent-log.txt"}
+    },
+    "changed": "nano rent-log.txt is typed."
+  },
+  {
+    "start": 72.4,
+    "end": 74.2,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": "rent-log.txt", "status": "[ New File ]"},
+      "main": {"buffer": ""},
+      "help": ["^G Help", "^O Write Out", "^X Exit"]
+    },
+    "changed": "GNU nano 7.2 opens a new buffer named rent-log.txt."
+  },
+  {
+    "start": 74.2,
+    "end": 92.2,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": "rent-log.txt *"},
+      "main": {
+        "buffer": "21 Aug rent is paid.\nKeep the three papers in /home/ubuntu/rent-receipts.\nNext due 21 Sep."
+      },
+      "help": ["^G Help", "^O Write Out", "^X Exit"]
+    },
+    "changed": "The three rent sentences are typed. An asterisk marks unsaved changes."
+  },
+  {
+    "start": 92.2,
+    "end": 93.6,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": "rent-log.txt *"},
+      "main": {
+        "buffer": "21 Aug rent is paid.\nKeep the three papers in /home/ubuntu/rent-receipts.\nNext due 21 Sep.",
+        "prompt": "File Name to Write: rent-log.txt"
+      },
+      "help": ["^G Help", "^C Cancel"]
+    },
+    "changed": "Write Out asks for File Name to Write: rent-log.txt."
+  },
+  {
+    "start": 93.6,
+    "end": 99.733,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": "rent-log.txt", "status": "[ Wrote 4 lines ]"},
+      "main": {
+        "lines": [
+          "21 Aug rent is paid.",
+          "Keep the three papers in /home/ubuntu/rent-receipts.",
+          "Next due 21 Sep."
+        ]
+      },
+      "help": ["^G Help", "^O Write Out", "^X Exit"],
+      "cursor": "block on the empty fourth line"
+    },
+    "changed": "[ Wrote 4 lines ] appears. The three rent sentences stay on screen until the file ends."
+  }
+]

@@ -1,0 +1,198 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"}
+    },
+    "changed": "The visualization starts. LINUX FROM ZERO and 73 are on screen."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "kicker": "LESSON 73",
+        "title": "awk prints chosen fields. $5 is the size. $NF is the name."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "tag": "FIELDS",
+        "heading": "awk",
+        "line": "ls-out.txt is one ls -l line. awk splits it on spaces into numbered fields.",
+        "photo": "Djoser colonnade of repeating stone columns"
+      }
+    },
+    "changed": "A Djoser colonnade photo appears with the awk card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "tag": "LAST",
+        "heading": "$NF",
+        "line": "$NF is the last field: rent-log.txt. Quote the program so the shell leaves $ alone.",
+        "photo": "Temple of Poseidon colonnade at Cape Sounion"
+      }
+    },
+    "changed": "A Poseidon colonnade photo appears with the $NF card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "tag": "SIZE",
+        "heading": "$5",
+        "line": "$5 is 92, the byte size. cut -d space cannot hold that column on ls -l.",
+        "photo": "stone arcade of repeating arches"
+      }
+    },
+    "changed": "A stone-arcade photo appears with the $5 card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "92",
+        "line": "Last awk print $5, $NF must still show 92 rent-log.txt.",
+        "photo": "Chester Roman Gardens colonnade"
+      }
+    },
+    "changed": "A Chester colonnade photo appears with the hold 92 card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.3,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "73"},
+      "main": {
+        "line": "cat ls-out.txt. print $NF. Hold $5 and $NF.",
+        "cards": ["Fields / awk", "Last / $NF", "Hold / 92"]
+      }
+    },
+    "changed": "Three end cards hold the Djoser, Poseidon, and Chester colonnades."
+  },
+  {
+    "start": 51.3,
+    "end": 52.45,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.45,
+    "end": 53.05,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens."
+  },
+  {
+    "start": 53.05,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator"
+      }
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.7,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 54.55,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 56.5,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $"]
+    },
+    "changed": "cd ~/linux-workshop runs. The prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat ls-out.txt",
+      "stdout": ["-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"]
+    },
+    "changed": "cat ls-out.txt shows the saved ls -l line for rent-log.txt."
+  },
+  {
+    "start": 67.0,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "awk '{print $NF}' ls-out.txt",
+      "stdout": ["rent-log.txt"]
+    },
+    "changed": "awk prints $NF: rent-log.txt."
+  },
+  {
+    "start": 73.5,
+    "end": 85.983,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "awk '{print $5, $NF}' ls-out.txt",
+      "stdout": ["92 rent-log.txt"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "awk prints $5 and $NF: 92 rent-log.txt."
+  }
+]

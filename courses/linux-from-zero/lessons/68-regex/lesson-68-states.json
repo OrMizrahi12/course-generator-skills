@@ -1,0 +1,205 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-68-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "kicker": "LESSON 68",
+        "title": "A regular expression matches a shape, not just a phrase."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "tag": "PATTERN",
+        "heading": "regex",
+        "line": "Default GNU grep already reads a basic regular expression. Quote it so the shell leaves the marks alone.",
+        "photo": "Roman geometric cube mosaic"
+      }
+    },
+    "changed": "A mosaic photo appears with the regex card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "tag": "RENT LOG",
+        "heading": "21",
+        "line": "grep 21 hits two cells: 21 Aug rent is paid, and Next due 21 Sep.",
+        "photo": "repeating glass honeycomb blocks"
+      }
+    },
+    "changed": "A glass-block photo appears with the two-21s card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "tag": "START",
+        "heading": "^",
+        "line": "Caret matches the empty string at the beginning of a line. '^21 ' keeps only the dated opening.",
+        "photo": "wooden hexagonal pavement"
+      }
+    },
+    "changed": "A hexagonal-pavement photo appears with the caret card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "^21",
+        "line": "Last grep '^21 ' must still show only 21 Aug rent is paid.",
+        "photo": "natural honeycomb cells"
+      }
+    },
+    "changed": "A honeycomb photo appears with the hold card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "68"},
+      "main": {
+        "end_line": "cat the log. grep 21. Hold grep '^21 '.",
+        "cards": [
+          {"title": "Pattern", "sub": "regex", "photo": "Roman mosaic"},
+          {"title": "Two 21s", "sub": "phrase", "photo": "glass honeycomb"},
+          {"title": "Hold", "sub": "^21", "photo": "honeycomb"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize regex, two 21s, and the caret hold."
+  },
+  {
+    "start": 51.0,
+    "end": 52.55,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.55,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click desktop menu opens with Run Program… under the pointer."
+  },
+  {
+    "start": 53.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the desktop menu."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.8,
+    "end": 61.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.2,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat rent-log.txt",
+      "output": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "cat shows the full rent-log note."
+  },
+  {
+    "start": 66.5,
+    "end": 73.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "grep 21 rent-log.txt",
+      "output": [
+        "21 Aug rent is paid.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "grep 21 prints both dated lines."
+  },
+  {
+    "start": 73.8,
+    "end": 84.267,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "grep '^21 ' rent-log.txt",
+      "output": "21 Aug rent is paid.",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "Last grep '^21 ' holds only the line that starts with the date."
+  }
+]

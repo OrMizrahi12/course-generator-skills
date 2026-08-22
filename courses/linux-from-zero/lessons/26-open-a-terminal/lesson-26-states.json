@@ -1,0 +1,171 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {"background": "#080C14 with navy and amber glows", "kicker": "LESSON 26"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 6.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "kicker": "LESSON 26",
+        "title": "Open a terminal. Type a command. Read the computer’s real answer."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 6.15,
+    "end": 14.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "photo": "desk with monitor and keyboard",
+        "tag": "OPEN",
+        "name": "Terminal Emulator",
+        "line": "Right-click the wallpaper. This host lists Terminal Emulator in that menu. Click it."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A desk photo is labeled Terminal Emulator, open."
+  },
+  {
+    "start": 14.05,
+    "end": 22.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "photo": "DEC VT100 terminal",
+        "tag": "WINDOW",
+        "name": "A text screen",
+        "line": "A prompt waits. Fill the window. Then type. The pictures of clocks and cabinets are not enough."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A VT100 photo is labeled A text screen."
+  },
+  {
+    "start": 22.05,
+    "end": 30.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "photo": "computer keyboard",
+        "tag": "TYPE",
+        "name": "A command",
+        "line": "One word, then Return. The computer runs it. echo is a toy. Ask for a date you need."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A keyboard photo is labeled A command, type."
+  },
+  {
+    "start": 30.05,
+    "end": 38.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "photo": "round wall clock",
+        "tag": "RESULT",
+        "name": "Today",
+        "line": "date prints the system date. Needed for a rent receipt in the folder you just made."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A wall clock is labeled Today."
+  },
+  {
+    "start": 38.05,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "26"},
+      "main": {
+        "line": "Open Terminal Emulator. Type date. Hold on the printed line.",
+        "cards": ["Open Terminal Emulator", "Type date", "Read The printed date"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Open, Type, Read."
+  },
+  {
+    "start": 51.0,
+    "end": 52.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.2,
+    "end": 54.4,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "The applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 54.4,
+    "end": 56.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 56.8,
+    "end": 58.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "date"},
+      "cursor": "block caret after date"
+    },
+    "changed": "date is typed at the prompt, not yet run."
+  },
+  {
+    "start": 58.6,
+    "end": 62.367,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "date",
+        "output": "Fri Aug 21 08:05:59 PM UTC 2026",
+        "prompt_after": "workspace $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "date prints Fri Aug 21 08:05:59 PM UTC 2026. That line stays until the file ends."
+  }
+]

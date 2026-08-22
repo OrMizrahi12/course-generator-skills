@@ -1,0 +1,161 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {"background": "#080C14 with navy and amber glows", "title": "not yet visible"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper. Wordmark and 10 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {"kicker": "LESSON 10", "title": "Seven pieces. One Linux OS."},
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears: LESSON 10 and Seven pieces. One Linux OS."
+  },
+  {
+    "start": 6.2,
+    "end": 14.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {
+        "photo": "GRUB version 2.12 Fedora Linux boot menu",
+        "tag": "PICTURE ONLY HERE",
+        "name": "Bootloader",
+        "line": "GRUB starts the machine. This host never shows that screen."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A GRUB screenshot is labeled Bootloader, picture only here."
+  },
+  {
+    "start": 14.5,
+    "end": 22.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {
+        "mark": "Tux the penguin on a cream disc",
+        "tag": "LINUX.COM",
+        "name": "Kernel",
+        "line": "The one piece actually called Linux. You already asked it."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Tux is labeled Kernel, the one piece actually called Linux."
+  },
+  {
+    "start": 22.5,
+    "end": 30.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {
+        "photo": "wooden matches with red tips, one burnt match in front",
+        "tag": "PID 1",
+        "name": "Init",
+        "line": "The first program. On this machine it is tini, not systemd."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A matches photograph is labeled Init. The line names tini, not systemd."
+  },
+  {
+    "start": 30.5,
+    "end": 38.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {
+        "mark": "XFCE mouse logo",
+        "tag": "THIS DESKTOP",
+        "name": "XFCE",
+        "line": "Graphical server, desktop, apps. You can see the session file."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The XFCE mark is labeled this desktop."
+  },
+  {
+    "start": 38.5,
+    "end": 50.6,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "10"},
+      "main": {
+        "line": "Seven pieces. Bootloader is a picture. Ask init and the desktop.",
+        "cards": ["Bootloader Picture", "Kernel", "Init", "Daemons", "Graphical", "Desktop", "Apps"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Seven cards sit in two rows: Bootloader through Apps."
+  },
+  {
+    "start": 50.6,
+    "end": 51.6,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The visualization closes."
+  },
+  {
+    "start": 51.6,
+    "end": 53.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "~ $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "A fullscreen terminal opens with an empty ~ $ prompt."
+  },
+  {
+    "start": 53.2,
+    "end": 58.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ps -p 1 -o pid,comm",
+        "header": "PID COMMAND",
+        "pid": "1",
+        "comm": "tini"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ps -p 1 -o pid,comm is typed and prints 1 tini."
+  },
+  {
+    "start": 58.5,
+    "end": 69.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "commands": ["ps -p 1 -o pid,comm", "ls /usr/share/xsessions"],
+        "pid1": "1 tini",
+        "xsessions": "xfce.desktop",
+        "prompt_after": "~ $"
+      },
+      "cursor": "I-beam, center"
+    },
+    "changed": "ls /usr/share/xsessions prints xfce.desktop. Init and desktop stay on screen until the file ends."
+  }
+]

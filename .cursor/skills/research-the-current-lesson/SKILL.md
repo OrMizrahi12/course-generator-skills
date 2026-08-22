@@ -63,6 +63,7 @@ Before you leave this skill:
 - Would a good teacher show this path, or a shortcut that hides how the thing is made?
 - Does the example make the feature necessary?
 - Can this be one complete film (creation, path, result) for a viewer who has never used it?
+- If this lesson uses a terminal: the brief notes that the font must be 1.75× default before filming.
 
 If any answer is no, do not proceed to recording. Fix the brief.
 
@@ -75,6 +76,7 @@ A short brief, then stop:
 - What "done" looks like on screen
 - Sources you actually used
 - Anything the viewer must see created on camera
+- If a terminal is in the lesson: font 1.75× default is part of the filming setup
 
 Do not write the full click script here. Do not start ffmpeg here. Hand off to [Real example in every lesson](sand-workflow:real-example-in-every-lesson) for the 0–100% path and ship gates, then to the recording skills.
 

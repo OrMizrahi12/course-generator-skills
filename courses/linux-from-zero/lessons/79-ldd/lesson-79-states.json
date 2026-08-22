@@ -1,0 +1,226 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.0,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-79-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens windowed playing the visualization."
+  },
+  {
+    "start": 1.0,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 79 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "kicker": "LESSON 79",
+        "title": "pstree is not one file. ldd lists the shared libraries it borrows."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "tag": "LINKED",
+        "heading": "file",
+        "line": "file /usr/bin/pstree must say dynamically linked. glibc’s ldd then names the libraries.",
+        "mark": "GNU head, white on black"
+      }
+    },
+    "changed": "The GNU mark appears with the file card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "tag": "DEPENDS",
+        "heading": "ldd",
+        "line": "ldd /usr/bin/pstree. Each line is a library this binary needs at run time.",
+        "photo": "heavy dark chain links on scratched metal"
+      }
+    },
+    "changed": "A chain photo appears with the ldd card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "tag": "C LIBRARY",
+        "heading": "libc",
+        "line": "libc.so.6 and libtinfo.so.6 live under /lib. pstree borrows them; it does not contain them.",
+        "photo": "interlocking clockwork cogs around a damaged clock face"
+      }
+    },
+    "changed": "Clockwork cogs appear with the libc card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "mappings",
+        "line": "Last ldd must hold libc.so.6 pointing at /lib/x86_64-linux-gnu/libc.so.6.",
+        "photo": "vertical hanging steel chain, one link in focus"
+      }
+    },
+    "changed": "A hanging-chain photo appears with the mappings card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "79"},
+      "main": {
+        "line": "file. ldd. libc. Hold the mappings.",
+        "cards": ["file / dynamically linked", "ldd / pstree", "Hold / libc.so.6"]
+      }
+    },
+    "changed": "Three end cards hold the GNU mark, the heavy chain, and the hanging links."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Run Program... highlighted."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "The pointer highlights Terminal Emulator."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 54.8,
+    "end": 57.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.2,
+    "end": 58.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~"
+    },
+    "changed": "cd ~ is typed."
+  },
+  {
+    "start": 58.5,
+    "end": 64.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~", "~ $"],
+      "typing": "file /usr/bin/pstree"
+    },
+    "changed": "cd ~ runs. file /usr/bin/pstree is typed."
+  },
+  {
+    "start": 64.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "file /usr/bin/pstree",
+      "stdout": "/usr/bin/pstree: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=376aa8135721635a9605f8f98b3f31c74ea4f71a, for GNU/Linux 3.2.0, stripped",
+      "prompt": "~ $"
+    },
+    "changed": "file reports pstree is a dynamically linked ELF pie executable."
+  },
+  {
+    "start": 68.0,
+    "end": 70.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "ldd /usr/bin/pstree"
+    },
+    "changed": "ldd /usr/bin/pstree is typed."
+  },
+  {
+    "start": 70.0,
+    "end": 74.65,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ldd /usr/bin/pstree",
+      "stdout": [
+        "linux-vdso.so.1 (0x00007f8e1e31e000)",
+        "libtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007f8e1e2d1000)",
+        "libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f8e1e0bf000)",
+        "/lib64/ld-linux-x86-64.so.2 (0x00007f8e1e320000)"
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "ldd holds linux-vdso.so.1, libtinfo.so.6, libc.so.6, and ld-linux-x86-64.so.2."
+  }
+]

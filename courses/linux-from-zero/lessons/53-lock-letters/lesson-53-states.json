@@ -1,0 +1,189 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-53-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "kicker": "LESSON 53",
+        "title": "Letters lock a file. u g o. r w x. chmod go-rw shuts the other doors."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "tag": "THE NOTE",
+        "heading": "rent-log.txt is open",
+        "line": "ls -l starts with -rw-r--r--. Group and others can still read the paid-rent date.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the open-note card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "tag": "LETTERS",
+        "heading": "g and o lose rw",
+        "line": "chmod go-rw rent-log.txt. Minus takes bits away. No numbers in this lesson.",
+        "photo": "cutaway brass padlock"
+      }
+    },
+    "changed": "A cutaway padlock photo appears with the letters card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "tag": "LS -L",
+        "heading": "The dashes appear",
+        "line": "ls -l again. Group and other columns become dashes. Owner still has rw.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the dashes card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "tag": "STILL YOURS",
+        "heading": "ubuntu can still read",
+        "line": "You own the file. Sam exists now. The note is no longer world-readable.",
+        "photo": "padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the still-yours card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "53"},
+      "main": {
+        "end_line": "ls -l. chmod go-rw. ls -l again. Hold -rw-------.",
+        "cards": [
+          {"title": "Open", "sub": "-rw-r--r--", "photo": "legal pad"},
+          {"title": "Letters", "sub": "go-rw", "photo": "cutaway padlock"},
+          {"title": "Shut", "sub": "-rw-------", "photo": "door latch"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize open, letters, and shut."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt_after": "linux-workshop $"
+    },
+    "changed": "cd ~/linux-workshop changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 67.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt",
+      "output": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+    },
+    "changed": "ls -l shows rent-log.txt still group-and-world readable."
+  },
+  {
+    "start": 67.5,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "chmod go-rw rent-log.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "chmod go-rw rent-log.txt runs with no printed output."
+  },
+  {
+    "start": 73.5,
+    "end": 82.933,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt",
+      "output": "-rw------- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds -rw------- on rent-log.txt."
+  }
+]

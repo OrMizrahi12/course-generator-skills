@@ -1,0 +1,337 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "kicker": "LESSON 39",
+        "title": "A leading dot hides a name from ls. ls -a finds it. The file is still there."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "photo": "antique lap desk with a hidden compartment open",
+        "tag": "MAKE",
+        "name": "Start with a dot",
+        "line": "nano .landlord.txt writes a real reminder. The name begins with . so ordinary ls will skip it."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A hidden desk compartment is labeled Start with a dot."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "photo": "moth camouflaged on tree bark",
+        "tag": "MISS",
+        "name": "ls looks past it",
+        "line": "ls still lists rent-log.txt and sep-due-draft.txt. The landlord note is present and unnamed in that list."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A camouflaged moth is labeled ls looks past it."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "photo": "iron door of a secret room slightly ajar",
+        "tag": "FIND",
+        "name": "ls -a opens it",
+        "line": "ls -a does not ignore names that start with a dot. . and .. appear. So does .landlord.txt."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An iron door is labeled ls -a opens it."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "photo": "speckled moth resting on concrete",
+        "tag": "NAME",
+        "name": "Ask for it",
+        "line": "ls -ld .landlord.txt prints the hidden file itself. echo is not a dotfile. This is."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A speckled moth is labeled Ask for it."
+  },
+  {
+    "start": 37.85,
+    "end": 50.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "39"},
+      "main": {
+        "line": "cd ~/linux-workshop. nano .landlord.txt. Write Out. Exit. ls misses it. ls -a finds it. ls -ld names it.",
+        "cards": ["Make .LANDLORD.TXT", "Miss PLAIN LS", "Find LS -A"]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three cards sit in a row: Make, Miss, Find."
+  },
+  {
+    "start": 50.85,
+    "end": 52.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center then mid-left"
+    },
+    "changed": "The visualization closes onto the empty wallpaper."
+  },
+  {
+    "start": 52.5,
+    "end": 53.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "near Run Program..."
+    },
+    "changed": "The applications menu opens with Run Program... at the top."
+  },
+  {
+    "start": 53.0,
+    "end": 53.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "highlight": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser"]
+      },
+      "cursor": "on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.5,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The menu closes after the click."
+  },
+  {
+    "start": 54.0,
+    "end": 54.7,
+    "on_screen": {
+      "window": "xfce4-terminal, not fullscreen",
+      "desktop": {"wallpaper": "visible on right and bottom edges"},
+      "main": {"prompt": "workspace $", "typed": ""}
+    },
+    "changed": "A windowed terminal opens with an empty workspace $ prompt."
+  },
+  {
+    "start": 54.7,
+    "end": 56.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": ""},
+      "cursor": "I-beam, center"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.2,
+    "end": 57.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "pwd"}
+    },
+    "changed": "pwd is typed."
+  },
+  {
+    "start": 57.4,
+    "end": 59.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "pwd", "output": "/workspace", "prompt_after": "workspace $"}
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 59.0,
+    "end": 62.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "workspace $", "typed": "cd ~/linux-workshop"}
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.2,
+    "end": 63.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "cd ~/linux-workshop", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "The prompt becomes linux-workshop $."
+  },
+  {
+    "start": 63.8,
+    "end": 65.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed."
+  },
+  {
+    "start": 65.0,
+    "end": 67.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "rent-log.txt  sep-due-draft.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls prints rent-log.txt and sep-due-draft.txt."
+  },
+  {
+    "start": 67.2,
+    "end": 71.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "nano .landlord.txt"}
+    },
+    "changed": "nano .landlord.txt is typed."
+  },
+  {
+    "start": 71.8,
+    "end": 80.4,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": ".landlord.txt *", "status": "[ New File ]"},
+      "main": {"buffer": "Call the landlord on 21 Sep before six."},
+      "help": ["^G Help", "^O Write Out", "^X Exit"]
+    },
+    "changed": "GNU nano 7.2 opens .landlord.txt and the reminder is typed."
+  },
+  {
+    "start": 80.4,
+    "end": 82.6,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "chrome": {"title": "GNU nano 7.2", "filename": ".landlord.txt", "status": "[ Wrote 2 lines ]"},
+      "main": {"buffer": "Call the landlord on 21 Sep before six."},
+      "help": ["^G Help", "^O Write Out", "^X Exit"]
+    },
+    "changed": "[ Wrote 2 lines ] appears after Write Out."
+  },
+  {
+    "start": 82.6,
+    "end": 85.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "nano .landlord.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "^X Exit returns to the linux-workshop $ prompt."
+  },
+  {
+    "start": 85.0,
+    "end": 86.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls"}
+    },
+    "changed": "ls is typed after the save."
+  },
+  {
+    "start": 86.2,
+    "end": 88.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"command": "ls", "output": "rent-log.txt  sep-due-draft.txt", "prompt_after": "linux-workshop $"}
+    },
+    "changed": "ls still prints only rent-log.txt and sep-due-draft.txt."
+  },
+  {
+    "start": 88.4,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls -a"}
+    },
+    "changed": "ls -a is typed."
+  },
+  {
+    "start": 90.0,
+    "end": 93.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls -a",
+        "output": ".  ..  .landlord.txt  rent-log.txt  sep-due-draft.txt",
+        "prompt_after": "linux-workshop $"
+      }
+    },
+    "changed": "ls -a lists .landlord.txt with . and .."
+  },
+  {
+    "start": 93.2,
+    "end": 97.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {"prompt": "linux-workshop $", "typed": "ls -ld .landlord.txt"}
+    },
+    "changed": "ls -ld .landlord.txt is typed."
+  },
+  {
+    "start": 97.0,
+    "end": 102.583,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "main": {
+        "command": "ls -ld .landlord.txt",
+        "output": "-rw-r--r-- 1 ubuntu ubuntu 41 Aug 21 23:09 .landlord.txt",
+        "prompt_after": "linux-workshop $"
+      },
+      "cursor": "block on the empty prompt"
+    },
+    "changed": "ls -ld prints the hidden .landlord.txt line. The file remains until the recording ends."
+  }
+]

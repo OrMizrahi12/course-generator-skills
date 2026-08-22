@@ -1,0 +1,276 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {"background": "#080C14 with navy and amber glows"},
+      "cursor": "not visible"
+    },
+    "changed": "A dark full-bleed course frame replaces the wallpaper."
+  },
+  {
+    "start": 1.25,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "kicker": "LESSON 41",
+        "title": "The tree has named rooms. People live in /home. The rent log does not belong in /tmp or /etc."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title appears."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "tag": "PEOPLE",
+        "heading": "/home is the house",
+        "line": "FHS 3.0 puts user directories under /home. This machine’s home is /home/ubuntu. The workshop is a room in that house.",
+        "photo": "front door of a house numbered 105"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A house-door photo appears with the /home card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "tag": "THROWAWAY",
+        "heading": "/tmp can vanish",
+        "line": "Temporary files may be deleted with no notice. The rent log is not a sticky note. ls /tmp/rent-log.txt fails.",
+        "photo": "stack of four colored sticky-note pads"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Sticky notes replace the house photo."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "tag": "THE MACHINE",
+        "heading": "/etc /var /usr /bin",
+        "line": "/etc is host config. /var changes. /usr is the shareable tree. /bin holds programs. None of those are a desk for papers.",
+        "photo": "labeled household electrical panel"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An electrical panel photo appears with the machine-directory card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "tag": "KEEP IT HERE",
+        "heading": "realpath says /home",
+        "line": "cd ~/linux-workshop. realpath . prints /home/ubuntu/linux-workshop. echo is not a place in the tree.",
+        "photo": "open cardboard box of hand tools"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A toolbox photo appears with the realpath card."
+  },
+  {
+    "start": 37.85,
+    "end": 50.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "41"},
+      "main": {
+        "end_line": "ls -ld the six names. Prove rent-log.txt is missing from /tmp and /etc. realpath the workshop under /home.",
+        "cards": [
+          {"title": "People", "sub": "/HOME", "photo": "house front door"},
+          {"title": "Throwaway", "sub": "/TMP", "photo": "sticky-note stack"},
+          {"title": "The machine", "sub": "/ETC /VAR /USR /BIN", "photo": "electrical panel"}
+        ]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three end cards summarize /home, /tmp, and the machine directories."
+  },
+  {
+    "start": 50.85,
+    "end": 51.6,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center"
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 51.6,
+    "end": 53.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      },
+      "cursor": "arrow near the menu"
+    },
+    "changed": "A right-click desktop menu opens."
+  },
+  {
+    "start": 53.0,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"},
+      "cursor": "arrow on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in blue."
+  },
+  {
+    "start": 53.7,
+    "end": 54.6,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "cwd_name": "workspace"
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.6,
+    "end": 56.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $",
+      "font": "JetBrains Mono, large"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.4,
+    "end": 58.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 58.8,
+    "end": 68.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld /home /tmp /etc /var /usr /bin",
+      "output": [
+        "/bin -> usr/bin",
+        "drwxr-xr-x ... /etc",
+        "drwxr-xr-x ... /home",
+        "drwxrwxrwt ... /tmp",
+        "drwxr-xr-x ... /usr",
+        "drwxr-xr-x ... /var"
+      ]
+    },
+    "changed": "ls -ld lists the six FHS names; /bin is a symlink; /tmp has the sticky bit."
+  },
+  {
+    "start": 68.5,
+    "end": 76.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "commands": ["ls /home", "ls /var", "ls /usr"],
+      "output": {
+        "/home": "ubuntu",
+        "/var": "backups cache lib local lock log mail opt run spool tmp",
+        "/usr": "bin games include lib lib64 libexec local sbin share src"
+      }
+    },
+    "changed": "ls shows ubuntu under /home and the short contents of /var and /usr."
+  },
+  {
+    "start": 76.5,
+    "end": 89.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "commands": ["ls -l /etc/os-release", "ls -l /bin/ls"],
+      "output": {
+        "os-release": "/etc/os-release -> ../usr/lib/os-release",
+        "ls_binary": "-rwxr-xr-x 1 root root 142312 ... /bin/ls"
+      }
+    },
+    "changed": "ls -l shows /etc/os-release as a config symlink and /bin/ls as an executable."
+  },
+  {
+    "start": 89.5,
+    "end": 105.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "commands": ["ls /tmp/rent-log.txt", "ls /etc/rent-log.txt"],
+      "output": [
+        "ls: cannot access '/tmp/rent-log.txt': No such file or directory",
+        "ls: cannot access '/etc/rent-log.txt': No such file or directory"
+      ]
+    },
+    "changed": "rent-log.txt is missing from /tmp and from /etc."
+  },
+  {
+    "start": 105.5,
+    "end": 112.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $",
+      "pwd": "/home/ubuntu/linux-workshop"
+    },
+    "changed": "cd ~/linux-workshop; pwd prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 112.5,
+    "end": 118.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "realpath .",
+      "output": "/home/ubuntu/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "realpath . prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 118.5,
+    "end": 128.7,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /home/ubuntu/linux-workshop/rent-log.txt",
+      "output": "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:12 /home/ubuntu/linux-workshop/rent-log.txt",
+      "prompt": "linux-workshop $",
+      "prior_errors_still_visible": [
+        "ls: cannot access '/tmp/rent-log.txt': No such file or directory",
+        "ls: cannot access '/etc/rent-log.txt': No such file or directory"
+      ]
+    },
+    "changed": "ls -l shows the 92-byte rent log under /home/ubuntu/linux-workshop."
+  }
+]

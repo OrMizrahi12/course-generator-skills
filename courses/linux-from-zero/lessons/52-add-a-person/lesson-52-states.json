@@ -1,0 +1,217 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-52-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "kicker": "LESSON 52",
+        "title": "A second chair at the table. Sam needs a login. adduser makes a person, not a folder."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "tag": "A PERSON",
+        "heading": "Set a place for Sam",
+        "line": "The landlord's helper needs a login to look at the rent papers later. A directory named sam is not enough.",
+        "photo": "two empty chairs and one blue table"
+      }
+    },
+    "changed": "A two-chair terrace photo appears with the person card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "tag": "ADDUSER",
+        "heading": "Pass sudo this time",
+        "line": "sudo adduser --disabled-password --comment Sam sam. Ubuntu’s wrapper. Wait until the info lines finish.",
+        "photo": "gold antique mailbox name plate"
+      }
+    },
+    "changed": "A mailbox name-plate photo appears with the adduser card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "tag": "THE REGISTER",
+        "heading": "A new passwd line",
+        "line": "getent passwd sam. uid 1001. Home /home/sam. Shell /bin/bash. id sam must name the new group.",
+        "photo": "wooden library card catalog"
+      }
+    },
+    "changed": "A card-catalog photo appears with the passwd card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "tag": "THE HOUSE",
+        "heading": "ls -ld /home/sam",
+        "line": "The home is a directory owned by sam. ubuntu cannot list inside it. The door is theirs.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the home card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "52"},
+      "main": {
+        "end_line": "sudo adduser. Wait. getent passwd sam. id sam. ls -ld /home/sam.",
+        "cards": [
+          {"title": "Place", "sub": "adduser", "photo": "two chairs"},
+          {"title": "Line", "sub": "getent", "photo": "card catalog"},
+          {"title": "Home", "sub": "/home/sam", "photo": "legal pad"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize adduser, getent, and /home/sam."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 60.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.5,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "id",
+      "output": "uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev)"
+    },
+    "changed": "id prints ubuntu uid 1000 including group sudo."
+  },
+  {
+    "start": 66.5,
+    "end": 74.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo adduser --disabled-password --comment Sam sam",
+      "output": [
+        "info: Adding user `sam' ...",
+        "info: Selecting UID/GID from range 1000 to 59999 ...",
+        "info: Adding new group `sam' (1001) ...",
+        "info: Adding new user `sam' (1001) with group `sam (1001)' ...",
+        "info: Creating home directory `/home/sam' ...",
+        "info: Copying files from `/etc/skel' ...",
+        "info: Adding new user `sam' to supplemental / extra groups `users' ...",
+        "info: Adding user `sam' to group `users' ..."
+      ]
+    },
+    "changed": "sudo adduser finishes; sam is uid 1001 with home /home/sam."
+  },
+  {
+    "start": 74.5,
+    "end": 79.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "id sam",
+      "output": "uid=1001(sam) gid=1001(sam) groups=1001(sam),100(users)"
+    },
+    "changed": "id sam prints uid 1001 and groups sam and users."
+  },
+  {
+    "start": 79.5,
+    "end": 84.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld /home/sam",
+      "output": "drwxr-x--- 2 sam sam 4096 Aug 22 02:27 /home/sam"
+    },
+    "changed": "ls -ld /home/sam starts with d and is owned by sam sam."
+  },
+  {
+    "start": 84.5,
+    "end": 90.983,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent passwd sam",
+      "output": "sam:x:1001:1001:Sam,,,:/home/sam:/bin/bash",
+      "prompt": "workspace $"
+    },
+    "changed": "getent passwd sam holds home /home/sam and shell /bin/bash."
+  }
+]

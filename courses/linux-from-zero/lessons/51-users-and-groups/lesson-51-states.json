@@ -1,0 +1,209 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-51-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "kicker": "LESSON 51",
+        "title": "Access is not only you. This login sits on several group lists. sudo is one of them."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "tag": "GROUPS",
+        "heading": "Several keys, one person",
+        "line": "groups and id -nG print the names. ubuntu, adm, sudo, and the rest on this machine.",
+        "photo": "brass padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the groups card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "tag": "THE FILE",
+        "heading": "One line per group",
+        "line": "group(5) is /etc/group. Name, password, GID, then the people. getent group sudo reads sudo.",
+        "photo": "wooden library card catalog"
+      }
+    },
+    "changed": "A card-catalog photo appears with the /etc/group card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "tag": "YOUR NAME ON THE LIST",
+        "heading": "ubuntu is written there",
+        "line": "grep ubuntu /etc/group. Every line that names this account. sudo:x:27:ubuntu must show.",
+        "photo": "gold antique mailbox name plate"
+      }
+    },
+    "changed": "A mailbox name-plate photo appears with the grep card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "tag": "THE JOB",
+        "heading": "Prove sudo before sudo",
+        "line": "Do not create a person yet. Read the lists. Then you know which keys this login already holds.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the prove-sudo card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "51"},
+      "main": {
+        "end_line": "groups. id -nG. getent group sudo. grep ubuntu /etc/group. Hold sudo:x:27:ubuntu.",
+        "cards": [
+          {"title": "Names", "sub": "groups", "photo": "padlock and keys"},
+          {"title": "The file", "sub": "/etc/group", "photo": "card catalog"},
+          {"title": "sudo", "sub": "grep ubuntu", "photo": "mailbox name plate"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize groups, /etc/group, and sudo."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 60.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.5,
+    "end": 64.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "groups",
+      "output": "ubuntu adm dialout cdrom floppy sudo audio dip video plugdev"
+    },
+    "changed": "groups prints the names this login belongs to, including sudo."
+  },
+  {
+    "start": 64.5,
+    "end": 68.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "id -nG",
+      "output": "ubuntu adm dialout cdrom floppy sudo audio dip video plugdev"
+    },
+    "changed": "id -nG prints the same group names."
+  },
+  {
+    "start": 68.5,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent group sudo",
+      "output": "sudo:x:27:ubuntu"
+    },
+    "changed": "getent group sudo prints sudo:x:27:ubuntu."
+  },
+  {
+    "start": 73.5,
+    "end": 81.017,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "grep ubuntu /etc/group",
+      "output": [
+        "adm:x:4:ubuntu",
+        "dialout:x:20:ubuntu",
+        "cdrom:x:24:ubuntu",
+        "floppy:x:25:ubuntu",
+        "sudo:x:27:ubuntu",
+        "audio:x:29:ubuntu",
+        "dip:x:30:ubuntu",
+        "video:x:44:ubuntu",
+        "plugdev:x:46:ubuntu",
+        "ubuntu:x:1000:"
+      ],
+      "prompt": "workspace $"
+    },
+    "changed": "grep ubuntu /etc/group holds sudo:x:27:ubuntu among this account's group lines."
+  }
+]

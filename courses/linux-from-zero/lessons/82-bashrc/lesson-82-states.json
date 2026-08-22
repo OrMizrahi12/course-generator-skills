@@ -1,0 +1,257 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.0,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-82-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens windowed playing the visualization."
+  },
+  {
+    "start": 1.0,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 82 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "kicker": "LESSON 82",
+        "title": "Write an alias in bashrc. source it. due works from home."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "tag": "FILE",
+        "heading": "bashrc",
+        "line": "cat ~/.bashrc. Interactive bash reads this file. The alias is not there yet.",
+        "photo": "spiral notebook binding on lined paper"
+      }
+    },
+    "changed": "A notebook photo appears with the bashrc card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "tag": "WRITE",
+        "heading": "alias",
+        "line": "nano .bashrc. Append alias due=/home/ubuntu/linux-workshop/due",
+        "photo": "spiral diary on a desk"
+      }
+    },
+    "changed": "A diary photo appears with the alias card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "tag": "LOAD",
+        "heading": "source",
+        "line": "source .bashrc. This shell rereads the file. type due must show the alias.",
+        "photo": "stacked cream note paper edges"
+      }
+    },
+    "changed": "Note-stack photo appears with the source card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "due",
+        "line": "Last due from ~ must hold Next due 21 Oct.",
+        "photo": "manila folder with a silver paperclip"
+      }
+    },
+    "changed": "A manila folder appears with the due card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "82"},
+      "main": {
+        "line": "bashrc. alias. source. Hold due.",
+        "cards": ["bashrc / the file", "alias / due", "Hold / Next due 21 Oct."]
+      }
+    },
+    "changed": "Three end cards hold the notebook, the diary, and the folder."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Run Program...",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Run Program... highlighted."
+  },
+  {
+    "start": 53.2,
+    "end": 54.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "The pointer highlights Terminal Emulator."
+  },
+  {
+    "start": 54.8,
+    "end": 57.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.2,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~"
+    },
+    "changed": "cd ~ is typed."
+  },
+  {
+    "start": 61.0,
+    "end": 64.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~", "~ $"],
+      "typing": "cat .bashrc"
+    },
+    "changed": "cd ~ runs. cat .bashrc is typed."
+  },
+  {
+    "start": 64.0,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat .bashrc",
+      "stdout": [
+        "export NVM_DIR=\"$HOME/.nvm\"",
+        "[ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\"",
+        "[ -s \"$NVM_DIR/bash_completion\" ] && \\. \"$NVM_DIR/bash_completion\"",
+        "export PS1=\"\\[\\e[36m\\]\\W\\[\\e[0m\\] $ \"",
+        "export PATH=/usr/local/cargo/bin:$PATH"
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "cat shows five bashrc lines. No due alias yet."
+  },
+  {
+    "start": 67.0,
+    "end": 85.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": ".bashrc",
+      "modified": true,
+      "buffer": [
+        "export NVM_DIR=\"$HOME/.nvm\"",
+        "[ -s \"$NVM_DIR/nvm.sh\" ] && \\. \"$NVM_DIR/nvm.sh\"",
+        "[ -s \"$NVM_DIR/bash_completion\" ] && \\. \"$NVM_DIR/bash_completion\"",
+        "export PS1=\"\\[\\e[36m\\]\\W\\[\\e[0m\\] $ \"",
+        "export PATH=/usr/local/cargo/bin:$PATH",
+        "alias due=/home/ubuntu/linux-workshop/due"
+      ]
+    },
+    "changed": "nano opens .bashrc. The due alias is appended and written."
+  },
+  {
+    "start": 85.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "source .bashrc"
+    },
+    "changed": "nano exits. source .bashrc is typed."
+  },
+  {
+    "start": 90.0,
+    "end": 94.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "type due"
+    },
+    "changed": "source returns. type due is typed."
+  },
+  {
+    "start": 94.0,
+    "end": 96.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "type due",
+      "stdout": "due is aliased to `/home/ubuntu/linux-workshop/due'",
+      "prompt": "~ $"
+    },
+    "changed": "type due reports the alias to the workshop binary."
+  },
+  {
+    "start": 96.0,
+    "end": 102.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "due",
+      "stdout": "Next due 21 Oct.",
+      "prompt": "~ $"
+    },
+    "changed": "due from home holds Next due 21 Oct."
+  }
+]

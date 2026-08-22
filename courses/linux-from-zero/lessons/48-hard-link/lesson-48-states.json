@@ -1,0 +1,234 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-48-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "kicker": "LESSON 48",
+        "title": "A hard link is a second key to the same lock. Two names. One inode. One rent log."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "tag": "HARD LINK",
+        "heading": "Another key, same lock",
+        "line": "GNU ln makes a hard link by default. Do not pass -s here. That is a different kind of name.",
+        "photo": "brass padlock with two keys on weathered wood"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the hard-link card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "tag": "THE FILE",
+        "heading": "The rent log stays",
+        "line": "ln rent-log.txt due-call.txt. The paper is not copied. sep-due-draft.txt was a copy. This is not.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the rent-log card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "tag": "THE INDEX",
+        "heading": "Same number twice",
+        "line": "ls -li prints the inode on the left. Both names must show 1575463. Link count becomes 2.",
+        "photo": "wooden library card catalog"
+      }
+    },
+    "changed": "A card-catalog photo appears with the inode card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "tag": "THE SECOND NAME",
+        "heading": "due-call.txt",
+        "line": "cat due-call.txt must print the same three rent sentences. Find the paper from the 21 Sep call.",
+        "photo": "wooden clipboard with a yellow pencil"
+      }
+    },
+    "changed": "A clipboard photo appears with the due-call card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "48"},
+      "main": {
+        "end_line": "cd into the workshop. ls -li. ln rent-log.txt due-call.txt. ls -li both names. cat the new name.",
+        "cards": [
+          {"title": "Two keys", "sub": "ln", "photo": "padlock and keys"},
+          {"title": "One inode", "sub": "1575463", "photo": "card catalog"},
+          {"title": "due-call", "sub": "link count 2", "photo": "clipboard"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize ln, inode 1575463, and link count 2."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 61.8,
+    "end": 67.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $",
+      "pwd": "/home/ubuntu/linux-workshop"
+    },
+    "changed": "cd into the workshop; pwd prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 67.2,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -li",
+      "output": [
+        "total 8",
+        "1575463 -rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "1575549 -rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ]
+    },
+    "changed": "ls -li shows rent-log.txt inode 1575463 with link count 1."
+  },
+  {
+    "start": 73.5,
+    "end": 77.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ln rent-log.txt due-call.txt"
+    },
+    "changed": "ln creates due-call.txt as a hard link to rent-log.txt."
+  },
+  {
+    "start": 77.8,
+    "end": 84.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -li",
+      "output": [
+        "total 12",
+        "1575463 -rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 due-call.txt",
+        "1575463 -rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "1575549 -rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ]
+    },
+    "changed": "ls -li now shows both names on inode 1575463 with link count 2."
+  },
+  {
+    "start": 84.8,
+    "end": 90.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat due-call.txt",
+      "output": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "cat due-call.txt prints the three rent sentences."
+  },
+  {
+    "start": 90.2,
+    "end": 99.45,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -li rent-log.txt due-call.txt",
+      "output": [
+        "1575463 -rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 due-call.txt",
+        "1575463 -rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -li of both names holds inode 1575463 twice and link count 2."
+  }
+]

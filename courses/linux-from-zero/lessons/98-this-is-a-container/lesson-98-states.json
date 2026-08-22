@@ -1,0 +1,203 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 98 are on screen."
+  },
+  {
+    "start": 1.5,
+    "end": 5.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "kicker": "LESSON 98",
+        "title": "This Linux is a container. Overlay on /. A pod cgroup. Namespaces wrap the process."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.2,
+    "end": 13.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "tag": "ROOT",
+        "heading": "overlay",
+        "line": "df -hT / prints type overlay. Upper and lower dirs stacked as one /.",
+        "photo": "person packing a cardboard box"
+      }
+    },
+    "changed": "A packing-box photo appears with the overlay card."
+  },
+  {
+    "start": 13.2,
+    "end": 21.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "tag": "FIND MNT",
+        "heading": "findmnt",
+        "line": "SOURCE overlay. FSTYPE overlay. TARGET /. Same root, named twice.",
+        "photo": "plywood shipping crates in a warehouse"
+      }
+    },
+    "changed": "A crate photo appears with the findmnt card."
+  },
+  {
+    "start": 21.2,
+    "end": 29.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "tag": "WRAP",
+        "heading": "/proc/self/ns",
+        "line": "mnt net pid user uts. Files that wrap this process. One use is containers.",
+        "photo": "open cardboard box on flattened boxes"
+      }
+    },
+    "changed": "A stacked-boxes photo appears with the /proc/self/ns card."
+  },
+  {
+    "start": 29.2,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "cgroup",
+        "line": "Last cat /proc/1/cgroup holds the pod slice. No /.dockerenv.",
+        "photo": "empty open cardboard box on carpet"
+      }
+    },
+    "changed": "An open-box photo appears with the cgroup card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "98"},
+      "main": {
+        "line": "overlay. namespaces. Hold PID 1’s cgroup.",
+        "cards": ["overlay / df -hT /", "/proc/self/ns / wraps this process", "Hold / pod cgroup"]
+      }
+    },
+    "changed": "Three end cards hold the packing box, the stacked boxes, and the open box."
+  },
+  {
+    "start": 51.0,
+    "end": 52.5,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.5,
+    "end": 53.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 53.0,
+    "end": 53.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 53.8,
+    "end": 54.5,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.5,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "df -hT /",
+      "stdout": [
+        "Filesystem     Type     Size  Used Avail Use% Mounted on",
+        "overlay        overlay  252G   19G  221G   8% /"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "df -hT / holds type overlay on /."
+  },
+  {
+    "start": 66.5,
+    "end": 74.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "findmnt -n -o SOURCE,FSTYPE,TARGET /",
+      "stdout": ["overlay overlay /"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "findmnt holds overlay overlay /."
+  },
+  {
+    "start": 74.5,
+    "end": 80.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /proc/self/ns",
+      "stdout": ["cgroup  ipc  mnt  net  pid  pid_for_children  time  time_for_children  user  uts"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /proc/self/ns lists namespace files for this process."
+  },
+  {
+    "start": 80.0,
+    "end": 90.283,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/1/cgroup",
+      "stdout": ["0::/system.slice/pod-2tfqlkm53fbljl2anubmdzxvxy-f76b9023"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /proc/1/cgroup holds the pod slice."
+  }
+]

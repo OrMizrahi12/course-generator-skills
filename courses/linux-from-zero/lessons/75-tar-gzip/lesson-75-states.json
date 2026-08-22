@@ -1,0 +1,305 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "arrow, lower right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"}
+    },
+    "changed": "The visualization starts. LINUX FROM ZERO and 75 are on screen."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "kicker": "LESSON 75",
+        "title": "tar packs the workshop into one gzip file. List it. Restore it somewhere else."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "tag": "PACK",
+        "heading": "tar -czf",
+        "line": "From home, pack linux-workshop into linux-workshop.tar.gz. One file holds the tree.",
+        "photo": "stacked plywood shipping crates in a warehouse"
+      }
+    },
+    "changed": "A crate photo appears with the tar -czf card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "tag": "GZIP",
+        "heading": "file",
+        "line": "ls -lh then file. The archive is gzip compressed data, not a plain directory.",
+        "photo": "hands packing a small cardboard box with tape nearby"
+      }
+    },
+    "changed": "A packing-hands photo appears with the file card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "tag": "LIST",
+        "heading": "-tzf",
+        "line": "tar -tzf lists members including .landlord.txt. It does not unpack yet.",
+        "photo": "open cardboard box on a stack of flattened boxes"
+      }
+    },
+    "changed": "An open-box photo appears with the -tzf card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "tag": "RESTORE",
+        "heading": "-xzf",
+        "line": "mkdir /tmp/workshop-snap. Extract -C there. Last cat of the restored draft must show Oct.",
+        "photo": "open empty cardboard box on carpet"
+      }
+    },
+    "changed": "An empty open-box photo appears with the -xzf card."
+  },
+  {
+    "start": 37.85,
+    "end": 50.95,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "75"},
+      "main": {
+        "line": "Pack. file. List. Extract. Hold the restored cat.",
+        "cards": ["Pack / tar -czf", "List / -tzf", "Restore / -xzf"]
+      }
+    },
+    "changed": "Three end cards hold crates, an open box on a stack, and an empty open box."
+  },
+  {
+    "start": 50.95,
+    "end": 51.2,
+    "on_screen": {
+      "window": "mpv, windowed",
+      "title": "lesson-75-viz.mp4 - mpv"
+    },
+    "changed": "mpv shows a brief windowed flash of the end cards."
+  },
+  {
+    "start": 51.2,
+    "end": 52.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "arrow near center-left"
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.9,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.7,
+    "end": 54.9,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 54.9,
+    "end": 56.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 56.8,
+    "end": 59.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~"]
+    },
+    "changed": "cd ~ is typed on the workspace $ prompt."
+  },
+  {
+    "start": 59.2,
+    "end": 63.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~", "~ $"],
+      "typing": "ls linux-workshop"
+    },
+    "changed": "cd ~ runs. The prompt becomes ~ $. ls linux-workshop is typed."
+  },
+  {
+    "start": 63.0,
+    "end": 66.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls linux-workshop",
+      "stdout": "due-call.txt  ls-err.txt  ls-out.txt  papers  receipt-list.txt  rent-log.txt  sep-due-draft.txt  sep-due-note.txt",
+      "prompt": "~ $"
+    },
+    "changed": "ls linux-workshop lists the workshop names including papers."
+  },
+  {
+    "start": 66.5,
+    "end": 73.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "typing": "tar -czf linux-workshop.tar.gz linux-workshop"
+    },
+    "changed": "tar -czf linux-workshop.tar.gz linux-workshop is typed."
+  },
+  {
+    "start": 73.2,
+    "end": 77.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tar -czf linux-workshop.tar.gz linux-workshop",
+      "prompt": "~ $"
+    },
+    "changed": "tar -czf finishes with no stdout. A new ~ $ prompt is waiting."
+  },
+  {
+    "start": 77.5,
+    "end": 82.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "typing": "ls -lh linux-workshop.tar.gz"
+    },
+    "changed": "ls -lh linux-workshop.tar.gz is typed."
+  },
+  {
+    "start": 82.5,
+    "end": 86.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -lh linux-workshop.tar.gz",
+      "stdout": "-rw-r--r-- 1 ubuntu ubuntu 603 Aug 22 08:27 linux-workshop.tar.gz",
+      "typing": "file linux-workshop.tar.gz"
+    },
+    "changed": "ls -lh shows the archive is 603 bytes. file is being typed."
+  },
+  {
+    "start": 86.5,
+    "end": 91.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "file linux-workshop.tar.gz",
+      "stdout": "linux-workshop.tar.gz: gzip compressed data, from Unix, original size modulo 2^32 10240",
+      "typing": "tar -tzf linux-workshop.tar.gz"
+    },
+    "changed": "file reports gzip compressed data. tar -tzf is typed."
+  },
+  {
+    "start": 91.5,
+    "end": 100.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tar -tzf linux-workshop.tar.gz",
+      "stdout": [
+        "linux-workshop/",
+        "linux-workshop/sep-due-note.txt",
+        "linux-workshop/receipt-list.txt",
+        "linux-workshop/rent-log.txt",
+        "linux-workshop/sep-due-draft.txt",
+        "linux-workshop/due-call.txt",
+        "linux-workshop/ls-err.txt",
+        "linux-workshop/ls-out.txt",
+        "linux-workshop/.landlord.txt",
+        "linux-workshop/papers"
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "tar -tzf lists members including .landlord.txt and papers."
+  },
+  {
+    "start": 100.5,
+    "end": 105.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "mkdir /tmp/workshop-snap",
+      "prompt": "~ $"
+    },
+    "changed": "mkdir /tmp/workshop-snap runs. A new ~ $ prompt is waiting."
+  },
+  {
+    "start": 105.5,
+    "end": 113.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "typing": "tar -xzf linux-workshop.tar.gz -C /tmp/workshop-snap"
+    },
+    "changed": "tar -xzf linux-workshop.tar.gz -C /tmp/workshop-snap is typed."
+  },
+  {
+    "start": 113.5,
+    "end": 118.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tar -xzf linux-workshop.tar.gz -C /tmp/workshop-snap",
+      "prompt": "~ $",
+      "typing": "cat /tmp/workshop-snap/linux-workshop/sep-due-draft.txt"
+    },
+    "changed": "Extract finishes with no stdout. cat of the restored draft is typed."
+  },
+  {
+    "start": 118.5,
+    "end": 129.767,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /tmp/workshop-snap/linux-workshop/sep-due-draft.txt",
+      "stdout": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Oct."
+      ],
+      "prompt": "~ $"
+    },
+    "changed": "cat of the restored draft holds Next due 21 Oct."
+  }
+]

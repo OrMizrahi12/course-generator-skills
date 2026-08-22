@@ -1,0 +1,169 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 89 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "kicker": "LESSON 89",
+        "title": "Start a listener. ss shows the LISTEN row."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "tag": "LISTEN",
+        "heading": "ss",
+        "line": "ss dumps socket statistics. LISTEN means something is waiting.",
+        "photo": "Schuko wall socket with one plug"
+      }
+    },
+    "changed": "A socket photo appears with the ss card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "tag": "TABLE",
+        "heading": "ss -lnt",
+        "line": "TCP listen table on this host, including ports already open.",
+        "photo": "rusty cover with a keyhole slot"
+      }
+    },
+    "changed": "A keyhole-slot photo appears with the ss -lnt card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "tag": "START",
+        "heading": "8765",
+        "line": "python3 -m http.server 8765 bound to 127.0.0.1 in the workshop.",
+        "photo": "rim lock with a skeleton key"
+      }
+    },
+    "changed": "A rim-lock photo appears with the 8765 card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "port",
+        "line": "Last ss -lnt sport = :8765 holds 127.0.0.1:8765 LISTEN.",
+        "photo": "antique door knocker"
+      }
+    },
+    "changed": "A door-knocker photo appears with the hold card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "89"},
+      "main": {
+        "line": "ss. Start. Hold the LISTEN row.",
+        "cards": ["ss / listen table", "8765 / started here", "Hold / 127.0.0.1:8765"]
+      }
+    },
+    "changed": "Three end cards hold the socket, the keyhole slot, and the knocker."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.0,
+    "end": 72.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ss -lnt",
+      "stdout": ["State Recv-Q Send-Q Local Address:Port", "LISTEN ... 127.0.0.1:5901"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ss -lnt lists TCP listen sockets already on this host."
+  },
+  {
+    "start": 72.0,
+    "end": 88.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "python3 -m http.server 8765 --bind 127.0.0.1 --directory /home/ubuntu/linux-workshop &",
+      "stdout": ["[1] 16370", "Serving HTTP on 127.0.0.1 port 8765 (http://127.0.0.1:8765/) ..."]
+    },
+    "changed": "python3 -m http.server 8765 starts in the background on 127.0.0.1."
+  },
+  {
+    "start": 88.0,
+    "end": 96.567,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ss -lnt sport = :8765",
+      "stdout": [
+        "State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess",
+        "LISTEN 0      5          127.0.0.1:8765      0.0.0.0:*"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ss holds LISTEN on 127.0.0.1:8765."
+  }
+]

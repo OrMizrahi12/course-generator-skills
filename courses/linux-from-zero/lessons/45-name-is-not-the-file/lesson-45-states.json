@@ -1,0 +1,229 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-45-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "kicker": "LESSON 45",
+        "title": "A name is a label. The inode is the file. Two rent papers can look the same and still be two files."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "tag": "THE NAME",
+        "heading": "The label is not the letter",
+        "line": "rent-log.txt and sep-due-draft.txt are names. GNU ls -i prints the index number that actually is the file.",
+        "photo": "brown kraft envelope with address lines"
+      }
+    },
+    "changed": "An envelope photo appears with the name card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "tag": "THE INDEX",
+        "heading": "Each slot has a number",
+        "line": "That number uniquely identifies a file on this filesystem. Two names with two numbers are two files.",
+        "photo": "wooden library card catalog drawers"
+      }
+    },
+    "changed": "A card-catalog photo appears with the inode card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "tag": "THE PAPERS",
+        "heading": "Same size, two files",
+        "line": "Both notes are 92 bytes. ls -l cannot tell copies from one file. The inode can.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the two-files card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "tag": "LINK COUNT",
+        "heading": "One name each",
+        "line": "ls -li shows link count 1 on both notes. Do not make a hard link here. That comes later.",
+        "photo": "open library catalog drawer with index cards"
+      }
+    },
+    "changed": "An open-drawer photo appears with the link-count card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "45"},
+      "main": {
+        "end_line": "cd into the workshop. ls -l the two notes. ls -i. Then ls -li both names.",
+        "cards": [
+          {"title": "Name", "sub": "label", "photo": "envelope"},
+          {"title": "Inode", "sub": "index", "photo": "card catalog"},
+          {"title": "Two files", "sub": "link count 1", "photo": "legal pad"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize name, inode, and two files."
+  },
+  {
+    "start": 51.05,
+    "end": 52.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.9,
+    "end": 53.95,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator"
+      }
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.95,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 60.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.4,
+    "end": 64.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd ~/linux-workshop changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 64.8,
+    "end": 68.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "pwd",
+      "output": "/home/ubuntu/linux-workshop"
+    },
+    "changed": "pwd prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 68.2,
+    "end": 73.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l",
+      "output": [
+        "total 8",
+        "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ]
+    },
+    "changed": "ls -l lists two 92-byte notes."
+  },
+  {
+    "start": 73.4,
+    "end": 77.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -i",
+      "output": "1575463 rent-log.txt  1575549 sep-due-draft.txt"
+    },
+    "changed": "ls -i prints two different inode numbers."
+  },
+  {
+    "start": 77.6,
+    "end": 82.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt_line": "linux-workshop $ ls -li rent-log.txt sep-due-draft.txt"
+    },
+    "changed": "ls -li of both note names is typed."
+  },
+  {
+    "start": 82.4,
+    "end": 86.85,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -li rent-log.txt sep-due-draft.txt",
+      "output": [
+        "1575463 -rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "1575549 -rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ],
+      "inodes": ["1575463", "1575549"],
+      "link_counts": ["1", "1"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -li shows two inodes and link count 1 on each note."
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-66-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "kicker": "LESSON 66",
+        "title": "One command’s stdout becomes the next command’s stdin."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "tag": "PIPE",
+        "heading": "stdout into stdin",
+        "line": "ls papers writes three receipt names. A pipe hands that listing to the next program.",
+        "photo": "stone aqueduct channel"
+      }
+    },
+    "changed": "An aqueduct photo appears with the pipe card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "tag": "VERSUS",
+        "heading": "greater-than hides",
+        "line": "Redirect alone writes a paper and blanks the screen. You do not see the names as they go.",
+        "photo": "wooden flume on trestles"
+      }
+    },
+    "changed": "A wooden-flume photo appears with the versus card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "tag": "FILTER",
+        "heading": "tee",
+        "line": "tee copies the stream to a workshop paper and still prints it. That is the Unix move.",
+        "photo": "log water trough"
+      }
+    },
+    "changed": "A log-trough photo appears with the tee card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "tag": "REPORT",
+        "heading": "three names",
+        "line": "Last cat of receipt-list.txt must still hold the three papers from papers.",
+        "photo": "brass firefighting nozzle"
+      }
+    },
+    "changed": "A brass-nozzle photo appears with the report card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "66"},
+      "main": {
+        "end_line": "ls papers. Redirect hides. Pipe into tee. Hold the three-name report.",
+        "cards": [
+          {"title": "Pipe", "sub": "stdout in", "photo": "aqueduct"},
+          {"title": "Filter", "sub": "tee", "photo": "log trough"},
+          {"title": "Report", "sub": "three names", "photo": "brass nozzle"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize pipe, tee, and the report."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click desktop menu opens with Run Program… under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the desktop menu."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.2,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls papers",
+      "output": "'21 Aug receipt.txt'  landlord-note.txt  late-notice.txt"
+    },
+    "changed": "ls papers lists the three receipt names on the terminal."
+  },
+  {
+    "start": 67.0,
+    "end": 74.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls papers > receipt-list.txt",
+      "output": ""
+    },
+    "changed": "Redirect writes the report and leaves the terminal quiet."
+  },
+  {
+    "start": 74.0,
+    "end": 81.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat receipt-list.txt",
+      "output": [
+        "21 Aug receipt.txt",
+        "landlord-note.txt",
+        "late-notice.txt"
+      ]
+    },
+    "changed": "cat shows the three names were caught by redirect."
+  },
+  {
+    "start": 81.0,
+    "end": 88.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls papers | tee receipt-list.txt",
+      "output": [
+        "21 Aug receipt.txt",
+        "landlord-note.txt",
+        "late-notice.txt"
+      ]
+    },
+    "changed": "The pipe into tee prints the three names while writing the report."
+  },
+  {
+    "start": 88.5,
+    "end": 96.75,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat receipt-list.txt",
+      "output": [
+        "21 Aug receipt.txt",
+        "landlord-note.txt",
+        "late-notice.txt"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "Last cat holds the three-name workshop report."
+  }
+]

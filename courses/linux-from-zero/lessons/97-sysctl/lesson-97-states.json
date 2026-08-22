@@ -1,0 +1,200 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 97 are on screen."
+  },
+  {
+    "start": 1.5,
+    "end": 6.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "kicker": "LESSON 97",
+        "title": "sysctl reads /proc/sys. This host’s swappiness is 60. Do not write."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.1,
+    "end": 14.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "tag": "KNOB",
+        "heading": "sysctl",
+        "line": "procps-ng sysctl names a kernel parameter with dots instead of slashes.",
+        "photo": "copper-alloy combination padlock"
+      }
+    },
+    "changed": "A padlock photo appears with the sysctl card."
+  },
+  {
+    "start": 14.1,
+    "end": 22.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "tag": "SWAP BIAS",
+        "heading": "swappiness",
+        "line": "The kernel default is 60. This host still holds that default.",
+        "photo": "vintage kitchen scale with apples"
+      }
+    },
+    "changed": "A kitchen-scale photo appears with the swappiness card."
+  },
+  {
+    "start": 22.1,
+    "end": 30.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "tag": "SAME FILE",
+        "heading": "/proc/sys",
+        "line": "vm.swappiness is the file /proc/sys/vm/swappiness.",
+        "photo": "72-pin SIMM RAM stick"
+      }
+    },
+    "changed": "A RAM-stick photo appears with the /proc/sys card."
+  },
+  {
+    "start": 30.1,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "60",
+        "line": "Last cat /proc/sys/vm/swappiness holds 60. Do not sysctl -w.",
+        "photo": "chicken kitchen timer"
+      }
+    },
+    "changed": "A kitchen-timer photo appears with the 60 card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "97"},
+      "main": {
+        "line": "sysctl. Same file. Hold 60.",
+        "cards": ["sysctl / vm.swappiness = 60", "/proc/sys / the same knob", "Hold / 60"]
+      }
+    },
+    "changed": "Three end cards hold the padlock, the RAM stick, and the kitchen timer."
+  },
+  {
+    "start": 51.1,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.8,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sysctl kernel.hostname",
+      "stdout": ["kernel.hostname = cursor"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "sysctl kernel.hostname holds kernel.hostname = cursor."
+  },
+  {
+    "start": 68.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sysctl vm.swappiness",
+      "stdout": ["vm.swappiness = 60"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "sysctl vm.swappiness holds vm.swappiness = 60."
+  },
+  {
+    "start": 75.0,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /proc/sys/vm/swappiness",
+      "stdout": ["/proc/sys/vm/swappiness"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /proc/sys/vm/swappiness prints the proc file path."
+  },
+  {
+    "start": 82.0,
+    "end": 91.967,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/sys/vm/swappiness",
+      "stdout": ["60"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /proc/sys/vm/swappiness holds 60."
+  }
+]

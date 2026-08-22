@@ -1,0 +1,274 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"},
+      "cursor": "white arrow, lower-right"
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-42-viz.mp4 - mpv",
+      "main": "abstract wallpaper still filling most of the player"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "kicker": "LESSON 42",
+        "title": "The kernel keeps facts in files. Read a real line from /proc and a real line from /sys."
+      },
+      "cursor": "not visible"
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "tag": "CATALOG",
+        "heading": "/proc and /sys",
+        "line": "procfs and sysfs are pseudo-filesystems. The kernel mounts them so you can open its tables like drawers.",
+        "photo": "wooden library card catalog with brass pulls"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A card-catalog photo appears with the /proc and /sys card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "tag": "THE KERNEL",
+        "heading": "Zero bytes, still a line",
+        "line": "ls -l /proc/version shows size 0. file says empty. cat still prints Linux version 6.12.94+ on this machine.",
+        "photo": "walnut kernel on a pale background"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A walnut photo appears with the zero-byte /proc/version card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "tag": "DEVICES",
+        "heading": "/sys names the CPUs",
+        "line": "sysfs exports kernel objects as text files. cat /sys/devices/system/cpu/online prints 0-3 here. Do not write those files.",
+        "photo": "open desktop chassis with motherboard, CPU fan, and cables"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "A motherboard photo appears with the /sys CPU card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "tag": "READ IT",
+        "heading": "Pull one card",
+        "line": "cat a proc file and a sys file. echo is not a kernel fact. uname is a later shortcut, not the drawer.",
+        "photo": "open subject-catalog drawer packed with typed index cards"
+      },
+      "cursor": "not visible"
+    },
+    "changed": "An open catalog-drawer photo appears with the read-it card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "42"},
+      "main": {
+        "end_line": "ls -ld /proc /sys. Prove /proc/version is 0 bytes then cat it. cat /sys/devices/system/cpu/online.",
+        "cards": [
+          {"title": "Catalog", "sub": "/PROC /SYS", "photo": "wooden card catalog"},
+          {"title": "The kernel", "sub": "/PROC/VERSION", "photo": "walnut kernel"},
+          {"title": "CPUs", "sub": "/SYS … CPU/ONLINE", "photo": "motherboard in an open case"}
+        ]
+      },
+      "cursor": "not visible"
+    },
+    "changed": "Three end cards summarize /proc, /proc/version, and /sys CPU online."
+  },
+  {
+    "start": 51.05,
+    "end": 52.15,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"},
+      "cursor": "arrow, center"
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.15,
+    "end": 53.4,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      },
+      "cursor": "arrow near Run Program..."
+    },
+    "changed": "A right-click desktop menu opens."
+  },
+  {
+    "start": 53.4,
+    "end": 53.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"},
+      "cursor": "arrow on Terminal Emulator"
+    },
+    "changed": "Terminal Emulator is highlighted in blue."
+  },
+  {
+    "start": 53.9,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "cwd_name": "workspace",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $; wallpaper is still visible on the right."
+  },
+  {
+    "start": 54.55,
+    "end": 56.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $",
+      "font": "JetBrains Mono, large"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.8,
+    "end": 60.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.2,
+    "end": 65.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld /proc /sys",
+      "output": [
+        "dr-xr-xr-x 181 root root 0 Aug 21 13:28 /proc",
+        "dr-xr-xr-x  12 root root 0 Aug 21 23:55 /sys"
+      ]
+    },
+    "changed": "ls -ld lists /proc and /sys as 0-byte root-owned directories."
+  },
+  {
+    "start": 65.8,
+    "end": 71.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /sys",
+      "output": "block  bus  class  dev  devices  firmware  fs  kernel  module  power"
+    },
+    "changed": "ls /sys lists block bus class dev devices firmware fs kernel module power."
+  },
+  {
+    "start": 71.2,
+    "end": 75.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /proc/version",
+      "output": "-r--r--r-- 1 root root 0 Aug 21 14:48 /proc/version"
+    },
+    "changed": "ls -l /proc/version shows a world-readable 0-byte file."
+  },
+  {
+    "start": 75.4,
+    "end": 80.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "file /proc/version",
+      "output": "/proc/version: empty"
+    },
+    "changed": "file reports /proc/version: empty."
+  },
+  {
+    "start": 80.2,
+    "end": 87.4,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/version",
+      "output": "Linux version 6.12.94+ (root@35ea6acd4182) (gcc (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Thu Aug 20 16:06:39 UTC 2026"
+    },
+    "changed": "cat /proc/version prints Linux version 6.12.94+."
+  },
+  {
+    "start": 87.4,
+    "end": 93.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /proc/sys/kernel/hostname",
+      "output": "cursor"
+    },
+    "changed": "cat /proc/sys/kernel/hostname prints cursor."
+  },
+  {
+    "start": 93.2,
+    "end": 98.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt_line": "workspace $ cat /sys/devices/system/cpu/online",
+      "still_visible": {
+        "proc_version": "Linux version 6.12.94+",
+        "hostname": "cursor"
+      }
+    },
+    "changed": "The command cat /sys/devices/system/cpu/online is typed."
+  },
+  {
+    "start": 98.0,
+    "end": 104.083,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /sys/devices/system/cpu/online",
+      "output": "0-3",
+      "still_visible": {
+        "proc_version": "Linux version 6.12.94+ (root@35ea6acd4182) (gcc (Debian 12.2.0-14+deb12u1) 12.2.0, GNU ld (GNU Binutils for Debian) 2.40) #1 SMP PREEMPT_DYNAMIC Thu Aug 20 16:06:39 UTC 2026",
+        "file_said": "/proc/version: empty",
+        "hostname": "cursor"
+      },
+      "prompt": "workspace $"
+    },
+    "changed": "cat /sys/devices/system/cpu/online prints 0-3."
+  }
+]

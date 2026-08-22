@@ -1,0 +1,243 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"}
+    },
+    "changed": "The visualization starts. LINUX FROM ZERO and 76 are on screen."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "kicker": "LESSON 76",
+        "title": "apt searches, installs psmisc, then pstree must run on this shell."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "tag": "SEARCH",
+        "heading": "psmisc",
+        "line": "type pstree is missing. apt-cache search psmisc finds the Ubuntu noble package.",
+        "mark": "Ubuntu wordmark and Circle of Friends"
+      }
+    },
+    "changed": "The Ubuntu mark appears with the psmisc search card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "tag": "INSTALL",
+        "heading": "apt",
+        "line": "sudo apt install psmisc. Confirm Y. Wait until unpack finishes.",
+        "mark": "Debian Open Use swirl"
+      }
+    },
+    "changed": "The Debian swirl appears with the apt install card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "tag": "BINARY",
+        "heading": "pstree",
+        "line": "type pstree now prints /usr/bin/pstree. The command exists because apt put it there.",
+        "photo": "open blue household toolkit"
+      }
+    },
+    "changed": "A toolkit photo appears with the pstree binary card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "tag": "RUN",
+        "heading": "-A -s",
+        "line": "Last pstree -A -s $$ must show this bash in the ancestor tree.",
+        "photo": "oak branch with leaves and acorns"
+      }
+    },
+    "changed": "An oak-branch photo appears with the run card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "76"},
+      "main": {
+        "line": "Search. Install. type. Hold pstree.",
+        "cards": ["Search / psmisc", "Install / apt", "Run / pstree"]
+      }
+    },
+    "changed": "Three end cards hold the Ubuntu mark, the toolkit, and the oak branch."
+  },
+  {
+    "start": 51.0,
+    "end": 52.9,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.9,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.7,
+    "end": 55.0,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 55.0,
+    "end": 57.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 57.5,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~", "~ $"],
+      "typing": "type pstree"
+    },
+    "changed": "cd ~ runs. type pstree is typed."
+  },
+  {
+    "start": 61.5,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "type pstree",
+      "stdout": "bash: type: pstree: not found",
+      "prompt": "~ $"
+    },
+    "changed": "type pstree reports not found."
+  },
+  {
+    "start": 68.0,
+    "end": 74.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "apt-cache search psmisc",
+      "stdout": "psmisc - utilities that use the proc file system",
+      "typing": "sudo apt install psmisc"
+    },
+    "changed": "apt-cache search psmisc hits the package. sudo apt install is typed."
+  },
+  {
+    "start": 74.0,
+    "end": 88.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo apt install psmisc",
+      "stdout": [
+        "The following NEW packages will be installed:",
+        "  psmisc",
+        "0 upgraded, 1 newly installed, 0 to remove and 105 not upgraded.",
+        "Need to get 179 kB of archives.",
+        "After this operation, 610 kB of additional disk space will be used."
+      ]
+    },
+    "changed": "apt lists psmisc as a new package and the download size."
+  },
+  {
+    "start": 88.0,
+    "end": 138.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo apt install psmisc",
+      "progress": "0% [Waiting for headers]y",
+      "stdout": [
+        "Get:1 http://archive.ubuntu.com/ubuntu noble/main amd64 psmisc amd64 23.7-1build1",
+        "Unpacking psmisc (23.7-1build1)",
+        "Setting up psmisc (23.7-1build1)",
+        "Processing triggers for man-db (2.12.0-4build2) ..."
+      ]
+    },
+    "changed": "apt fetches psmisc 23.7-1build1 from noble/main, unpacks, and sets it up."
+  },
+  {
+    "start": 138.0,
+    "end": 144.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "~ $",
+      "typing": "type pstree"
+    },
+    "changed": "apt returns to a ~ $ prompt. type pstree is typed again."
+  },
+  {
+    "start": 144.0,
+    "end": 148.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "type pstree",
+      "stdout": "pstree is /usr/bin/pstree",
+      "typing": "pstree -A -s $$"
+    },
+    "changed": "type pstree now prints /usr/bin/pstree. pstree -A -s $$ is typed."
+  },
+  {
+    "start": 148.5,
+    "end": 153.133,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "pstree -A -s $$",
+      "stdout": "tini---xfce4-terminal---bash---pstree",
+      "prompt": "~ $"
+    },
+    "changed": "pstree -A -s $$ holds tini---xfce4-terminal---bash---pstree."
+  }
+]

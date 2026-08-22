@@ -1,0 +1,245 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 87 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "kicker": "LESSON 87",
+        "title": "No cron here. while + sleep + a log. snap.sh three times."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "tag": "HONEST",
+        "heading": "no cron",
+        "line": "crontab is not installed. systemd user bus is missing. PID 1 is tini. Do not fake a timer.",
+        "photo": "stone sundial on a weathered pediment"
+      }
+    },
+    "changed": "A sundial photo appears with the no-cron card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "tag": "LOOP",
+        "heading": "while",
+        "line": "while [ \"$n\" -le 3 ]. Each pass logs the time and runs snap.sh.",
+        "photo": "brass hourglass with flowing gold sand"
+      }
+    },
+    "changed": "An hourglass photo appears with the while card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "tag": "WAIT",
+        "heading": "sleep 1",
+        "line": "sleep pauses one second. Three passes without sitting at the keyboard.",
+        "photo": "chicken-shaped kitchen timer"
+      }
+    },
+    "changed": "A kitchen-timer photo appears with the sleep card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "log",
+        "line": "Last cat snap-repeat.log must hold three date lines.",
+        "photo": "hourglass egg timer in a clear cylinder"
+      }
+    },
+    "changed": "An egg-timer photo appears with the log card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "87"},
+      "main": {
+        "line": "while. sleep. Hold the three timestamps.",
+        "cards": ["while / three passes", "sleep / one second", "Hold / snap-repeat.log"]
+      }
+    },
+    "changed": "Three end cards hold the hourglass, the kitchen timer, and the egg timer."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator",
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens with workspace $."
+  },
+  {
+    "start": 54.8,
+    "end": 57.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080. White background, JetBrains Mono."
+  },
+  {
+    "start": 57.5,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 61.5,
+    "end": 66.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $"],
+      "typing": "nano repeat-snap.sh"
+    },
+    "changed": "cd runs. nano repeat-snap.sh is typed."
+  },
+  {
+    "start": 66.0,
+    "end": 110.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "repeat-snap.sh",
+      "modified": true,
+      "status": "[ New File ]",
+      "buffer": [
+        "#!/bin/bash",
+        "n=1",
+        "while [ \"$n\" -le 3 ]",
+        "do",
+        "    date '+%F %T' >> /home/ubuntu/linux-workshop/snap-repeat.log",
+        "    /home/ubuntu/linux-workshop/snap.sh /tmp/workshop-repeat.tar.gz",
+        "    n=$((n+1))",
+        "    sleep 1",
+        "done"
+      ]
+    },
+    "changed": "nano opens a new repeat-snap.sh. The while loop with sleep and snap.sh is typed."
+  },
+  {
+    "start": 110.0,
+    "end": 116.0,
+    "on_screen": {
+      "window": "GNU nano 7.2, fullscreen",
+      "file": "repeat-snap.sh",
+      "status": "[ Wrote 10 lines ]"
+    },
+    "changed": "nano writes ten lines of repeat-snap.sh to disk."
+  },
+  {
+    "start": 116.0,
+    "end": 122.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "chmod +x repeat-snap.sh"
+    },
+    "changed": "nano exits. chmod +x repeat-snap.sh is typed."
+  },
+  {
+    "start": 122.0,
+    "end": 134.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "./repeat-snap.sh",
+      "stdout": "",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "./repeat-snap.sh runs three snap.sh passes with sleep 1 and returns to the prompt."
+  },
+  {
+    "start": 134.0,
+    "end": 138.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "linux-workshop $",
+      "typing": "cat snap-repeat.log"
+    },
+    "changed": "cat snap-repeat.log is typed."
+  },
+  {
+    "start": 138.0,
+    "end": 142.183,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat snap-repeat.log",
+      "stdout": [
+        "2026-08-22 12:50:11",
+        "2026-08-22 12:50:12",
+        "2026-08-22 12:50:13"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat holds three timestamps one second apart."
+  }
+]

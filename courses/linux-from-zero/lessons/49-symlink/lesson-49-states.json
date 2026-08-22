@@ -1,0 +1,239 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-49-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "kicker": "LESSON 49",
+        "title": "A symlink is a fingerpost. It names a path. It is not a second copy of the papers."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "tag": "SYMLINK",
+        "heading": "Pass -s this time",
+        "line": "GNU ln makes a hard link by default. ln -s writes a pointer name. That is a different kind of file.",
+        "photo": "PUBLIC BRIDLEWAY fingerpost"
+      }
+    },
+    "changed": "A bridleway fingerpost photo appears with the symlink card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "tag": "THE PAPERS",
+        "heading": "They stay in rent-receipts",
+        "line": "ln -s ~/rent-receipts papers. The three notes stay in home. The workshop only gets a pointer.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the rent-receipts card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "tag": "THE LETTER L",
+        "heading": "ls -ld starts with l",
+        "line": "papers -> /home/ubuntu/rent-receipts. readlink prints that path. ls papers lists the three names.",
+        "photo": "BRIDLEWAY fingerpost in foliage"
+      }
+    },
+    "changed": "A second fingerpost photo appears with the letter-l card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "tag": "THE SHORT NAME",
+        "heading": "papers",
+        "line": "From the workshop, ls papers must show 21 Aug receipt.txt, late-notice.txt, and landlord-note.txt.",
+        "photo": "wooden clipboard with a yellow pencil"
+      }
+    },
+    "changed": "A clipboard photo appears with the papers card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "49"},
+      "main": {
+        "end_line": "cd into the workshop. ln -s ~/rent-receipts papers. ls -ld papers. readlink. ls papers.",
+        "cards": [
+          {"title": "Pointer", "sub": "ln -s", "photo": "PUBLIC BRIDLEWAY fingerpost"},
+          {"title": "Letter l", "sub": "ls -ld", "photo": "BRIDLEWAY fingerpost"},
+          {"title": "Three papers", "sub": "ls papers", "photo": "legal pad"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize ln -s, letter l, and the three papers."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.8,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 61.8,
+    "end": 67.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $",
+      "pwd": "/home/ubuntu/linux-workshop"
+    },
+    "changed": "cd into the workshop; pwd prints /home/ubuntu/linux-workshop."
+  },
+  {
+    "start": 67.2,
+    "end": 73.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l",
+      "output": [
+        "total 12",
+        "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 due-call.txt",
+        "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ]
+    },
+    "changed": "ls -l lists the workshop files before the pointer exists."
+  },
+  {
+    "start": 73.5,
+    "end": 78.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ln -s ~/rent-receipts papers"
+    },
+    "changed": "ln -s creates papers as a pointer to ~/rent-receipts."
+  },
+  {
+    "start": 78.0,
+    "end": 83.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l",
+      "output": [
+        "total 12",
+        "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 due-call.txt",
+        "lrwxrwxrwx 1 ubuntu ubuntu 26 Aug 22 01:49 papers -> /home/ubuntu/rent-receipts",
+        "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+        "-rw-r--r-- 1 ubuntu ubuntu 92 Aug 21 22:28 sep-due-draft.txt"
+      ]
+    },
+    "changed": "ls -l shows papers starting with l and pointing at /home/ubuntu/rent-receipts."
+  },
+  {
+    "start": 83.5,
+    "end": 87.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "readlink papers",
+      "output": "/home/ubuntu/rent-receipts"
+    },
+    "changed": "readlink papers prints /home/ubuntu/rent-receipts."
+  },
+  {
+    "start": 87.0,
+    "end": 91.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls papers",
+      "output": "'21 Aug receipt.txt'  landlord-note.txt  late-notice.txt"
+    },
+    "changed": "ls papers lists the three rent papers through the pointer."
+  },
+  {
+    "start": 91.5,
+    "end": 97.917,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld papers",
+      "output": "lrwxrwxrwx 1 ubuntu ubuntu 26 Aug 22 01:49 papers -> /home/ubuntu/rent-receipts",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -ld papers holds the letter l and papers -> /home/ubuntu/rent-receipts."
+  }
+]

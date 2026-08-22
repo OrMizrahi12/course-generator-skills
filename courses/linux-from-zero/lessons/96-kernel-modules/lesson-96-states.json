@@ -1,0 +1,200 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 96 are on screen."
+  },
+  {
+    "start": 1.5,
+    "end": 6.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "kicker": "LESSON 96",
+        "title": "/proc/modules is empty. nomodule is on the cmdline. Name virtio_blk anyway."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.1,
+    "end": 14.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "tag": "LOADABLE",
+        "heading": "modules",
+        "line": "lsmod would format /proc/modules. That file is 0 bytes here.",
+        "photo": "Tux the Linux mascot"
+      }
+    },
+    "changed": "Tux appears with the modules card."
+  },
+  {
+    "start": 14.1,
+    "end": 22.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "tag": "THIS HOST",
+        "heading": "nomodule",
+        "line": "The kernel booted with nomodule. /lib/modules does not exist.",
+        "photo": "wood screws"
+      }
+    },
+    "changed": "A screws photo appears with the nomodule card."
+  },
+  {
+    "start": 22.1,
+    "end": 30.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "tag": "BUILT-IN",
+        "heading": "/sys/module",
+        "line": "Pieces compiled into the kernel still show up as names under /sys/module.",
+        "photo": "72-pin SIMM RAM stick"
+      }
+    },
+    "changed": "A RAM-stick photo appears with the /sys/module card."
+  },
+  {
+    "start": 30.1,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "virtio_blk",
+        "line": "Last ls /sys/module/virtio_blk holds parameters and uevent.",
+        "photo": "socket wrench set on carpet"
+      }
+    },
+    "changed": "A socket-set photo appears with the virtio_blk card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.1,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "96"},
+      "main": {
+        "line": "Empty /proc/modules. Missing /lib/modules. Hold virtio_blk.",
+        "cards": ["/proc/modules / 0 bytes", "/lib/modules / does not exist", "Hold / virtio_blk"]
+      }
+    },
+    "changed": "Three end cards hold Tux, the screws, and the socket set."
+  },
+  {
+    "start": 51.1,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.2,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 53.2,
+    "end": 54.0,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 54.0,
+    "end": 54.8,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.8,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "wc -c /proc/modules",
+      "stdout": ["0 /proc/modules"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "wc -c /proc/modules holds 0 /proc/modules."
+  },
+  {
+    "start": 68.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /lib/modules",
+      "stderr": ["ls: cannot access '/lib/modules': No such file or directory"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /lib/modules prints No such file or directory."
+  },
+  {
+    "start": 75.0,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /sys/module | grep virtio_blk",
+      "stdout": ["virtio_blk"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /sys/module | grep virtio_blk holds virtio_blk."
+  },
+  {
+    "start": 82.0,
+    "end": 91.033,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls /sys/module/virtio_blk",
+      "stdout": ["parameters  uevent"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls /sys/module/virtio_blk holds parameters and uevent."
+  }
+]

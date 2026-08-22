@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="./assets/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; background: #080C14; }
+      #root {
+        position: relative; width: 1920px; height: 1080px; overflow: hidden;
+        background:
+          radial-gradient(ellipse 90% 70% at 18% 12%, rgba(21, 32, 56, 0.95), transparent 55%),
+          radial-gradient(ellipse 70% 60% at 88% 88%, rgba(28, 22, 12, 0.55), transparent 50%),
+          #080C14;
+        color: #F3EDE4; font-family: Inter, "Noto Sans", sans-serif;
+      }
+      .clip { position: absolute; inset: 0; }
+      .wordmark { position: absolute; top: 48px; left: 64px; font-size: 13px; letter-spacing: 0.32em; font-weight: 600; color: rgba(243,237,228,0.55); }
+      .lesson-no { position: absolute; top: 44px; right: 64px; font-size: 22px; font-weight: 600; color: #E8A53A; }
+      .title-wrap { position: absolute; left: 64px; right: 64px; top: 260px; }
+      .kicker { font-size: 18px; letter-spacing: 0.22em; text-transform: uppercase; color: #E8A53A; margin: 0 0 28px; font-weight: 600; }
+      h1 { margin: 0; font-size: 64px; line-height: 0.95; font-weight: 650; letter-spacing: -0.03em; max-width: 1680px; }
+      .part { display: grid; grid-template-columns: 900px 1fr; gap: 72px; align-items: center; height: 100%; padding: 140px 80px 80px; box-sizing: border-box; }
+      .well { height: 720px; border-radius: 28px; background: #10141E; border: 1px solid rgba(243,237,228,0.08); overflow: hidden; display: flex; align-items: center; justify-content: center; }
+      .well.photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+      .copy .tag { display: inline-block; font-size: 15px; letter-spacing: 0.2em; text-transform: uppercase; color: #E8A53A; font-weight: 650; margin-bottom: 18px; }
+      .copy .name { font-size: 68px; line-height: 0.92; font-weight: 650; margin: 0 0 24px; }
+      .copy .line { font-size: 32px; line-height: 1.35; color: #8B93A7; margin: 0; max-width: 640px; }
+      .grid3 { position: absolute; left: 64px; right: 64px; top: 180px; bottom: 64px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+      .card { background: #10141E; border: 1px solid rgba(243,237,228,0.08); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; }
+      .card .shot { height: 480px; overflow: hidden; background: #0C1018; }
+      .card .shot img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; }
+      .card h2 { margin: 22px 24px 4px; font-size: 32px; font-weight: 650; }
+      .card .sub { margin: 0 24px 24px; color: #8B93A7; font-size: 20px; }
+      .end-line { position: absolute; left: 64px; top: 96px; font-size: 24px; color: #8B93A7; margin: 0; max-width: 1790px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="50" data-width="1920" data-height="1080">
+      <div class="clip" data-start="0" data-duration="50" data-track-index="0">
+        <div class="wordmark">LINUX FROM ZERO</div>
+        <div class="lesson-no">91</div>
+      </div>
+      <section class="clip" data-start="0" data-duration="5" data-track-index="1">
+        <div class="title-wrap">
+          <p class="kicker" id="tk">Lesson 91</p>
+          <h1 id="th">curl a real HTTP page into the workshop.</h1>
+        </div>
+      </section>
+      <section class="clip" data-start="5" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w1"><img src="./assets/yellow.jpg" alt="Coiled yellow Ethernet cable" /></div>
+          <div class="copy" id="c1"><span class="tag">Fetch</span><p class="name">curl</p><p class="line">curl 8.5.0. Write the response to a file with -o.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="13" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w2"><img src="./assets/utp.jpg" alt="Stripped UTP pairs" /></div>
+          <div class="copy" id="c2"><span class="tag">URL</span><p class="name">example.com</p><p class="line">http://example.com/ returns 200. Save it as example.html.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="21" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w3"><img src="./assets/socket.jpg" alt="Schuko socket with one plug" /></div>
+          <div class="copy" id="c3"><span class="tag">Write</span><p class="name">-o</p><p class="line">curl -o example.html puts the bytes on disk in the workshop.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="29" data-duration="8" data-track-index="1">
+        <div class="part">
+          <div class="well photo" id="w4"><img src="./assets/lettres.jpg" alt="Weathered LETTRES mail slot" /></div>
+          <div class="copy" id="c4"><span class="tag">Hold</span><p class="name">page</p><p class="line">Last cat example.html holds Example Domain.</p></div>
+        </div>
+      </section>
+      <section class="clip" data-start="37" data-duration="13" data-track-index="1">
+        <p class="end-line" id="el">ss. Write. Hold the LISTEN row.</p>
+        <div class="grid3">
+          <article class="card" id="a1"><div class="shot"><img src="./assets/yellow.jpg" alt="" /></div><h2>curl</h2><span class="sub">-o file</span></article>
+          <article class="card" id="a2"><div class="shot"><img src="./assets/utp.jpg" alt="" /></div><h2>HTTP</h2><span class="sub">example.com</span></article>
+          <article class="card" id="a3"><div class="shot"><img src="./assets/lettres.jpg" alt="" /></div><h2>Hold</h2><span class="sub">Example Domain</span></article>
+        </div>
+      </section>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const t = gsap.timeline({ paused: true });
+      t.fromTo("#tk", { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.25);
+      t.fromTo("#th", { y: 36, opacity: 0 }, { y: 0, opacity: 1, duration: 0.85, ease: "power3.out" }, 0.4);
+      t.fromTo("#w1", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 5.15);
+      t.fromTo("#c1", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 5.4);
+      t.fromTo("#w2", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 13.15);
+      t.fromTo("#c2", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 13.4);
+      t.fromTo("#w3", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 21.15);
+      t.fromTo("#c3", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 21.4);
+      t.fromTo("#w4", { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }, 29.15);
+      t.fromTo("#c4", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75, ease: "power3.out" }, 29.4);
+      t.fromTo("#el", { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.1);
+      t.fromTo("#a1", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.25);
+      t.fromTo("#a2", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.4);
+      t.fromTo("#a3", { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out" }, 37.55);
+      window.__timelines.main = t;
+    </script>
+  </body>
+</html>

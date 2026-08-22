@@ -1,0 +1,188 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-50-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "kicker": "LESSON 50",
+        "title": "This login has a name, a number, a home, and a shell. whoami is not the whole line."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "tag": "THE NAME",
+        "heading": "whoami prints ubuntu",
+        "line": "GNU whoami prints the effective user name. Same as id -un. That is only the first field.",
+        "photo": "gold antique mailbox name plate"
+      }
+    },
+    "changed": "A mailbox name-plate photo appears with the whoami card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "tag": "THE NUMBER",
+        "heading": "id prints uid 1000",
+        "line": "id with no flags prints uid, gid, and groups. This account is uid=1000(ubuntu).",
+        "photo": "ceramic house number 12"
+      }
+    },
+    "changed": "A house-number photo appears with the id card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "tag": "THE REGISTER",
+        "heading": "One line in passwd",
+        "line": "getent passwd ubuntu reads the live account file. Seven fields. Home and shell sit on that line.",
+        "photo": "wooden library card catalog"
+      }
+    },
+    "changed": "A card-catalog photo appears with the passwd card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "tag": "THE PROOF",
+        "heading": "Home and bash",
+        "line": "The line must show /home/ubuntu and /bin/bash. That is this person on this machine.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the home-and-bash card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "50"},
+      "main": {
+        "end_line": "whoami. id. getent passwd ubuntu. Hold the seven-field line.",
+        "cards": [
+          {"title": "Name", "sub": "whoami", "photo": "mailbox name plate"},
+          {"title": "Number", "sub": "uid 1000", "photo": "house number 12"},
+          {"title": "Line", "sub": "getent", "photo": "card catalog"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize whoami, uid 1000, and getent."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 60.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ pwd", "/workspace", "workspace $"]
+    },
+    "changed": "pwd prints /workspace."
+  },
+  {
+    "start": 60.5,
+    "end": 63.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "whoami",
+      "output": "ubuntu"
+    },
+    "changed": "whoami prints ubuntu."
+  },
+  {
+    "start": 63.5,
+    "end": 67.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "id",
+      "output": "uid=1000(ubuntu) gid=1000(ubuntu) groups=1000(ubuntu),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev)"
+    },
+    "changed": "id prints uid=1000(ubuntu) and this account's groups."
+  },
+  {
+    "start": 67.5,
+    "end": 74.683,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent passwd ubuntu",
+      "output": "ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash",
+      "prompt": "workspace $"
+    },
+    "changed": "getent passwd ubuntu holds the seven-field line with /home/ubuntu and /bin/bash."
+  }
+]

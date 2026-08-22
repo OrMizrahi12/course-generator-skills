@@ -1,0 +1,221 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-54-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "kicker": "LESSON 54",
+        "title": "Numbers lock the same bits. 4 2 1. chmod 644 reopens the note. 755 opens a folder."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "tag": "DIGITS",
+        "heading": "4 plus 2 plus 1",
+        "line": "Each class is an octal digit. Read is 4. Write is 2. Execute is 1. Add them.",
+        "photo": "antique copper combination padlock"
+      }
+    },
+    "changed": "A combination-padlock photo appears with the digits card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "tag": "THE NOTE",
+        "heading": "chmod 644",
+        "line": "rent-log.txt starts shut. 644 is owner rw, group r, others r. Same as the letters, written as a number.",
+        "photo": "cutaway brass padlock"
+      }
+    },
+    "changed": "A cutaway padlock photo appears with the 644 card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "tag": "THE FOLDER",
+        "heading": "700 then 755",
+        "line": "chmod 700 . shuts the workshop. chmod 755 . puts execute back so people can walk in.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the folder card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "tag": "LS -L",
+        "heading": "Prove the digits",
+        "line": "ls -l rent-log.txt must start with -rw-r--r--. ls -ld . after 755 starts with d rwx r-x r-x.",
+        "photo": "house number 32 on a gate pillar"
+      }
+    },
+    "changed": "A house-number photo appears with the prove card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "54"},
+      "main": {
+        "end_line": "chmod 644. chmod 700. chmod 755. Hold -rw-r--r--.",
+        "cards": [
+          {"title": "Bits", "sub": "4 2 1", "photo": "combination padlock"},
+          {"title": "File", "sub": "644", "photo": "cutaway padlock"},
+          {"title": "Folder", "sub": "755", "photo": "house number 32"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize bits, 644, and 755."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt_after": "linux-workshop $"
+    },
+    "changed": "cd ~/linux-workshop changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt",
+      "output": "-rw------- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+    },
+    "changed": "ls -l shows rent-log.txt still owner-only readable."
+  },
+  {
+    "start": 67.0,
+    "end": 73.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "chmod 644 rent-log.txt",
+      "verify": "ls -l rent-log.txt",
+      "output": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt"
+    },
+    "changed": "chmod 644 reopens group and other read on rent-log.txt."
+  },
+  {
+    "start": 73.0,
+    "end": 80.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -ld .",
+      "output": "drwxr-xr-x 2 ubuntu ubuntu 4096 Aug 22 01:49 ."
+    },
+    "changed": "ls -ld . shows the workshop still drwxr-xr-x."
+  },
+  {
+    "start": 80.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "chmod 700 .",
+      "verify": "ls -ld .",
+      "output": "drwx------ 2 ubuntu ubuntu 4096 Aug 22 01:49 ."
+    },
+    "changed": "chmod 700 . shuts group and other bits on the workshop."
+  },
+  {
+    "start": 90.0,
+    "end": 98.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "chmod 755 .",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "chmod 755 . restores execute for group and others."
+  },
+  {
+    "start": 98.0,
+    "end": 106.05,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l rent-log.txt",
+      "output": "-rw-r--r-- 2 ubuntu ubuntu 92 Aug 21 22:12 rent-log.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds -rw-r--r-- on rent-log.txt after 644, 700, and 755."
+  }
+]

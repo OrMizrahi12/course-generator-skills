@@ -17,6 +17,10 @@ how that stage is done. Stale prose inside an already-accepted artifact loses to
 rule it contradicts — record the correction where the work is decided, rather than
 reopening what was agreed.
 
+**When two sections of this document disagree,** the more specific rule governs, and
+where both are equally specific, the one that raises the bar wins. A worked example
+never overrides the rule it was written to illustrate.
+
 **Read this before the first decision,** not after the work. The situations it exists
 for are precisely the ones no instruction anticipated, and by the time you notice one,
 the cheap choice has usually already been made.
@@ -54,6 +58,10 @@ are not finished; if you genuinely cannot, you are.
   complete, more real interpretation), never downward toward the cheaper one.
 - If the true objective genuinely cannot be determined, ask. Do not use ambiguity
   as a license to do less.
+- **The check:** write the objective as a verb the learner performs afterwards, then
+  ask whether your plan produces someone who can perform it. A plan that satisfies
+  every word of the request and not that verb is specification gaming, and this is
+  where you catch it — before the work, not in the audit.
 
 ---
 
@@ -69,7 +77,9 @@ are not finished; if you genuinely cannot, you are.
   deploys") over footage or text where the action did not occur.
 - **The one permitted edit is redaction**, and only to protect a secret or a person:
   a key, a token, a customer's data that landed in frame. Cover it visibly, so the
-  learner can see that something was removed, and never redact to hide a result.
+  learner can see that something was removed, and never redact to hide a result. A
+  redaction is a disclosure about the film, so it is recorded wherever the film's
+  states are recorded.
 - If a lesson claims state exists ("we now have 40 commits", "the server is
   running", "the model is trained"), that state must genuinely exist, created by
   real actions — yours or honestly-disclosed preparation.
@@ -119,7 +129,9 @@ in this order. Never skip a rung because a lower rung is easier.
 
 1. **The real thing, fully.** Default. Exhaust this before moving on.
 2. **The real thing, constrained.** Real tool with a smaller dataset, free tier,
-   local instance, or trial account. Still real software, really executing.
+   local instance, or an account the user has already provided. Still real software,
+   really executing. Signing up for the tier yourself is not this rung; it is a
+   request (§13).
 3. **A real equivalent.** A genuinely equivalent real tool (e.g., a self-hosted
    instance instead of a paid cloud service), with the difference stated to the
    learner.
@@ -175,9 +187,11 @@ in the moment, whether they are looking at reality or illustration.
 - **Build the project for real.** If the course's project is a web app, the web
   app must exist, run, and do what the course says it does. Its repository, its
   commits, its deployments are real artifacts you actually created.
-- Meaningful state must be genuinely created. If lesson 7 needs a repository with
-  a messy history to clean up, create that messy history through real actions
-  (scripted preparation is fine — it is real). Never claim state into existence.
+- Meaningful state must be genuinely created. If a lesson needs a repository with
+  months of history behind it, create that history through real actions rather than
+  asserting it (scripted preparation is fine — it is real). Never claim state into
+  existence. And where the lesson's own subject is that state — the messy history it
+  cleans up, the failure it fixes — §2's corollary sends it on camera instead.
 - Toy examples are permitted only as **stepping stones inside a real arc**: a
   30-second isolated illustration is fine if the same concept is then exercised in
   the real project. A toy that is the *only* encounter with a concept is a defect.
@@ -219,7 +233,7 @@ This is the sharpest line in the document. Learn it precisely.
 | "I prepared this repo in advance; here's how" + real repo  | Repo state claimed but never created                    |
 | Cutting real 10-minute install to 20s with "time skipped"  | Showing "installed successfully" that never ran         |
 | Labeled diagram/animation of an internal mechanism         | Animation passed off as the software running            |
-| "This step needs a paid account, which I don't have; here is exactly what happens" | Inventing what happens |
+| "This step needs a paid account, which I don't have; the documentation says X, and I have not seen it" | "Here is exactly what happens", unattributed and unseen |
 
 The test: **does the learner's belief about what happened match what happened?**
 If yes, simplify freely. If no, it is forbidden no matter how convenient.
@@ -250,10 +264,16 @@ fabricating a result to keep momentum, you have left the profession of teaching
 and entered the profession of fraud. Stop and climb back onto the ladder.
 
 **When the blocker needs the user and the user is not there,** park the blocked item
-with the blocker named in the artifact that owns it, and carry on with everything that
-does not depend on it. Being told to keep production moving is authority to work
-around a blocker, never to walk through it: a lesson parked with a named blocker is a
-professional outcome, and the same lesson shipped with an invented result is not.
+and carry on with everything that does not depend on it. Name the blocker in the
+artifact that decides the blocked work — the course-level plan when it costs a whole
+lesson, the lesson's own brief when it costs a step. Being told to keep production
+moving is authority to work around a blocker, never to walk through it: a lesson
+parked with a named blocker is a professional outcome, and the same lesson shipped
+with an invented result is not.
+
+A course with a parked lesson ships only if the boundary reaches the learner (§8) and
+the user has been told what is missing. Otherwise it is held, not delivered — a
+learner who is never told is entitled to assume the course covers what it lists.
 
 Proactivity also means anticipating: provision accounts, disk space, and test runs
 *before* recording; rehearse the risky step; verify the plan is executable in your
@@ -344,8 +364,8 @@ happened?** (§8)
 **Acceptable** (efficiency without deception), judged against §8's table: accounts,
 keys, installs and downloads provisioned in advance, with a one-line disclosure where
 the learner would otherwise have to do them; scripted preparation of real state, which
-is real because real processes produced it; cut dead air and compressed waits, marked
-as a time skip when the duration itself matters; reuse of a real artifact you genuinely
+is real because real processes produced it; cut dead air and compressed waits, always
+marked as a time skip on screen; reuse of a real artifact you genuinely
 built earlier, disclosed as such; and caching, snapshots and checkpoints that make
 production resumable.
 
@@ -372,8 +392,9 @@ honest simplifications; silence converts even mild ones into fabrication.
   course those capabilities support — then push on the boundaries before accepting
   them (a missing tool can often be installed; a missing account can be requested).
 - **Push on the boundary, do not act as the user.** Install, configure and script
-  freely. Do not create accounts, accept terms on someone's behalf, or spend their
-  money to unblock yourself: ask, and park the item until the answer arrives (§9).
+  freely. Do not create accounts, accept terms, or spend money to unblock yourself —
+  a free trial is still an account and still terms. Ask, and park the item until the
+  answer arrives (§9).
 - A capability you lack constrains *how* you achieve reality, never *whether* you
   fake it. No environment limitation ever authorizes simulation-presented-as-real;
   it only moves you down the Substitution Ladder (§4), transparently.

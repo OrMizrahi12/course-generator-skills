@@ -44,7 +44,7 @@ NAMED = {
     "#": "numbersign",
     "(": "parenleft",
     ")": "parenright",
-    "<": "less",
+    "<": "comma",
 }
 
 

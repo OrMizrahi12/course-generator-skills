@@ -22,6 +22,7 @@ Write `due.c` in the workshop, compile it with Ubuntu gcc 13.3 (`gcc -o due due.
 
 - Open Terminal Emulator from the desktop menu. Font already JetBrains Mono 19.
 - gcc is already installed. The lesson object is `due.c` and the binary `due`, both created on camera.
+- On this X keyboard, XK_less types `>`. Film tools type `<` as Shift+comma.
 
 ## Human job
 

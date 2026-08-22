@@ -149,7 +149,7 @@ def main() -> None:
     time.sleep(1.6)
     h.type_line("rm /tmp/ubuntu-rent-scratch.txt")
     time.sleep(1.5)
-    h.type_line("rm /tmp/sam-rent-scratch.txt")
+    h.type_line("rm -f /tmp/sam-rent-scratch.txt")
     time.sleep(1.8)
     h.type_line("ls -l /tmp/sam-rent-scratch.txt")
     time.sleep(6.0)

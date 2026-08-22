@@ -1,0 +1,229 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-61-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "kicker": "LESSON 61",
+        "title": "Stop a running program on purpose. Then prove it is gone."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "tag": "START",
+        "heading": "tail -f again",
+        "line": "Foreground this time. The rent log prints. The process is still alive.",
+        "photo": "steam locomotive running gear"
+      }
+    },
+    "changed": "A locomotive-wheels photo appears with the start card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "tag": "SIGINT",
+        "heading": "Ctrl+C",
+        "line": "The kernel sends interrupt. The watcher stops. The prompt comes back.",
+        "photo": "weathered Finnish stop sign"
+      }
+    },
+    "changed": "A stop-sign photo appears with the SIGINT card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "tag": "KILL",
+        "heading": "kill %1",
+        "line": "Park sleep 90. kill job one. Do not pkill every tail. The host /dev/null tail stays.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the kill card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "tag": "GONE",
+        "heading": "ps -C sleep",
+        "line": "Header only. No sleep row. The rent-log tail is gone too.",
+        "photo": "padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the gone card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "61"},
+      "main": {
+        "end_line": "tail -f. Ctrl+C. kill %1. Hold ps -C sleep empty.",
+        "cards": [
+          {"title": "Stop", "sub": "Ctrl+C", "photo": "Finnish stop sign"},
+          {"title": "kill", "sub": "%1", "photo": "door latch"},
+          {"title": "Gone", "sub": "ps empty", "photo": "padlock"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize stop, kill, and gone."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cd changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 69.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "tail -f rent-log.txt",
+      "output": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "Foreground tail -f prints the rent log and holds."
+  },
+  {
+    "start": 69.5,
+    "end": 74.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "interrupt": "^C",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "Ctrl+C prints ^C and the prompt returns."
+  },
+  {
+    "start": 74.0,
+    "end": 80.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -C tail -o pid,user,cmd",
+      "output": {
+        "header": "PID USER CMD",
+        "row": "2619 ubuntu tail -f /dev/null"
+      }
+    },
+    "changed": "ps lists only the host /dev/null tail, not rent-log.txt."
+  },
+  {
+    "start": 80.5,
+    "end": 85.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sleep 90 &",
+      "output": "[1] 171159"
+    },
+    "changed": "sleep 90 starts as job 1 PID 171159."
+  },
+  {
+    "start": 85.5,
+    "end": 89.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "kill %1",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "kill %1 returns to the prompt."
+  },
+  {
+    "start": 89.5,
+    "end": 93.283,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ps -C sleep",
+      "output": {
+        "header": "PID TTY TIME CMD",
+        "job": "[1]+ Terminated sleep 90"
+      },
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ps -C sleep holds the header and Terminated sleep 90, with no live sleep row."
+  }
+]

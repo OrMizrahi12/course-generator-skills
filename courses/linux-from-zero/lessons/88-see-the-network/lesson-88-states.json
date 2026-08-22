@@ -1,0 +1,196 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 88 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "kicker": "LESSON 88",
+        "title": "ip is missing. Install it. Then see this host on the network."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "tag": "MISSING",
+        "heading": "ip",
+        "line": "ip -br addr is command not found until iproute2 is installed.",
+        "photo": "stripped UTP Ethernet pairs"
+      }
+    },
+    "changed": "A UTP photo appears with the missing-ip card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "tag": "ADDRESSES",
+        "heading": "ip -br addr",
+        "line": "Brief table of this host’s interfaces after the install.",
+        "photo": "coiled yellow Ethernet with RJ45"
+      }
+    },
+    "changed": "A yellow cable photo appears with the addr card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "tag": "PATH",
+        "heading": "ip route",
+        "line": "The kernel’s routes from this machine. ping is denied here; do not fake it.",
+        "photo": "rear of yellow patch-panel bundles"
+      }
+    },
+    "changed": "A patch-panel photo appears with the route card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "tag": "LOOKUP",
+        "heading": "getent",
+        "line": "Last getent hosts 1.1.1.1 holds one.one.one.one.",
+        "photo": "four-pair telecommunication cable"
+      }
+    },
+    "changed": "A four-pair cable photo appears with the getent card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "88"},
+      "main": {
+        "line": "Install. ip. Hold the DNS line.",
+        "cards": ["ip / install iproute2", "addr / this host", "Hold / one.one.one.one"]
+      }
+    },
+    "changed": "Three end cards hold the UTP pairs, the yellow cable, and the four-pair cable."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator"
+      }
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 58.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 58.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ip -br addr",
+      "stderr": "bash: ip: command not found",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ip -br addr fails with command not found."
+  },
+  {
+    "start": 68.0,
+    "end": 105.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo apt-get install -y iproute2",
+      "stdout": ["Selecting previously unselected package iproute2.", "Setting up iproute2 (6.1.0-1ubuntu6.4) ..."],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "sudo apt-get install -y iproute2 unpacks and sets up iproute2."
+  },
+  {
+    "start": 105.0,
+    "end": 110.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ip -br addr",
+      "stdout": [
+        "lo               UNKNOWN        127.0.0.1/8 ::1/128",
+        "eth0             UP             172.30.0.2/24 fe80::802b:38ff:fe3d:bcd0/64",
+        "docker0          DOWN           172.17.0.1/16"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ip -br addr lists lo, eth0 UP at 172.30.0.2/24, and docker0 DOWN."
+  },
+  {
+    "start": 110.0,
+    "end": 115.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ip route",
+      "stdout": ["default via 172.30.0.1 dev eth0"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ip route shows the default via 172.30.0.1 on eth0."
+  },
+  {
+    "start": 115.0,
+    "end": 121.033,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent hosts 1.1.1.1",
+      "stdout": ["1.1.1.1         one.one.one.one"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "getent hosts 1.1.1.1 holds one.one.one.one."
+  }
+]

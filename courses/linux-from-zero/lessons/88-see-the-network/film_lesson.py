@@ -142,7 +142,7 @@ def main() -> None:
     h.type_line("ip -br addr")
     time.sleep(2.2)
     h.type_line("sudo apt-get install -y iproute2")
-    time.sleep(28.0)
+    time.sleep(40.0)
     h.type_line("ip -br addr")
     time.sleep(2.4)
     h.type_line("ip route")

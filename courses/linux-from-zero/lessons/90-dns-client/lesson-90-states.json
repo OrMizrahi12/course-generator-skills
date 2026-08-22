@@ -1,0 +1,181 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 90 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "kicker": "LESSON 90",
+        "title": "Read resolv.conf and hosts. Then look a name up."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "tag": "RESOLVER",
+        "heading": "resolv.conf",
+        "line": "This host’s nameserver line is nameserver 10.0.0.2.",
+        "photo": "weathered LETTRES mail slot"
+      }
+    },
+    "changed": "A mail-slot photo appears with the resolv.conf card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "tag": "HOSTS",
+        "heading": "/etc/hosts",
+        "line": "127.0.0.1 maps to localhost and to cursor.",
+        "photo": "house number plaque 8"
+      }
+    },
+    "changed": "A house-number photo appears with the hosts card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "tag": "LOOKUP",
+        "heading": "getent",
+        "line": "getent hosts example.com uses the resolver. getent hosts cursor uses /etc/hosts.",
+        "photo": "open book by candlelight"
+      }
+    },
+    "changed": "An open-book photo appears with the getent card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "cursor",
+        "line": "Last getent hosts cursor holds 127.0.0.1 cursor.",
+        "photo": "spiral notebook on a table"
+      }
+    },
+    "changed": "A notebook photo appears with the cursor card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "90"},
+      "main": {
+        "line": "Read both files. Hold the hosts line.",
+        "cards": ["resolv / nameserver", "hosts / cursor", "Hold / 127.0.0.1 cursor"]
+      }
+    },
+    "changed": "Three end cards hold the mail slot, the house number, and the notebook."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /etc/resolv.conf",
+      "stdout": ["nameserver 10.0.0.2"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /etc/resolv.conf holds nameserver 10.0.0.2."
+  },
+  {
+    "start": 68.0,
+    "end": 76.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /etc/hosts",
+      "stdout": ["127.0.0.1       localhost", "127.0.0.1       cursor"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /etc/hosts shows localhost and cursor on 127.0.0.1."
+  },
+  {
+    "start": 76.0,
+    "end": 84.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent hosts example.com",
+      "stdout": [
+        "2606:4700:10::6814:179a example.com",
+        "2606:4700:10::ac42:93f3 example.com"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "getent hosts example.com returns two IPv6 addresses from the resolver."
+  },
+  {
+    "start": 84.0,
+    "end": 90.75,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "getent hosts cursor",
+      "stdout": ["127.0.0.1       cursor"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "getent hosts cursor holds 127.0.0.1 cursor."
+  }
+]

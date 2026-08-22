@@ -1,0 +1,178 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.25,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 93 are on screen."
+  },
+  {
+    "start": 1.25,
+    "end": 6.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "kicker": "LESSON 93",
+        "title": "date, LANG, and /etc/timezone. timedatectl has no bus here."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 6.0,
+    "end": 14.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "tag": "CLOCK",
+        "heading": "date",
+        "line": "GNU date prints Sat Aug 22 2026 UTC on this host.",
+        "photo": "hourglass egg timer"
+      }
+    },
+    "changed": "An egg-timer photo appears with the date card."
+  },
+  {
+    "start": 14.0,
+    "end": 22.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "tag": "LOCALE",
+        "heading": "LANG",
+        "line": "locale shows LANG=en_US.UTF-8. Do not fake timedatectl.",
+        "photo": "chicken kitchen timer"
+      }
+    },
+    "changed": "A kitchen-timer photo appears with the LANG card."
+  },
+  {
+    "start": 22.0,
+    "end": 30.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "tag": "ZONE",
+        "heading": "localtime",
+        "line": "/etc/localtime is a symlink to /usr/share/zoneinfo/Etc/UTC.",
+        "photo": "open book by candlelight"
+      }
+    },
+    "changed": "An open-book photo appears with the localtime card."
+  },
+  {
+    "start": 30.0,
+    "end": 38.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "timezone",
+        "line": "Last cat /etc/timezone holds Etc/UTC.",
+        "photo": "spiral notebook on a table"
+      }
+    },
+    "changed": "A notebook photo appears with the timezone card."
+  },
+  {
+    "start": 38.0,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "93"},
+      "main": {
+        "line": "date. LANG. Hold Etc/UTC.",
+        "cards": ["date / UTC now", "LANG / en_US.UTF-8", "Hold / Etc/UTC"]
+      }
+    },
+    "changed": "Three end cards hold the egg timer, the kitchen timer, and the notebook."
+  },
+  {
+    "start": 51.0,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.8,
+    "end": 53.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click applications menu is open with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.3,
+    "end": 62.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed."
+  },
+  {
+    "start": 62.0,
+    "end": 68.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "date",
+      "stdout": ["Sat Aug 22 01:37:43 PM UTC 2026"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "date prints Saturday 22 Aug 2026 in UTC."
+  },
+  {
+    "start": 68.0,
+    "end": 74.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "locale | grep '^LANG='",
+      "stdout": ["LANG=en_US.UTF-8"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "locale | grep '^LANG=' holds en_US.UTF-8."
+  },
+  {
+    "start": 74.0,
+    "end": 80.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /etc/localtime",
+      "stdout": ["lrwxrwxrwx 1 root root 27 Jan  1  1970 /etc/localtime -> /usr/share/zoneinfo/Etc/UTC"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l /etc/localtime shows a symlink to zoneinfo/Etc/UTC."
+  },
+  {
+    "start": 80.0,
+    "end": 86.717,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat /etc/timezone",
+      "stdout": ["Etc/UTC"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat /etc/timezone holds Etc/UTC."
+  }
+]

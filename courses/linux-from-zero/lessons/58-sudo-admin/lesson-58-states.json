@@ -1,0 +1,219 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-58-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "kicker": "LESSON 58",
+        "title": "Root is a tool. Borrow it for one job. Then you are still yourself."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "tag": "SUDO",
+        "heading": "whoami then sudo whoami",
+        "line": "ubuntu. Then root. One command as root. The prompt does not become root.",
+        "photo": "four skeleton keys"
+      }
+    },
+    "changed": "A skeleton-keys photo appears with the sudo card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "tag": "THE STUCK PAPER",
+        "heading": "Sticky still blocks you",
+        "line": "rm -f /tmp/sam-rent-scratch.txt. Operation not permitted. Same as lesson 56.",
+        "photo": "weathered door latch"
+      }
+    },
+    "changed": "A door-latch photo appears with the sticky card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "tag": "THE JOB",
+        "heading": "sudo rm -f",
+        "line": "Root can clear Sam’s scratch from the shared tray. That is the admin job. Not apt. Not a new login.",
+        "photo": "bunch of antique skeleton keys"
+      }
+    },
+    "changed": "A key-ring photo appears with the job card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "tag": "BACK",
+        "heading": "whoami is still ubuntu",
+        "line": "ls -l of Sam’s file must miss. You borrowed root. You did not become root.",
+        "photo": "padlock with three keys"
+      }
+    },
+    "changed": "A padlock-and-keys photo appears with the back card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "58"},
+      "main": {
+        "end_line": "whoami. sudo whoami. rm -f fails. sudo rm -f. whoami. Hold No such file.",
+        "cards": [
+          {"title": "Borrow", "sub": "sudo whoami", "photo": "four skeleton keys"},
+          {"title": "Job", "sub": "sudo rm", "photo": "key ring"},
+          {"title": "Back", "sub": "ubuntu", "photo": "padlock"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize borrow, job, and back."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "whoami",
+      "output": "ubuntu"
+    },
+    "changed": "whoami prints ubuntu."
+  },
+  {
+    "start": 61.5,
+    "end": 67.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo whoami",
+      "output": "root"
+    },
+    "changed": "sudo whoami prints root."
+  },
+  {
+    "start": 67.0,
+    "end": 74.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /tmp/sam-rent-scratch.txt",
+      "output": "-rw-rw-r-- 1 sam sam 0 Aug 22 03:23 /tmp/sam-rent-scratch.txt"
+    },
+    "changed": "ls -l shows Sam’s scratch still in /tmp."
+  },
+  {
+    "start": 74.0,
+    "end": 81.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "rm -f /tmp/sam-rent-scratch.txt",
+      "output": "rm: cannot remove '/tmp/sam-rent-scratch.txt': Operation not permitted"
+    },
+    "changed": "rm -f fails with Operation not permitted."
+  },
+  {
+    "start": 81.0,
+    "end": 88.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "sudo rm -f /tmp/sam-rent-scratch.txt",
+      "prompt": "workspace $"
+    },
+    "changed": "sudo rm -f succeeds with no printed output."
+  },
+  {
+    "start": 88.0,
+    "end": 94.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "whoami",
+      "output": "ubuntu"
+    },
+    "changed": "whoami still prints ubuntu."
+  },
+  {
+    "start": 94.0,
+    "end": 102.083,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l /tmp/sam-rent-scratch.txt",
+      "output": "ls: cannot access '/tmp/sam-rent-scratch.txt': No such file or directory",
+      "prompt": "workspace $"
+    },
+    "changed": "ls -l holds No such file or directory for Sam’s scratch."
+  }
+]

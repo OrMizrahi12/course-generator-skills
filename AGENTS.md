@@ -1,6 +1,6 @@
 # Course Generator
 
-Record any course as silent screen lessons. Each lesson is an MP4 plus a timed states array, and every stage leaves an artifact on disk that the next stage reads.
+Record any course as silent screen lessons. Each lesson is an MP4 plus a timed states array.
 
 Chat with the user in Hebrew. Skills, instructions, course production, on-screen text, and artifacts are English.
 
@@ -8,7 +8,7 @@ Chat with the user in Hebrew. Skills, instructions, course production, on-screen
 
 `COURSE_AGENT.md` is the constitution, and it is always in force — read it before the first decision, not after the work. It governs judgment; the skills govern procedure. On any conflict between a skill and that document, it wins.
 
-What it decides, so you know when you need it: what may be shown to a learner and what may not, how far to degrade when the real thing is unavailable and how to disclose it, what counts as evidence that you are done, and which of two disagreeing documents governs.
+What it decides, so you know when you need it: what may be shown to a learner and what may not, how far to degrade when the real thing is unavailable and how to disclose it, what counts as evidence that you are done.
 
 ## The pipeline
 
@@ -16,14 +16,14 @@ What it decides, so you know when you need it: what may be shown to a learner an
 |---|---|---|---|---|
 | **1. Plan the course** — once per course | `/build-a-course-syllabus` | the user | `courses/<slug>/syllabus.md` | the user has accepted the spine and `status: accepted` |
 | **2. Research the lesson** — once per lesson | `/research-the-current-lesson` | the accepted syllabus | `.../lessons/<NN>-<slug>/brief.md` | the validator is clean and `status: ready` |
-| **3. Film the lesson** — once per lesson | `/real-example-in-every-lesson` first, then `/human-screen-recordings` and `/record-until-the-result-is-visible` on the same take | the ready brief | `.../take-plan.md`, then `.../lesson.mp4` | the example passed the rubric, the plan is `approved`, the plan was rehearsed off camera and the state reset, and the MP4's own frames show the state before the action, the whole path, and the finished result |
+| **3. Film the lesson** — once per lesson | `/real-example-in-every-lesson` first, then `/human-screen-recordings` and `/record-until-the-result-is-visible` on the same take | the ready brief | `.../take-plan.md`, then `.../lesson.mp4` | the example passed the rubric, the plan is `approved` and rehearsed, and the MP4's own frames show the state before the action, the whole path, and the finished result |
 | **4. Extract the states** — once per lesson | `/extract-lesson-states` | the locked MP4 | `.../states.json` | the array covers the film with no gaps and the validator is clean |
 
-The MP4 is **locked** once that stage-3 gate passes: nothing is re-shot after it, and a re-shoot voids the states extracted from the old take. `states.json` is the handoff out of this repository — the narration is written from it, elsewhere, by something that never sees the video.
+**Rehearsed** means the plan was walked end to end off camera, in the environment you will film in, and the state it created was reset. The MP4 is **locked** once that stage-3 gate passes, and the locked take is the one that ships. A re-shoot means it was never locked: the old take and any states extracted from it go together. `states.json` is the handoff out of this repository — the narration is written from it, elsewhere, by something that never sees the video.
 
-Use every skill. Do not skip one because the lesson "seems simple", and do not invent a parallel process. "Every skill" spans the course rather than a single reply: each skill is the gate for its own stage, and you do not open the next stage until the current gate passes.
+Use every skill. Do not skip one because the lesson "seems simple", and do not invent a parallel process.
 
-Stage 1 runs once. Stages 2 to 4 repeat per lesson, in order, from scratch every time — last lesson's research is not this lesson's research.
+Each lesson runs stages 2 to 4 from scratch — last lesson's research is not this lesson's research.
 
 ## Weight: what is absolute, and what is yours
 
@@ -40,13 +40,11 @@ Stage 1 runs once. Stages 2 to 4 repeat per lesson, in order, from scratch every
 
 **Yours,** and you state the decision out loud so the user can reverse it: lesson order and titles, which live sources to trust, the shape of the example, how the take is paced, how the states name their regions.
 
-How to tell them apart: **a rule with a validator behind it is absolute; everything else is judgment you have to be able to defend.**
+The test runs one way only: **every rule with a validator behind it is absolute.** The list above is not limited to those, and anything on neither list is judgment you have to be able to defend.
 
 ## Validators
 
-Run from the workspace root, and fix what they report rather than explaining it away.
-
-One per artifact, run from the workspace root at the gate that artifact opens.
+One per artifact, run from the workspace root at the gate that artifact opens. Fix what they report rather than explaining it away.
 
 ```bash
 python3 .cursor/skills/1-plan-the-course/build-a-course-syllabus/scripts/validate_syllabus.py courses/<slug>/syllabus.md
@@ -70,7 +68,7 @@ Park the blocked item with the blocker named in the artifact that decides that w
 
 ## Where the skills live
 
-Each stage folder under `.cursor/skills/` holds the skills for that stage. The folder is organizational: a skill's identity is the folder that holds its `SKILL.md`, so every skill is still invoked as `/its-own-name`.
+Stage folders are organizational: a skill's identity is the folder holding its `SKILL.md`, so each is invoked as `/its-own-name`.
 
 - [1-plan-the-course/build-a-course-syllabus](.cursor/skills/1-plan-the-course/build-a-course-syllabus/SKILL.md)
 - [2-research-the-lesson/research-the-current-lesson](.cursor/skills/2-research-the-lesson/research-the-current-lesson/SKILL.md)

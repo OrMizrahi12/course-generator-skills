@@ -1,0 +1,199 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "mpv",
+      "title_bar": "lesson-55-viz.mp4 - mpv"
+    },
+    "changed": "mpv opens playing the lesson visualization."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "kicker": "LESSON 55",
+        "title": "New files inherit a default. umask is the stamp. 0022 knocks write off group and others."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "tag": "THE MASK",
+        "heading": "umask prints 0022",
+        "line": "A bash builtin. The mask is subtracted from 666 for files. Type umask. Then umask -S.",
+        "photo": "dial rubber stamp on an ink pad"
+      }
+    },
+    "changed": "A rubber-stamp photo appears with the mask card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "tag": "A NEW PAPER",
+        "heading": "touch sep-due-note.txt",
+        "line": "September’s due date needs its own file. touch creates it empty. chmod is not the default.",
+        "photo": "yellow legal pad with a pencil"
+      }
+    },
+    "changed": "A legal-pad photo appears with the new-paper card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "tag": "THE BITS",
+        "heading": "ls -l starts -rw-r--r--",
+        "line": "Size 0. Same letters as 644. umask 0022 took group-write and other-write before the file existed.",
+        "photo": "antique copper combination padlock"
+      }
+    },
+    "changed": "A combination-padlock photo appears with the bits card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "tag": "POLICY",
+        "heading": "Defaults are a policy",
+        "line": "Every new file in this shell gets that stamp until umask changes. Do not change it in this lesson.",
+        "photo": "house number 32 on a gate pillar"
+      }
+    },
+    "changed": "A house-number photo appears with the policy card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.05,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "55"},
+      "main": {
+        "end_line": "umask. umask -S. touch sep-due-note.txt. Hold -rw-r--r-- size 0.",
+        "cards": [
+          {"title": "Mask", "sub": "0022", "photo": "rubber stamp"},
+          {"title": "New", "sub": "touch", "photo": "legal pad"},
+          {"title": "Bits", "sub": "-rw-r--r--", "photo": "combination padlock"}
+        ]
+      }
+    },
+    "changed": "Three end cards summarize umask, touch, and the bits."
+  },
+  {
+    "start": 51.05,
+    "end": 52.3,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none"}
+    },
+    "changed": "The empty desktop returns after the visualization."
+  },
+  {
+    "start": 52.3,
+    "end": 53.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "A right-click desktop menu opens with Terminal Emulator highlighted."
+  },
+  {
+    "start": 53.85,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal",
+      "prompt": "workspace $",
+      "fills_screen": false
+    },
+    "changed": "A white terminal opens with prompt workspace $."
+  },
+  {
+    "start": 54.55,
+    "end": 56.6,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "background": "white",
+      "prompt": "workspace $"
+    },
+    "changed": "The terminal fills the 1920×1080 screen."
+  },
+  {
+    "start": 56.6,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cd ~/linux-workshop",
+      "prompt_after": "linux-workshop $"
+    },
+    "changed": "cd ~/linux-workshop changes the prompt to linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 66.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "umask",
+      "output": "0022"
+    },
+    "changed": "umask prints 0022."
+  },
+  {
+    "start": 66.0,
+    "end": 71.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "umask -S",
+      "output": "u=rwx,g=rx,o=rx"
+    },
+    "changed": "umask -S prints u=rwx,g=rx,o=rx."
+  },
+  {
+    "start": 71.0,
+    "end": 77.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "touch sep-due-note.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "touch sep-due-note.txt creates the empty September note."
+  },
+  {
+    "start": 77.5,
+    "end": 84.417,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l sep-due-note.txt",
+      "output": "-rw-r--r-- 1 ubuntu ubuntu 0 Aug 22 02:52 sep-due-note.txt",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds -rw-r--r-- size 0 on sep-due-note.txt."
+  }
+]

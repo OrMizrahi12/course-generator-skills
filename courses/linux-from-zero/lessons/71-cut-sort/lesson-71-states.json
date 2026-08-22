@@ -1,0 +1,227 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "Recording starts on an empty 1920×1080 desktop."
+  },
+  {
+    "start": 0.7,
+    "end": 1.15,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"}
+    },
+    "changed": "The visualization starts. LINUX FROM ZERO and 71 are on screen."
+  },
+  {
+    "start": 1.15,
+    "end": 5.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "kicker": "LESSON 71",
+        "title": "wc counts the notes. sort and uniq collapse the copies. cut keeps twelve characters."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.85,
+    "end": 13.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "tag": "COUNT",
+        "heading": "wc",
+        "line": "rent-log.txt and sep-due-draft.txt are both 4 lines, 15 words, 92 bytes.",
+        "photo": "Chinese suanpan abacus"
+      }
+    },
+    "changed": "An abacus photo appears with the wc card."
+  },
+  {
+    "start": 13.85,
+    "end": 21.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "tag": "ORDER",
+        "heading": "sort",
+        "line": "cat both notes into sort. Each sentence appears twice, blanks first.",
+        "photo": "1951 mail sorting warehouse"
+      }
+    },
+    "changed": "A mail-sorting photo appears with the sort card."
+  },
+  {
+    "start": 21.85,
+    "end": 29.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "tag": "UNIQUE",
+        "heading": "uniq",
+        "line": "uniq on that sorted stream keeps one of each line. The draft matches the log.",
+        "photo": "open stainless scissors"
+      }
+    },
+    "changed": "A scissors photo appears with the uniq card."
+  },
+  {
+    "start": 29.85,
+    "end": 37.85,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "tag": "SLICE",
+        "heading": "cut",
+        "line": "Last cut -c1-12 rent-log.txt must still show 21 Aug rent and Next due 21.",
+        "photo": "letter opener on a white envelope"
+      }
+    },
+    "changed": "A letter-opener photo appears with the cut card."
+  },
+  {
+    "start": 37.85,
+    "end": 51.3,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "71"},
+      "main": {
+        "line": "wc both notes. sort the copies. uniq them. Hold cut -c1-12.",
+        "cards": ["Count / wc", "Order / sort", "Slice / cut"]
+      }
+    },
+    "changed": "Three end cards hold the abacus, mail warehouse, and letter opener."
+  },
+  {
+    "start": 51.3,
+    "end": 52.45,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "abstract peach-teal blur", "panel": "none", "dock": "none"}
+    },
+    "changed": "The visualization ends. The empty desktop is back."
+  },
+  {
+    "start": 52.45,
+    "end": 53.05,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "items": ["Run Program...", "Terminal Emulator", "File Manager", "Mail Reader", "Web Browser", "Settings", "Accessories", "Development", "Internet", "Multimedia", "System", "About Xfce", "Log Out"]
+      }
+    },
+    "changed": "A right-click applications menu opens."
+  },
+  {
+    "start": 53.05,
+    "end": 53.7,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "menu": {
+        "open": true,
+        "highlighted": "Terminal Emulator"
+      }
+    },
+    "changed": "Terminal Emulator is highlighted in the menu."
+  },
+  {
+    "start": 53.7,
+    "end": 54.55,
+    "on_screen": {
+      "window": "xfce4-terminal, windowed",
+      "prompt": "workspace $"
+    },
+    "changed": "xfce4-terminal opens windowed on the desktop."
+  },
+  {
+    "start": 54.55,
+    "end": 56.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "cursor": "block after $"
+    },
+    "changed": "The terminal fills 1920×1080."
+  },
+  {
+    "start": 56.5,
+    "end": 61.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "lines": ["workspace $ cd ~/linux-workshop", "linux-workshop $"]
+    },
+    "changed": "cd ~/linux-workshop runs. The prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.5,
+    "end": 69.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "wc rent-log.txt sep-due-draft.txt",
+      "stdout": [
+        "4  15  92 rent-log.txt",
+        "4  15  92 sep-due-draft.txt",
+        "8  30 184 total"
+      ]
+    },
+    "changed": "wc reports both notes as 4 lines, 15 words, 92 bytes."
+  },
+  {
+    "start": 69.5,
+    "end": 80.5,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat rent-log.txt sep-due-draft.txt | sort",
+      "stdout": [
+        "21 Aug rent is paid.",
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "sort prints each rent sentence twice, blanks first."
+  },
+  {
+    "start": 80.5,
+    "end": 92.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat rent-log.txt sep-due-draft.txt | sort | uniq",
+      "stdout": [
+        "21 Aug rent is paid.",
+        "Keep the three papers in /home/ubuntu/rent-receipts.",
+        "Next due 21 Sep."
+      ]
+    },
+    "changed": "uniq keeps one of each sorted line. The draft matches the log."
+  },
+  {
+    "start": 92.0,
+    "end": 102.417,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cut -c1-12 rent-log.txt",
+      "stdout": [
+        "21 Aug rent ",
+        "Keep the thr",
+        "Next due 21 "
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cut -c1-12 holds the first twelve characters of each rent-log line."
+  }
+]

@@ -153,10 +153,10 @@ def main() -> None:
     time.sleep(0.4)
     h.press_end()
     time.sleep(0.3)
-    for _ in range(3):
+    for _ in range(4):
         h.press_backspace()
     time.sleep(0.25)
-    h.type_text("Oct")
+    h.type_text("Oct.")
     time.sleep(0.6)
     h.ctrl_key("o")
     time.sleep(0.9)

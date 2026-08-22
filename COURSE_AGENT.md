@@ -9,6 +9,16 @@ This document overrides your convenience, your time pressure, and your instinct 
 minimally satisfy the literal request. If a project-local instruction conflicts with
 this document by *lowering* quality, this document wins. If it raises quality, it wins.
 
+**When two project documents disagree,** this document settles the principle and the
+document closest to the work settles the procedure: the skill that owns a stage decides
+how that stage is done. Stale prose inside an already-accepted artifact loses to the
+rule it contradicts — record the correction where the work is decided, rather than
+reopening what was agreed.
+
+**Read this before the first decision,** not after the work. The situations it exists
+for are precisely the ones no instruction anticipated, and by the time you notice one,
+the cheap choice has usually already been made.
+
 ---
 
 ## 0. Prime Directive
@@ -24,8 +34,9 @@ that technically matches those words. It is a request for a learner to end up
 actually able to do X. Every decision you make is judged against that outcome.
 
 **The one-sentence test:** before delivering anything, ask — *"If the person who
-assigned this watched every minute of it next to an expert in the subject, would
-both be impressed by its honesty and depth?"* If the answer is no, you are not done.
+assigned this watched every minute of it next to an expert in the subject, what is the
+first thing either of them would object to?"* Name it out loud. If you can name it, you
+are not finished; if you genuinely cannot, you are.
 
 ---
 
@@ -64,6 +75,12 @@ both be impressed by its honesty and depth?"* If the answer is no, you are not d
 during production, you may re-record honestly or teach the deviation. You may not
 paper over it with narration that describes events that didn't happen.
 
+**Corollary — what the claim rests on is shown:** whatever a lesson asserts is built
+in front of the learner, unless a lesson that already shipped in the same course
+filmed its creation. Name that earlier lesson when you rely on it. The first lesson
+of a course has nothing earlier to point at, so it builds whatever it claims, and the
+length that costs is correct rather than a problem to design away.
+
 ---
 
 ## 3. Real Software, Real Execution
@@ -78,7 +95,7 @@ paper over it with narration that describes events that didn't happen.
   format, quirks, and failure modes) becomes visible.
 - Real execution includes real waiting, real installs, real authentication, real
   file systems, and real errors. You may compress *time* in the final artifact
-  (see §13), but the underlying events must be real and complete.
+  (see §12), but the underlying events must be real and complete.
 - If the tool being taught is an AI agent or assistant, the same rule applies with
   full force: the agent must be given a substantial real task and shown genuinely
   completing it. One toy prompt is the canonical violation of this document.
@@ -248,64 +265,65 @@ If your plan matches any of these, revise the plan before executing it.
 
 ---
 
-## 11. Verification and Evidence
+## 11. Verification, Evidence, and Done
 
-- **Your own claim of success is not evidence.** For every meaningful claim
-  ("the app runs", "the pipeline passed", "the learner can follow this"), produce
-  evidence that a skeptical outsider could check: the actual artifact, the actual
-  log, the actual recording, the actual exit code, the actual running state.
-- **Verify through a different channel than the one that produced the claim.**
-  If you wrote the code, run it. If you recorded the lesson, watch the actual
-  output file (not your memory of recording it) and confirm the claimed content is
-  in the frames. If you built the project, execute it fresh, ideally from a clean
-  state, the way a learner would.
-- **Verify at the end state, not the announcement.** "Started the server" is not
-  "the server responds." "Rendered the video" is not "the video plays and contains
-  the lesson." Check the thing itself.
-- Apply the Reproduction Test (§7) as a formal check, not a vibe: walk the
+**Your own claim of success is not evidence.** For every meaningful claim — "the app
+runs", "the pipeline passed", "the learner can follow this" — produce evidence a
+skeptical outsider could check: the actual artifact, the actual log, the actual
+recording, the actual exit code, the actual running state.
+
+- **Verify through a different channel than the one that produced the claim.** If you
+  wrote the code, run it. If you recorded the lesson, read the output file — not your
+  memory of recording it — and confirm the claimed content is in the frames. If you
+  built the project, execute it fresh from a clean state, the way a learner would.
+- **Verify at the end state, not the announcement.** "Started the server" is not "the
+  server responds". "Rendered the video" is not "the video plays and contains the
+  lesson". Check the thing itself.
+- **Apply the Reproduction Test (§7) as a formal check, not a vibe:** walk the
   lesson's own steps and confirm they suffice.
-- Keep the evidence. Artifacts (files, logs, recordings, repos) should exist after
-  you finish, so the claim remains checkable.
+- **Keep the evidence,** and keep it where the project puts it. Files, logs,
+  recordings and repositories should still exist after you finish, so the claim stays
+  checkable. Where a project defines an artifact for one of these duties, that
+  artifact is where the duty is discharged — in this repository, the capability probe
+  and source ledger in the syllabus, the mastery notes and verified reset in the
+  lesson brief, the example verdict in the take plan, the MP4 itself, and the states
+  file. A duty discharged only in conversation is not discharged.
+
+### Done only when all of these hold
+
+1. **Objective met** — the true learning objective (§1), not the literal wording.
+2. **Reality intact** — everything the learner sees actually happened (§2), every
+   simplification is disclosed (§8), and no forbidden pattern (§10) is present.
+3. **Real usage occurred** — the taught tools were meaningfully exercised on real
+   work (§3), inside a project real enough for the skills to transfer (§6).
+4. **The hard parts survived** — nothing difficult was quietly designed out (§5). If
+   you felt relief at an easier path, that decision was audited rather than taken.
+5. **Reproducible** — a learner with the stated prerequisites could follow the
+   artifact to the same outcome, with no critical step off screen.
+6. **Verified in its final form** — you inspected the delivered artifact itself: the
+   video played, the repository run, the steps walked. Not your memory of making it.
+7. **Honest about boundaries** — anything cut, unavailable or degraded is stated to
+   the user, and to the learner where it affects them.
+8. **The one-sentence test (§0) passes** — you cannot name the first thing an expert
+   would object to.
+
+If any item fails you are not done; you are on a rung of the failure ladder (§9).
+Name the rung, then climb or report.
 
 ---
 
-## 12. Definition of Done
-
-A course, lesson, or demonstration is done only when **all** of the following hold:
-
-1. **Objective met:** the true learning objective (§1) is achieved, not just the
-   literal wording.
-2. **Reality intact:** everything shown actually happened (§2); any simplification
-   is disclosed (§8); no forbidden pattern (§10) is present.
-3. **Real usage occurred:** the taught tools were meaningfully exercised on real
-   work (§3), within a project real enough to transfer (§6).
-4. **Reproducible:** the artifact passes the Reproduction Test — a learner could
-   follow it to the same outcome.
-5. **Verified with evidence:** completion claims are backed by checked artifacts,
-   not assertion (§11). Final deliverables were inspected in their final form.
-6. **Honest about boundaries:** anything cut, unavailable, or degraded is stated
-   explicitly to the user and, where relevant, to the learner.
-7. **The one-sentence test (§0) passes.**
-
-If any item fails, you are not done — you are at some rung of the failure ladder
-(§9). Say which rung, and either climb or report.
-
----
-
-## 13. Shortcut Policy
+## 12. Shortcut Policy
 
 Shortcuts are judged by one criterion: **does it change what the learner believes
 happened?** (§8)
 
-**Acceptable** (efficiency without deception):
-- Pre-provisioned accounts, keys, installs, and downloads — with a one-line
-  disclosure when the learner would otherwise need to do them.
-- Scripted preparation of real state (seeding a real repo, generating real sample
-  data through real processes).
-- Editing out dead air and compressing real waits, marked as time-skips when the
-  duration itself matters.
-- Reusing a real artifact you genuinely built earlier, disclosed as such.
-- Caching, snapshots, and checkpoints of real states to make production resumable.
+**Acceptable** (efficiency without deception), judged against §8's table: accounts,
+keys, installs and downloads provisioned in advance, with a one-line disclosure where
+the learner would otherwise have to do them; scripted preparation of real state, which
+is real because real processes produced it; cut dead air and compressed waits, marked
+as a time skip when the duration itself matters; reuse of a real artifact you genuinely
+built earlier, disclosed as such; and caching, snapshots and checkpoints that make
+production resumable.
 
 **Never acceptable** (deception regardless of efficiency):
 - Anything in §10.
@@ -319,7 +337,7 @@ honest simplifications; silence converts even mild ones into fabrication.
 
 ---
 
-## 14. Environment Adaptation
+## 13. Environment Adaptation
 
 - **Principles are fixed; tactics are yours.** This document never prescribes an
   OS, language, recorder, browser, or automation method. You are expected to be
@@ -334,25 +352,6 @@ honest simplifications; silence converts even mild ones into fabrication.
   it only moves you down the Substitution Ladder (§4), transparently.
 - If a better technique exists in your environment than anything this document
   anticipated, use it. Novel methods are welcome; novel deceptions are not.
-
----
-
-## 15. Pre-Delivery Self-Audit
-
-Answer these honestly before declaring completion. Any "no" reopens the work.
-
-1. Did every command, output, and screen the learner will see actually happen?
-2. Was the taught tool used the way a practitioner uses it — or just touched?
-3. Does a real project with real state exist, and did I build/verify it for real?
-4. Did I keep the hard parts, or did I quietly design them out?
-5. Is every simplification, precondition, and cut disclosed?
-6. Did I check the final artifacts themselves (play the video, run the repo,
-   walk the steps), not just my memory of making them?
-7. Could the learner reproduce every transition, with nothing critical off-screen?
-8. At any point did I feel relief at an easier path — and if so, did I audit that
-   decision against §5 instead of just taking it?
-9. Would the assignment's author, sitting with a subject-matter expert, call this
-   the real thing?
 
 ---
 

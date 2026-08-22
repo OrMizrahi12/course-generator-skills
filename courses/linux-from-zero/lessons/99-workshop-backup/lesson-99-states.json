@@ -1,0 +1,238 @@
+[
+  {
+    "start": 0.0,
+    "end": 0.85,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "Recording starts on a 1920×1080 desktop."
+  },
+  {
+    "start": 0.85,
+    "end": 1.5,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"}
+    },
+    "changed": "The visualization fills the screen. LINUX FROM ZERO and 99 are on screen."
+  },
+  {
+    "start": 1.5,
+    "end": 5.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "kicker": "LESSON 99",
+        "title": "Run snap.sh. Dated archive in the workshop. One line in the log."
+      }
+    },
+    "changed": "The lesson title fills the screen."
+  },
+  {
+    "start": 5.2,
+    "end": 13.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "tag": "WROTE",
+        "heading": "snap.sh",
+        "line": "The backup command they already wrote. cat it, then run it.",
+        "photo": "spool of twine on wood"
+      }
+    },
+    "changed": "A twine photo appears with the snap.sh card."
+  },
+  {
+    "start": 13.2,
+    "end": 21.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "tag": "DATED",
+        "heading": "%F",
+        "line": "date +%F is 2026-08-22. Pack beside the tree, then mv in.",
+        "photo": "coils of blue rope"
+      }
+    },
+    "changed": "A rope photo appears with the %F card."
+  },
+  {
+    "start": 21.2,
+    "end": 29.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "tag": "ARCHIVE",
+        "heading": ".tar.gz",
+        "line": "workshop-2026-08-22.tar.gz lands in ~/linux-workshop/.",
+        "photo": "jute weave"
+      }
+    },
+    "changed": "A jute photo appears with the .tar.gz card."
+  },
+  {
+    "start": 29.2,
+    "end": 38.2,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "tag": "HOLD",
+        "heading": "log",
+        "line": "Last cat workshop-backup.log holds the dated line. Not snap-repeat.log.",
+        "photo": "paper-strip knot"
+      }
+    },
+    "changed": "A knot photo appears with the log card."
+  },
+  {
+    "start": 38.2,
+    "end": 51.0,
+    "on_screen": {
+      "window": "visualization, fullscreen",
+      "chrome": {"wordmark": "LINUX FROM ZERO", "lesson_no": "99"},
+      "main": {
+        "line": "snap.sh. Dated archive. Hold the log.",
+        "cards": ["snap.sh / the command they wrote", ".tar.gz / 2026-08-22", "Hold / workshop-backup.log"]
+      }
+    },
+    "changed": "Three end cards hold the twine, the jute, and the knot."
+  },
+  {
+    "start": 51.0,
+    "end": 52.4,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset", "panel": "none"}
+    },
+    "changed": "The visualization ends. The desktop is back."
+  },
+  {
+    "start": 52.4,
+    "end": 52.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Run Program..."}
+    },
+    "changed": "A right-click applications menu is open with Run Program... under the pointer."
+  },
+  {
+    "start": 52.8,
+    "end": 53.8,
+    "on_screen": {
+      "window": "XFCE desktop",
+      "desktop": {"wallpaper": "hills at sunset"},
+      "menu": {"open": true, "highlighted": "Terminal Emulator"}
+    },
+    "changed": "Terminal Emulator is highlighted in the applications menu."
+  },
+  {
+    "start": 53.8,
+    "end": 54.5,
+    "on_screen": {
+      "window": "xfce4-terminal, top-left",
+      "title": "Terminal -",
+      "prompt": "workspace $",
+      "desktop": {"wallpaper": "hills at sunset"}
+    },
+    "changed": "xfce4-terminal opens in the top-left with a white background."
+  },
+  {
+    "start": 54.5,
+    "end": 61.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "prompt": "workspace $",
+      "typing": "cd ~/linux-workshop"
+    },
+    "changed": "xfce4-terminal fills 1920×1080. cd ~/linux-workshop is typed and the prompt becomes linux-workshop $."
+  },
+  {
+    "start": 61.0,
+    "end": 70.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat snap.sh",
+      "stdout": [
+        "#!/bin/bash",
+        "if [ -z \"$1\" ]",
+        "then",
+        "    echo \"usage: snap.sh outfile.tar.gz\" >&2",
+        "    exit 1",
+        "fi",
+        "tar -czf \"$1\" -C /home/ubuntu linux-workshop"
+      ],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat snap.sh holds the backup script they wrote."
+  },
+  {
+    "start": 70.0,
+    "end": 75.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "date +%F",
+      "stdout": ["2026-08-22"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "date +%F holds 2026-08-22."
+  },
+  {
+    "start": 75.0,
+    "end": 82.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "./snap.sh ../workshop-2026-08-22.tar.gz",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "./snap.sh writes ../workshop-2026-08-22.tar.gz."
+  },
+  {
+    "start": 82.0,
+    "end": 90.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "mv ../workshop-2026-08-22.tar.gz .",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "mv puts workshop-2026-08-22.tar.gz in the workshop."
+  },
+  {
+    "start": 90.0,
+    "end": 100.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "ls -l workshop-2026-08-22.tar.gz",
+      "stdout": ["-rw-r--r-- 1 ubuntu ubuntu 3697 Aug 22 14:43 workshop-2026-08-22.tar.gz"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "ls -l holds the dated archive, 3697 bytes."
+  },
+  {
+    "start": 100.0,
+    "end": 114.0,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "date '+%F %T workshop-2026-08-22.tar.gz' >> workshop-backup.log",
+      "prompt": "linux-workshop $"
+    },
+    "changed": "date appends one line to workshop-backup.log."
+  },
+  {
+    "start": 114.0,
+    "end": 125.2,
+    "on_screen": {
+      "window": "xfce4-terminal, fullscreen",
+      "command": "cat workshop-backup.log",
+      "stdout": ["2026-08-22 14:43:48 workshop-2026-08-22.tar.gz"],
+      "prompt": "linux-workshop $"
+    },
+    "changed": "cat workshop-backup.log holds the dated archive line."
+  }
+]
